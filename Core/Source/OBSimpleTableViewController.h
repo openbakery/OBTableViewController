@@ -1,5 +1,4 @@
 //
-// ELO 
 //
 // Created by rene on 19.02.14.
 

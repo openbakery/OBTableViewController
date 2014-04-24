@@ -21,6 +21,7 @@
 		355B25C9E3824F75B1F6A037 /* OBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B217D70CF3AF2312F1A8F /* OBTableViewController.m */; };
 		355B25DD447586B59F40AECD /* OBModelCellBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B21A484FCF7700D1D137D /* OBModelCellBinding.m */; };
 		355B265A642EB0F2A6C9B1AE /* OBSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25D1B751831C8D6C93D2 /* OBSimpleTableViewController.m */; };
+		355B265F3BC277D41C450F56 /* OBDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B21541CFC21B27110011A /* OBDemoViewController.m */; };
 		355B2684BBDE1B53C4FDB86B /* UISearchBarTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DB50339FA83AE3F9DC3 /* UISearchBarTestModel.m */; };
 		355B272E69AD7A722FFA6B00 /* UIImageViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B23D1CCD44E05D98D0F36 /* UIImageViewPropertyBinding.m */; };
 		355B2797F91ADA2F73792A29 /* OBAbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */; };
@@ -44,6 +45,7 @@
 		A754FD8019094F4200F92530 /* OBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7C19094EB900F92530 /* OBAppDelegate.m */; };
 		A754FD8119094F9000F92530 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7A19094EB900F92530 /* main.m */; };
 		A754FD8319094F9700F92530 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754FD7819094EB900F92530 /* Images.xcassets */; };
+		A7E11C4019096A3000AEA800 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */; };
 		D2C909D33826455987D8844C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 838C2C370A6340C59E6A9FCB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,7 @@
 		355B20A12801DEE9E2C0DF42 /* OBButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBButtonTableViewCell.h; sourceTree = "<group>"; };
 		355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAbstractTableViewController.m; sourceTree = "<group>"; };
 		355B210BFED1F637237DF6B0 /* OBButtonTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBButtonTableViewCellModel.m; sourceTree = "<group>"; };
+		355B21541CFC21B27110011A /* OBDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBDemoViewController.m; sourceTree = "<group>"; };
 		355B217D70CF3AF2312F1A8F /* OBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewController.m; sourceTree = "<group>"; };
 		355B21A484FCF7700D1D137D /* OBModelCellBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBinding.m; sourceTree = "<group>"; };
 		355B22BE0E059B7C50EE2C2D /* OBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBProperty.m; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		355B26CC11DCF0D46B6B4EEA /* UILabelPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelPropertyBinding.h; sourceTree = "<group>"; };
 		355B26CDDD0B40303AE48656 /* OBTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest.m; sourceTree = "<group>"; };
 		355B26E431D019063C3EE0BF /* OBTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewCellModel.h; sourceTree = "<group>"; };
+		355B27DFDE3E383136D31ADA /* OBDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDemoViewController.h; sourceTree = "<group>"; };
 		355B28099C6456F547F348F6 /* UISearchBarPropertyBindingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBindingTest.m; sourceTree = "<group>"; };
 		355B280D0B200C334901D126 /* OBTableViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewControllerDelegate.h; sourceTree = "<group>"; };
 		355B28795380302DD0C11AD1 /* OBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBProperty.h; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 		A754FD7F19094EB900F92530 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		A7E11C3D1909614700AEA800 /* Test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
 		A7E11C3E1909628F00AEA800 /* Mock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mock.h; sourceTree = "<group>"; };
+		A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		B8EF237DD8DD4A2DB9845DE7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -297,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				A754FD7819094EB900F92530 /* Images.xcassets */,
+				A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -307,6 +313,8 @@
 				A754FD7A19094EB900F92530 /* main.m */,
 				A754FD7B19094EB900F92530 /* OBAppDelegate.h */,
 				A754FD7C19094EB900F92530 /* OBAppDelegate.m */,
+				355B21541CFC21B27110011A /* OBDemoViewController.m */,
+				355B27DFDE3E383136D31ADA /* OBDemoViewController.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -415,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A754FD8319094F9700F92530 /* Images.xcassets in Resources */,
+				A7E11C4019096A3000AEA800 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +525,7 @@
 				355B2F6B2D2E9E1A4C3156CB /* UITableViewCellModel.m in Sources */,
 				355B2AA769BE9D75D2A2AC9F /* OBProperty.m in Sources */,
 				355B2D433F464CB643EA7D1C /* OBReflection.m in Sources */,
+				355B265F3BC277D41C450F56 /* OBDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

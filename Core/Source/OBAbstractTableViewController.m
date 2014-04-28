@@ -41,12 +41,12 @@
 
 
 - (void)setupBinding {
-	[self addPropertyBinding:[[UILabelPropertyBinding alloc] initSourceName:@"text" andDestinationName:@"textLabel"]];
+	[self addPropertyBinding:[[UILabelPropertyBinding alloc] initWithSourceName:@"text" andDestinationName:@"textLabel"]];
 	[self addPropertyBinding:[[UIImageViewPropertyBinding alloc] initSourceName:@"image" andDestinationName:@"imageView"]];
 	[self addPropertyBinding:[[UILabelToDatePropertyBinding alloc] initSourceName:@"date" andDestinationName:@"detailTextLabel"]];
 	[self addPropertyBinding:[[UIDatePickerPropertyBinding alloc] initSourceName:@"date" andDestinationName:@"datePicker"]];
 	[self addPropertyBinding:[[OBAccessoryPropertyBinding alloc] initSourceName:@"accessoryType" andDestinationName:@"accessoryType"]];
-	[self addPropertyBinding:[[UILabelPropertyBinding alloc] initSourceName:@"title" andDestinationName:@"titleLabel"]];
+	[self addPropertyBinding:[[UILabelPropertyBinding alloc] initWithSourceName:@"title" andDestinationName:@"titleLabel"]];
 
 }
 

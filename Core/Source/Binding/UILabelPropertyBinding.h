@@ -16,6 +16,6 @@
 */
 @interface UILabelPropertyBinding : OBPropertyBinding
 
-- (id)initSourceName:(NSString *)string andDestinationName:(NSString *)name;
+- (id)initWithSourceName:(NSString *)string andDestinationName:(NSString *)name;
 
 @end

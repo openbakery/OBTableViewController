@@ -1,6 +1,7 @@
 //
 //
-// Created by rene on 20.02.14.
+//
+// Created by Rene Pirringer on 20.02.14.
 // Copyright 2014 openbakery.org. All rights reserved.
 //
 // 
@@ -13,7 +14,7 @@
 @interface OBProperty : NSObject
 - (id)initWithName:(NSString *)nameString andTypeString:(NSString *)string;
 - (id)initWithName:(NSString *)string andClass:(Class)class;
-- (id)initIntWithName:(NSString *)name;
+- (id)initIntegerWithName:(NSString *)name;
 - (id)initFloatWithName:(NSString *)name;
 - (id)initLongWithName:(NSString *)name;
 - (id)initShortWithName:(NSString *)name;

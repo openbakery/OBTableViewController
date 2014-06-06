@@ -15,6 +15,8 @@
 
 @property(nonatomic, copy) NSString *headerTitle;
 
+@property(nonatomic) BOOL editable;
+
 - (BOOL)isEqual:(id)other;
 
 - (BOOL)isEqualToSection:(OBTableViewSection *)section;

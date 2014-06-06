@@ -8,6 +8,8 @@
 
 #import "OBTableViewController.h"
 #import "OBTableViewSection.h"
+#import "UITableViewCellModel.h"
+#import "OBAbstractTableViewController.h"
 
 
 @interface OBTableViewController ()
@@ -134,15 +136,18 @@
 
 
 - (void)appendModel:(NSObject *)model toSection:(OBTableViewSection *)section {
+	[self appendModels:@[model] toSection:section];
+}
+
+- (void)appendModels:(NSArray *)models toSection:(OBTableViewSection *)section {
 	NSInteger sectionIndex = [self.sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
 		NSInteger modelCount = [[self modelsArrayForSection:section] count];
 		NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:modelCount inSection:sectionIndex];
-		[self insertModel:model atIndexPath:insertIndexPath];
+		[self insertModels:models atIndexPath:insertIndexPath];
 	}
 
 }
-
 
 - (void)insertModel:(NSObject *)model after:(NSObject *)afterModel {
 	NSIndexPath *afterModelIndexPath = [self indexPathForModel:afterModel];
@@ -197,14 +202,21 @@
 - (void)removeModels:(NSArray *)modelsToRemove {
 
 	NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+
+	// first grab all indexPath for the models that must be removed
 	for (NSObject *model in modelsToRemove) {
 		NSIndexPath *indexPath = [self indexPathForModel:model];
 		if (indexPath) {
 			[indexPaths addObject:indexPath];
-			OBTableViewSection *section = [self sectionAtIndex:indexPath.section];
-			NSMutableArray *models = [self modelsArrayForSection:section];
-			[models removeObject:model];
 		}
+	}
+
+	// remove the models
+	for (NSObject *model in modelsToRemove) {
+		NSIndexPath *indexPath = [self indexPathForModel:model];
+		OBTableViewSection *section = [self sectionAtIndex:indexPath.section];
+		NSMutableArray *models = [self modelsArrayForSection:section];
+		[models removeObject:model];
 	}
 
 	if ([indexPaths count]) {
@@ -244,6 +256,85 @@
 		return tableViewSection.headerTitle;
 	}
 	return nil;
+}
+
+
+- (void)deleteAllModelsFromSection:(OBTableViewSection *)section {
+	NSMutableArray *models = [self modelsArrayForSection:section];
+	[models removeAllObjects];
+}
+
+- (void)removeAllModelsFromSection:(OBTableViewSection *)section {
+	NSMutableArray *modelsToRemove = [self modelsArrayForSection:section];
+
+
+	NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+
+	// first grab all indexPath for the models that must be removed
+	for (NSObject *model in modelsToRemove) {
+		NSIndexPath *indexPath = [self indexPathForModel:model];
+		if (indexPath) {
+			[indexPaths addObject:indexPath];
+		}
+	}
+
+	[modelsToRemove removeAllObjects];
+
+	if ([indexPaths count]) {
+		[self.tableView beginUpdates];
+		[self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+		[self.tableView endUpdates];
+	}
+}
+
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+	BOOL setEditing = NO;
+	if (editing) {
+		for (OBTableViewSection *section in self.sections) {
+			if (section.editable) {
+				NSArray *model = [self modelsForSection:section];
+				if ([model count]) {
+					setEditing = YES;
+					break;
+				}
+			}
+		}
+	}
+	[self.tableView setEditing:setEditing animated:animated];
+}
+
+
+- (void)setEditing:(BOOL)editable {
+	[self setEditing:editable animated:YES];
+}
+
+- (BOOL)editing {
+	return self.tableView.editing;
+}
+
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+
+	OBTableViewSection *section = [self.sections objectAtIndex:indexPath.section];
+	if (!section.editable) {
+		return NO;
+	}
+	return YES;
+}
+
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+
+	if (editingStyle == UITableViewCellEditingStyleDelete) {
+		NSObject *model = [self modelAtIndexPath:indexPath];
+		[self removeModel:model];
+
+		if (self.delegate && [self.delegate respondsToSelector:@selector(tableViewController:didDeleteModel:)]) {
+
+			[self.delegate tableViewController:self didDeleteModel:model];
+
+		}
+	}
 }
 
 

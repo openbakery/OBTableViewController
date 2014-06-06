@@ -14,10 +14,14 @@
 
 @interface OBTableViewController : OBAbstractTableViewController
 
+@property(nonatomic) BOOL editing;
+
 - (void)addSection:(OBTableViewSection *)section;
 
 - (void)addModel:(NSObject *)model toSection:(OBTableViewSection *)section;
 - (void)addModels:(NSArray *)models toSection:(OBTableViewSection *)section;
+
+- (void)deleteAllModelsFromSection:(OBTableViewSection *)section;
 
 - (NSArray *)modelsForSection:(OBTableViewSection *)section;
 
@@ -37,6 +41,11 @@
 */
 - (void)appendModel:(NSObject *)model toSection:(OBTableViewSection *)section;
 
+/**
+* Inserts the model at the end of the given section
+*/
+- (void)appendModels:(NSArray *)models toSection:(OBTableViewSection *)section;
+
 
 - (void)insertModel:(NSObject *)model after:(NSObject*)after;
 - (void)insertModel:(NSObject *)model before:(NSObject *)before;
@@ -50,4 +59,7 @@
 - (void)reloadTableView;
 
 
+- (void)removeAllModelsFromSection:(OBTableViewSection *)section;
+
+- (void)setEditing:(BOOL)b animated:(BOOL)animated;
 @end

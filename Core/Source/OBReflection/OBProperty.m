@@ -1,6 +1,7 @@
 //
 //
-// Created by rene on 20.02.14.
+//
+// Created by Rene Pirringer on 20.02.14.
 // Copyright 2014 openbakery.org. All rights reserved.
 //
 // 
@@ -32,8 +33,9 @@
 
 
 
-- (id)initIntWithName:(NSString *)name {
-	return [self initWithName:name andTypeName:@"i"];
+- (id)initIntegerWithName:(NSString *)name {
+	char *intChar = @encode(NSInteger);
+	return [self initWithName:name andTypeName:[NSString stringWithFormat:@"%c" , *intChar]];
 }
 
 

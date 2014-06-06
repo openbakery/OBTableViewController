@@ -39,6 +39,11 @@
 	return self;
 }
 
+- (void)dealloc {
+	_tableView.dataSource = nil;
+	_tableView.delegate = nil;
+}
+
 
 - (void)setupBinding {
 	[self addPropertyBinding:[[UILabelPropertyBinding alloc] initSourceName:@"text" andDestinationName:@"textLabel"]];
@@ -171,7 +176,11 @@
 
 		[_registeredIdentifiers enumerateKeysAndObjectsUsingBlock:^(NSString *className, NSString *identifier, BOOL *stop) {
 			UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
-			[_cellHeightForModelClass setObject:[NSNumber numberWithFloat:cell.frame.size.height] forKey:className];
+		  CGFloat height = cell.frame.size.height;
+		  if (height == 0) {
+				height = 44.0f;
+		  }
+		  [_cellHeightForModelClass setObject:@(height) forKey:className];
 		}];
 
 
@@ -188,88 +197,61 @@
 
 	NSObject *model = [self modelAtIndexPath:indexPath];
 
-	if (self.selectionMode == OBTableViewControllerSelectionModeNone) {
-		[tableView deselectRowAtIndexPath:indexPath animated:YES];
-		return;
-	}
-
-	if (self.selectionMode == OBTableViewControllerSelectionSingleSelection
-		) {
-		BOOL shouldSelect = YES;
-		if ([self.delegate respondsToSelector:@selector(shouldSelectModel:)]) {
-			shouldSelect = [self.delegate shouldSelectModel:model];
-		}
-		if (shouldSelect) {
-			[self setSelectedModel:model];
-		}
-	}
-
-	if (self.selectionMode == OBTableViewControllerSelectionSingleCheck) {
-		[tableView deselectRowAtIndexPath:indexPath animated:YES];
-
-		if (model == _selectedModel) {
-			BOOL shouldDeselect = YES;
-			if ([self.delegate respondsToSelector:@selector(shouldDeselectModel:)]) {
-				shouldDeselect = [self.delegate shouldDeselectModel:_selectedModel];
-			}
-			if (shouldDeselect) {
-				_selectedModel = nil;
-				[self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-			}
-		}
-		else {
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	switch (self.selectionMode) {
+		case OBTableViewControllerSelectionModeNone:
+			break;
+		case OBTableViewControllerSelectionSingleSelection: {
 			BOOL shouldSelect = YES;
 			if ([self.delegate respondsToSelector:@selector(shouldSelectModel:)]) {
 				shouldSelect = [self.delegate shouldSelectModel:model];
 			}
 			if (shouldSelect) {
 				[self setSelectedModel:model];
-
 			}
+			break;
 		}
+		case OBTableViewControllerSelectionSingleCheck: {
+			if (model == _selectedModel) {
+				BOOL shouldDeselect = YES;
+				if ([self.delegate respondsToSelector:@selector(shouldDeselectModel:)]) {
+					shouldDeselect = [self.delegate shouldDeselectModel:_selectedModel];
+				}
+				if (shouldDeselect) {
+					_selectedModel = nil;
+					[self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+				}
+			}
+			else {
+				BOOL shouldSelect = YES;
+				if ([self.delegate respondsToSelector:@selector(shouldSelectModel:)]) {
+					shouldSelect = [self.delegate shouldSelectModel:model];
+				}
+				if (shouldSelect) {
+					[self setSelectedModel:model];
+
+				}
+			}
+			break;
+		}
+
 	}
-
-
-	/*
-	if (self.selectionMode == OBTableViewControllerSelectionSingleCheck) {
-		[tableView deselectRowAtIndexPath:indexPath animated:YES];
-
-		if (model == _selectedModel) {
-			BOOL shouldDeselect = YES;
-			if ([self.delegate respondsToSelector:@selector(shouldDeselectModel:)]) {
-				shouldDeselect = [self.delegate shouldDeselectModel:_selectedModel];
-			}
-			if (shouldDeselect) {
-				_selectedModel = nil;
-				[self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-			}
-		}
-		else {
-			BOOL shouldSelect = YES;
-			if ([self.delegate respondsToSelector:@selector(shouldSelectModel:)]) {
-				shouldSelect = [self.delegate shouldSelectModel:model];
-			}
-			if (shouldSelect) {
-				[self setSelectedModel:model];
-				//NSMutableArray *indicesToUpdate = [[NSMutableArray alloc] init];
-				//NSIndexPath *oldIndexPath = [self indexPathForModel:_selectedModel];
-				//if (oldIndexPath != nil) {
-				//	[indicesToUpdate addObject:oldIndexPath];
-				//}
-				//[indicesToUpdate addObject:indexPath];
-				//_selectedModel = model;
-				//[self.tableView reloadRowsAtIndexPaths:indicesToUpdate withRowAnimation:UITableViewRowAnimationAutomatic];
-			}
-		}
-	}
-	*/
-
 
 	if ([self.delegate respondsToSelector:@selector(didSelectModel:)]) {
 		[self.delegate didSelectModel:model];
 	}
 
 }
+
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+	NSObject *model = [self modelAtIndexPath:indexPath];
+	if ([self.delegate respondsToSelector:@selector(tableViewController:didSelectAccessoryForModel:)]) {
+		[self.delegate tableViewController:self didSelectAccessoryForModel:model];
+	}
+
+}
+
 
 - (NSIndexPath *)indexPathForModel:(id)object {
 	return nil;
@@ -330,6 +312,7 @@
 	}
 	return [NSArray array];
 }
+
 
 
 

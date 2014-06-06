@@ -14,6 +14,15 @@
 }
 
 
+- (id)init {
+	self = [super init];
+	if (self) {
+		self.editable = YES;
+	}
+	return self;
+}
+
+
 - (id)copyWithZone:(NSZone *)zone {
 	OBTableViewSection *copy = [[self class] allocWithZone:zone];
 	if (copy) {

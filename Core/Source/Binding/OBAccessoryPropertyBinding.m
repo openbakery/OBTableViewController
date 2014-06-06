@@ -18,8 +18,8 @@
 - (id)initSourceName:(NSString *)sourceName andDestinationName:(NSString *)destinationName {
 	self = [super init];
 	if (self) {
-		self.sourceProperty = [[OBProperty alloc] initIntWithName:sourceName];
-		self.destinationProperty = [[OBProperty alloc] initIntWithName:destinationName];
+		self.sourceProperty = [[OBProperty alloc] initIntegerWithName:sourceName];
+		self.destinationProperty = [[OBProperty alloc] initIntegerWithName:destinationName];
 	}
 	return self;
 }

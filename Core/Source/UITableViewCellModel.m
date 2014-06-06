@@ -1,6 +1,7 @@
 //
 //
-// Created by rene on 19.02.14.
+//
+// Created by Rene Pirringer on 19.02.14.
 
 //
 // 

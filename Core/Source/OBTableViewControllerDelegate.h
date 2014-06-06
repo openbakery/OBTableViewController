@@ -14,7 +14,17 @@
 
 @optional
 
+/**
+* this method is called when the cell for the given model was selected
+*/
 - (void)didSelectModel:(NSObject *)model;
+
+
+/**
+* this method is called when the accessory for the given model was selected
+*/
+- (void)tableViewController:(OBAbstractTableViewController *)tableViewController didSelectAccessoryForModel:(NSObject *)model;
+
 
 /**
 * Method to ask the delegate if the given model should be selected
@@ -30,5 +40,18 @@
 - (BOOL)shouldDeselectModel:(NSObject *)model;
 
 
+
+/**
+* this method is called when the cell for the given model was deleted
+*/
+- (void)tableViewController:(OBAbstractTableViewController *)tableViewController didDeleteModel:(NSObject *)model;
+
+
+/**
+* this method is called when a cell will be displayed
+*/
 - (void)tableViewController:(OBAbstractTableViewController *)tableViewController willDisplayCell:(UITableViewCell *)cell;
+
+
+
 @end

@@ -18,15 +18,25 @@
 
 - (void)addSection:(OBTableViewSection *)section;
 
+- (NSArray *)sections;
+
+/**
+* adds a model to the table.
+* Added models does not trigger a reload of the table, therefor adding can be done before the table is shown,
+* or a reloadTableView muss be called afterwards, so that the items are displayed
+*/
 - (void)addModel:(NSObject *)model toSection:(OBTableViewSection *)section;
 - (void)addModels:(NSArray *)models toSection:(OBTableViewSection *)section;
 
+/*
+
+ */
 - (void)deleteAllModelsFromSection:(OBTableViewSection *)section;
 
 - (NSArray *)modelsForSection:(OBTableViewSection *)section;
 
 /**
-* Inserts the model to the section on the first position.
+* Inserts the model to the section on the first position. Insert means that the item is animated into the visible table.
 */
 - (void)insertModel:(NSObject *)model toSection:(OBTableViewSection *)section;
 
@@ -37,7 +47,7 @@
 
 
 /**
-* Inserts the model at the end of the given section
+* Inserts the model at the end of the given section. When appending models to the table, the a new cell is animated with the table data into the table.
 */
 - (void)appendModel:(NSObject *)model toSection:(OBTableViewSection *)section;
 
@@ -61,6 +71,6 @@
 
 - (void)removeAllModelsFromSection:(OBTableViewSection *)section;
 
-- (void)setEditing:(BOOL)b animated:(BOOL)animated;
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated;
 
 @end

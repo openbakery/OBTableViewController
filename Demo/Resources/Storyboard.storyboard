@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zhd-WZ-yvA">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
@@ -57,7 +58,7 @@
                     <navigationItem key="navigationItem" title="Demo" id="vsN-gc-N6L">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="iYy-pP-2cB">
                             <connections>
-                                <segue destination="RuF-ax-CeS" kind="push" id="EXv-ld-nlh"/>
+                                <segue destination="RuF-ax-CeS" kind="push" identifier="InsertItem" id="EXv-ld-nlh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -69,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="790" y="379"/>
         </scene>
-        <!--View Controller-->
+        <!--Insert View Controller-->
         <scene sceneID="6vE-UV-LSU">
             <objects>
-                <viewController id="RuF-ax-CeS" sceneMemberID="viewController">
+                <viewController id="RuF-ax-CeS" customClass="OBInsertViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fKh-zy-VsM"/>
                         <viewControllerLayoutGuide type="bottom" id="8g4-Ca-iyr"/>
@@ -86,16 +87,41 @@
                                 <state key="normal" title="Insert">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="insertButtonPressed:" destination="RuF-ax-CeS" eventType="touchUpInside" id="AmP-sg-itY"/>
+                                </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iu-8a-lf6">
+                                <rect key="frame" x="0.0" y="114" width="320" height="162"/>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="us4-n6-LMg">
+                                <rect key="frame" x="20" y="84" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameChanged:" destination="RuF-ax-CeS" eventType="editingChanged" id="MQd-48-vM8"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="us4-n6-LMg" firstAttribute="leading" secondItem="AGM-fi-8ey" secondAttribute="leading" constant="20" id="33s-eZ-EQ9"/>
+                            <constraint firstAttribute="trailing" secondItem="us4-n6-LMg" secondAttribute="trailing" constant="20" id="94n-ba-KWI"/>
                             <constraint firstAttribute="trailing" secondItem="XRr-TS-h1o" secondAttribute="trailing" constant="20" id="DD4-fe-79l"/>
+                            <constraint firstAttribute="trailing" secondItem="3iu-8a-lf6" secondAttribute="trailing" id="FDk-8K-JNQ"/>
+                            <constraint firstItem="us4-n6-LMg" firstAttribute="top" secondItem="fKh-zy-VsM" secondAttribute="bottom" constant="20" id="PuN-Kf-bcw"/>
                             <constraint firstItem="8g4-Ca-iyr" firstAttribute="top" secondItem="XRr-TS-h1o" secondAttribute="bottom" constant="20" id="Tyt-LM-sWH"/>
+                            <constraint firstItem="3iu-8a-lf6" firstAttribute="top" secondItem="us4-n6-LMg" secondAttribute="bottom" id="ami-RA-rHA"/>
                             <constraint firstItem="XRr-TS-h1o" firstAttribute="leading" secondItem="AGM-fi-8ey" secondAttribute="leading" constant="20" id="bQA-3V-daN"/>
+                            <constraint firstItem="3iu-8a-lf6" firstAttribute="leading" secondItem="AGM-fi-8ey" secondAttribute="leading" id="elt-6p-HcL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oQD-oO-LgG"/>
+                    <connections>
+                        <outlet property="insertButton" destination="XRr-TS-h1o" id="zId-Wf-X4r"/>
+                        <outlet property="nameTextField" destination="us4-n6-LMg" id="TDH-CB-920"/>
+                        <outlet property="sectionPicker" destination="3iu-8a-lf6" id="yZK-of-q4j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbz-wR-17U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

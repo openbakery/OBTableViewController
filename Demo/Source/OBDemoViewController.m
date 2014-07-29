@@ -10,11 +10,10 @@
 #import "UITableViewCellModel.h"
 #import "OBTableViewController.h"
 #import "OBTableViewSection.h"
+#import "OBInsertViewController.h"
 
 
 @implementation OBDemoViewController {
-
-	OBTableViewSection *_firstSection;
 }
 
 
@@ -27,23 +26,30 @@
 
 	[self.tableViewController registerIdentifier:@"TableViewCell" modelClass:[UITableViewCellModel class]];
 	
-	_firstSection = [[OBTableViewSection alloc] init];
-	[self.tableViewController addSection:_firstSection];
-
-	[self addItem:nil];
-	[self addItem:nil];
-	[self addItem:nil];
+	[self.tableViewController addSection:[[OBTableViewSection alloc] initWithHeaderTitle:@"First"]];
+	[self.tableViewController addSection:[[OBTableViewSection alloc] initWithHeaderTitle:@"Second"]];
+	[self.tableViewController addSection:[[OBTableViewSection alloc] initWithHeaderTitle:@"Third"]];
+	[self.tableViewController addSection:[[OBTableViewSection alloc] initWithHeaderTitle:@"Forth"]];
 }
 
 
-- (IBAction)addItem:(id)sender {
-	static int count;
-
+- (IBAction)addItem:(NSString *)name toSection:(OBTableViewSection *)section{
 	UITableViewCellModel *model = [[UITableViewCellModel alloc] init];
-	model.text = [NSString stringWithFormat:@"Item %@", [@(count) stringValue]];
-
-	[self.tableViewController insertModel:model toSection:_firstSection];
-	count++;
+	model.text = name;
+	[self.tableViewController insertModel:model toSection:section];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	if ([segue.identifier isEqualToString:@"InsertItem"]) {
+		OBInsertViewController *insertViewController = segue.destinationViewController;
+		insertViewController.sections = [self.tableViewController sections];
+		__weak OBDemoViewController *weakSelf = self;
+		insertViewController.completion = ^(NSString *name, OBTableViewSection *section) {
+		    [weakSelf addItem:name toSection:section];
+		    [weakSelf.navigationController popViewControllerAnimated:YES];
+		};
+	}
+}
+
 
 @end

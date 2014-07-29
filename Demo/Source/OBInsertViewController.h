@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OBInsertViewController : UIViewController
+@class OBTableViewSection;
 
+typedef void (^InsertCompletionBlock)(NSString *name, OBTableViewSection *section);
+
+
+@interface OBInsertViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
+@property (strong, nonatomic) IBOutlet UIPickerView *sectionPicker;
+@property (strong, nonatomic) IBOutlet UIButton *insertButton;
+@property(nonatomic, strong) NSArray *sections;
+@property(nonatomic, copy) InsertCompletionBlock completion;
 @end

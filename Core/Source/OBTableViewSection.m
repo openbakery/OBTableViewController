@@ -8,6 +8,10 @@
 
 #import "OBTableViewSection.h"
 
+@interface OBTableViewSection()
+@property (nonatomic, assign) NSInteger identifier;
+@end;
+
 
 @implementation OBTableViewSection {
 
@@ -18,6 +22,15 @@
 	self = [super init];
 	if (self) {
 		self.editable = YES;
+	}
+	return self;
+}
+
+
+- (id)initWithHeaderTitle:(NSString *)title {
+	self = [self init];
+	if (self) {
+		self.headerTitle = title;
 	}
 	return self;
 }

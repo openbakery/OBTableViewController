@@ -11,22 +11,23 @@
 #import "UITableViewCellModel.h"
 #import "OBAbstractTableViewController.h"
 
+@interface OBTableViewSection()
+@property (nonatomic, assign) NSInteger identifier;
+@end;
 
-@interface OBTableViewController ()
-@property(nonatomic, strong) NSMutableDictionary *modelDictionary;
-@property(nonatomic, strong) NSMutableArray *sections;
 
-@end
 
 @implementation OBTableViewController {
+	NSMutableDictionary *_modelDictionary;
+	NSMutableArray *_sections;
 
 }
 
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.sections = [[NSMutableArray alloc] init];
-		self.modelDictionary = [[NSMutableDictionary alloc] init];
+		_sections = [[NSMutableArray alloc] init];
+		_modelDictionary = [[NSMutableDictionary alloc] init];
 	}
 
 	return self;
@@ -34,12 +35,17 @@
 
 
 - (void)addSection:(OBTableViewSection *)section {
-	if ([self.sections containsObject:section]) {
+	if ([_sections containsObject:section]) {
 		return;
 	}
-	section.identifier = [self.sections count] + 1;
-	[self.sections addObject:section];
+	section.identifier = [_sections count] + 1;
+	[_sections addObject:section];
 }
+
+- (NSArray *)sections {
+	return [NSArray arrayWithArray:_sections];
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex {
 	OBTableViewSection *section = [self sectionAtIndex:sectionIndex];
@@ -50,8 +56,8 @@
 }
 
 - (OBTableViewSection *)sectionAtIndex:(NSInteger)section {
-	if (section < [self.sections count]) {
-		return [self.sections objectAtIndex:section];
+	if (section < [_sections count]) {
+		return [_sections objectAtIndex:section];
 	}
 	return nil;
 
@@ -59,7 +65,7 @@
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return [self.sections count];
+	return [_sections count];
 
 }
 
@@ -76,18 +82,18 @@
 
 
 - (NSMutableArray *)modelsArrayForSection:(OBTableViewSection *)section {
-	//DDLogVerbose(@"model dictionary, %@", self.modelDictionary);
+	//DDLogVerbose(@"model dictionary, %@", _modelDictionary);
 	//DDLogVerbose(@"get model for section: %@", section);
 	if (!section) {
 		return nil;
 	}
 
-	NSMutableArray *result = [self.modelDictionary objectForKey:section];
+	NSMutableArray *result = [_modelDictionary objectForKey:section];
 	if (!result) {
 		//DDLogDebug(@"no models found so create array");
 		result = [[NSMutableArray alloc] init];
-		[self.modelDictionary setObject:result forKey:section];
-		//DDLogDebug(@"model created and added: %@", self.modelDictionary);
+		[_modelDictionary setObject:result forKey:section];
+		//DDLogDebug(@"model created and added: %@", _modelDictionary);
 
 	}
 	//DDLogVerbose(@"models: %@ in section %@",result, section);
@@ -104,7 +110,7 @@
 }
 
 - (NSIndexPath *)indexPathForModel:(NSObject *)object {
-	for (OBTableViewSection *section in self.sections) {
+	for (OBTableViewSection *section in _sections) {
 		NSArray *models = [self modelsForSection:section];
 		NSInteger index = [models indexOfObject:object];
 		if (index != NSNotFound) {
@@ -116,7 +122,7 @@
 
 - (void)insertModel:(NSObject *)model toSection:(OBTableViewSection *)section {
 
-	NSInteger sectionIndex = [self.sections indexOfObject:section];
+	NSInteger sectionIndex = [_sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
 		NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:0 inSection:sectionIndex];
 		[self insertModel:model atIndexPath:insertIndexPath];
@@ -125,7 +131,7 @@
 }
 
 - (void)insertModels:(NSArray *)models toSection:(OBTableViewSection *)section {
-	NSInteger sectionIndex = [self.sections indexOfObject:section];
+	NSInteger sectionIndex = [_sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
 		NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:0 inSection:sectionIndex];
 		[self insertModels:models atIndexPath:insertIndexPath];
@@ -140,7 +146,7 @@
 }
 
 - (void)appendModels:(NSArray *)models toSection:(OBTableViewSection *)section {
-	NSInteger sectionIndex = [self.sections indexOfObject:section];
+	NSInteger sectionIndex = [_sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
 		NSInteger modelCount = [[self modelsArrayForSection:section] count];
 		NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:modelCount inSection:sectionIndex];
@@ -290,7 +296,7 @@
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
 	BOOL setEditing = NO;
 	if (editing) {
-		for (OBTableViewSection *section in self.sections) {
+		for (OBTableViewSection *section in _sections) {
 			if (section.editable) {
 				NSArray *model = [self modelsForSection:section];
 				if ([model count]) {
@@ -314,8 +320,7 @@
 
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-
-	OBTableViewSection *section = [self.sections objectAtIndex:indexPath.section];
+	OBTableViewSection *section = [_sections objectAtIndex:indexPath.section];
 	if (!section.editable) {
 		return NO;
 	}
@@ -324,7 +329,6 @@
 
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-
 	if (editingStyle == UITableViewCellEditingStyleDelete) {
 		NSObject *model = [self modelAtIndexPath:indexPath];
 		[self removeModel:model];

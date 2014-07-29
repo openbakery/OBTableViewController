@@ -1,0 +1,22 @@
+PODS:
+  - CocoaLumberjack (1.6.5.1):
+    - CocoaLumberjack/Core
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.6.5.1)
+  - CocoaLumberjack/Extensions (1.6.5.1):
+    - CocoaLumberjack/Core
+  - OCHamcrest (3.0.1)
+  - OCMockito (1.1.0):
+    - OCHamcrest (~> 3.0)
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 1.6.0)
+  - OCHamcrest (~> 3.0.0)
+  - OCMockito (~> 1.1.0)
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: baf4a09a3bcbdfea3363556a90104e026d3504e2
+  OCHamcrest: 207233b7d7a44dadd66aca398947cc7e029c9be5
+  OCMockito: bf7def7b3939f794b1e7b44420f611250b1f2781
+
+COCOAPODS: 0.33.1

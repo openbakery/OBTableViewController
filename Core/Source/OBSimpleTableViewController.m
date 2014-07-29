@@ -1,14 +1,13 @@
 //
 //
-//
-// Created by Rene Pirringer on 19.02.14.
+// Created by rene on 19.02.14.
 
 //
 // 
 //
 
 
-#import <objc/runtime.h>
+
 #import "OBSimpleTableViewController.h"
 #import "OBModelCellBinding.h"
 
@@ -30,7 +29,6 @@
 }
 
 
-
 - (NSArray *)modelsForSectionIndex:(NSInteger)section {
 	return self.models;
 }
@@ -49,6 +47,9 @@
 	[self.models addObject:model];
 }
 
+- (void)addModels:(NSArray *)models {
+	[self.models addObjectsFromArray:models];
+}
 
 - (NSIndexPath *)indexPathForModel:(NSObject *)object {
 	NSInteger index = [self.models indexOfObject:object];

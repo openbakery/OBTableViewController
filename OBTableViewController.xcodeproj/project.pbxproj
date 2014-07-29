@@ -45,6 +45,7 @@
 		A754FD8019094F4200F92530 /* OBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7C19094EB900F92530 /* OBAppDelegate.m */; };
 		A754FD8119094F9000F92530 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7A19094EB900F92530 /* main.m */; };
 		A754FD8319094F9700F92530 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754FD7819094EB900F92530 /* Images.xcassets */; };
+		A77E7C0D1986A685008083C5 /* OBInsertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77E7C0C1986A685008083C5 /* OBInsertViewController.m */; };
 		A7E11C4019096A3000AEA800 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */; };
 		D2C909D33826455987D8844C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 838C2C370A6340C59E6A9FCB /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -127,6 +128,8 @@
 		A754FD7B19094EB900F92530 /* OBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBAppDelegate.h; sourceTree = "<group>"; };
 		A754FD7C19094EB900F92530 /* OBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAppDelegate.m; sourceTree = "<group>"; };
 		A754FD7F19094EB900F92530 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		A77E7C0B1986A685008083C5 /* OBInsertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBInsertViewController.h; sourceTree = "<group>"; };
+		A77E7C0C1986A685008083C5 /* OBInsertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBInsertViewController.m; sourceTree = "<group>"; };
 		A7E11C3D1909614700AEA800 /* Test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
 		A7E11C3E1909628F00AEA800 /* Mock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mock.h; sourceTree = "<group>"; };
 		A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 				A754FD7C19094EB900F92530 /* OBAppDelegate.m */,
 				355B21541CFC21B27110011A /* OBDemoViewController.m */,
 				355B27DFDE3E383136D31ADA /* OBDemoViewController.h */,
+				A77E7C0B1986A685008083C5 /* OBInsertViewController.h */,
+				A77E7C0C1986A685008083C5 /* OBInsertViewController.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -517,6 +522,7 @@
 				355B2129E006DB56CBE20409 /* UILabelToDatePropertyBinding.m in Sources */,
 				355B2797F91ADA2F73792A29 /* OBAbstractTableViewController.m in Sources */,
 				355B265A642EB0F2A6C9B1AE /* OBSimpleTableViewController.m in Sources */,
+				A77E7C0D1986A685008083C5 /* OBInsertViewController.m in Sources */,
 				355B284BF11BED4165380D30 /* OBTableViewCellModel.m in Sources */,
 				355B215D703DC2A95FFBB67E /* OBButtonTableViewCell.m in Sources */,
 				355B2B80B13DE8F6562D0FF4 /* OBButtonTableViewCellModel.m in Sources */,

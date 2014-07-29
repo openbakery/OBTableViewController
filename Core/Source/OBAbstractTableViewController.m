@@ -6,7 +6,7 @@
 //
 
 
-#import "OBAbstractTableViewController.h"
+#import "OBTableViewController.h"
 #import "OBModelCellBinding.h"
 #import "UILabelPropertyBinding.h"
 #import "UIImageViewPropertyBinding.h"
@@ -14,7 +14,6 @@
 #import "UIDatePickerPropertyBinding.h"
 #import "OBAccessoryPropertyBinding.h"
 #import "DDLog.h"
-
 
 @interface OBAbstractTableViewController ()
 @end
@@ -138,10 +137,10 @@
 
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-	if ([self.delegate respondsToSelector:@selector(tableViewController:willDisplayCell:)]) {
-		[self.delegate tableViewController:self willDisplayCell:cell];
-	}
 	NSObject *model = [self modelAtIndexPath:indexPath];
+	if ([self.delegate respondsToSelector:@selector(tableViewController:willDisplayCell:withModel:)]) {
+		[self.delegate tableViewController:self willDisplayCell:cell withModel:model];
+	}
 	if (self.selectionMode == OBTableViewControllerSelectionSingleSelection) {
 		cell.selected = [model isEqual:_selectedModel];
 	}
@@ -219,7 +218,7 @@
 				}
 				if (shouldDeselect) {
 					_selectedModel = nil;
-					[self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+					[self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
 				}
 			}
 			else {
@@ -277,9 +276,8 @@
 	}
 
 	if ([indicesToUpdate count]) {
-		[self.tableView reloadRowsAtIndexPaths:indicesToUpdate withRowAnimation:UITableViewRowAnimationAutomatic];
+		[self.tableView reloadRowsAtIndexPaths:indicesToUpdate withRowAnimation:UITableViewRowAnimationNone];
 	}
-
 }
 
 
@@ -314,6 +312,20 @@
 }
 
 
+- (void)scrollToModel:(NSObject *)model {
+	NSIndexPath *indexPath = [self indexPathForModel:model];
+	if (indexPath) {
+		[self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+	}
+
+}
 
 
+- (void)deselectAll {
+	_selectedModel = nil;
+	NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+	if (indexPath) {
+		[self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+	}
+}
 @end

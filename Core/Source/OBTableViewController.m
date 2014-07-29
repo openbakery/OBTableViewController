@@ -230,11 +230,11 @@
 
 - (void)reloadCellForModel:(NSObject *)model {
 	NSIndexPath *indexPath = [self indexPathForModel:model];
-
-	[self.tableView beginUpdates];
-	[self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-	[self.tableView endUpdates];
-
+	if (indexPath) {
+		[self.tableView beginUpdates];
+		[self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+		[self.tableView endUpdates];
+	}
 }
 
 - (void)reloadTableView {
@@ -336,7 +336,6 @@
 		}
 	}
 }
-
 
 
 @end

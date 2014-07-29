@@ -62,4 +62,5 @@
 - (void)removeAllModelsFromSection:(OBTableViewSection *)section;
 
 - (void)setEditing:(BOOL)b animated:(BOOL)animated;
+
 @end

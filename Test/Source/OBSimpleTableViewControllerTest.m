@@ -1,18 +1,15 @@
 //
 //
-// Created by Rene Pirringer on 19.02.14.
-
+// Created by rene on 19.02.14.
 //
-// 
 //
 
 
 #import <Foundation/Foundation.h>
+#import "Mock.h"
 #import "OBSimpleTableViewController.h"
 #import "UITableViewCellModel.h"
 #import "OBCustomTableViewCell.h"
-#import "Mock.h"
-
 
 @interface OBSimpleTableViewControllerTest : XCTestCase
 @end
@@ -122,7 +119,7 @@
 
 
 	MKTArgumentCaptor *indexPathsArguments = [[MKTArgumentCaptor alloc] init];
-	[verify(tableView) reloadRowsAtIndexPaths:[indexPathsArguments capture] withRowAnimation:UITableViewRowAnimationAutomatic];
+	[verify(tableView) reloadRowsAtIndexPaths:[indexPathsArguments capture] withRowAnimation:UITableViewRowAnimationNone];
 	NSArray *indexPaths = [indexPathsArguments value];
 	assertThatInteger([indexPaths count], is(equalToInt(1)));
 	NSIndexPath *resultIndexPath = [indexPaths objectAtIndex:0];
@@ -152,7 +149,7 @@
 	[tableViewController tableView:tableViewController.tableView didSelectRowAtIndexPath:indexPath];
 
 	MKTArgumentCaptor *indexPathsArguments = [[MKTArgumentCaptor alloc] init];
-	[verify(tableView) reloadRowsAtIndexPaths:[indexPathsArguments capture] withRowAnimation:UITableViewRowAnimationAutomatic];
+	[verify(tableView) reloadRowsAtIndexPaths:[indexPathsArguments capture] withRowAnimation:UITableViewRowAnimationNone];
 
 	NSArray *indexPaths = [indexPathsArguments value];
 
@@ -205,5 +202,7 @@
 	assertThatInteger([tableViewController.selectedModels count], is(equalToInt(1)));
 
 }
+
+
 
 @end

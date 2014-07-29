@@ -28,7 +28,7 @@ typedef enum {
 
 @property (nonatomic, assign) OBTableViewControllerSelectionMode selectionMode;
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, assign) id<OBTableViewControllerDelegate> delegate;
+@property (nonatomic, weak) id<OBTableViewControllerDelegate> delegate;
 @property (nonatomic, readonly) NSArray* selectedModels;
 
 
@@ -47,5 +47,8 @@ typedef enum {
 - (id)modelForCell:(id)cell;
 - (UITableViewCell *)cellForModel:(id)model;
 
+- (void)scrollToModel:(NSObject *)model;
 
+
+- (void)deselectAll;
 @end

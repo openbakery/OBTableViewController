@@ -11,8 +11,8 @@
 #import <Foundation/Foundation.h>
 #import "OBTableViewSection.h"
 #import "OBTableViewController.h"
-#import "UITableViewCellModel.h"
 #import "Mock.h"
+#import "UITableViewCellModel.h"
 
 
 @interface OBTableViewControllerTest : XCTestCase
@@ -163,6 +163,114 @@
 
 	NSString *title = [tableViewController tableView:tableViewController.tableView titleForHeaderInSection:0];
 	assertThat(title, is(equalTo(@"Header")));
+}
+
+- (void)testSingleSection {
+
+
+	tableViewController.selectionMode = OBTableViewControllerSelectionSingleSelection;
+	OBTableViewSection *section = [[OBTableViewSection alloc] init];
+
+
+	[tableViewController addSection:section];
+	UITableViewCellModel *model = [[UITableViewCellModel alloc] init];
+	[tableViewController addModel:model toSection:section];
+
+	id<OBTableViewControllerDelegate> delegate = mockProtocol(@protocol(OBTableViewControllerDelegate));
+	[given([delegate shouldSelectModel:anything()]) willReturnBool:NO];
+	tableViewController.delegate = delegate;
+
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+	[tableViewController tableView:tableViewController.tableView didSelectRowAtIndexPath:indexPath];
+
+	UITableViewCell *cell = [tableViewController tableView:tableViewController.tableView cellForRowAtIndexPath:indexPath];
+	[tableViewController tableView:tableViewController.tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+	assertThat(cell, is(instanceOf([UITableViewCell class])));
+	assertThatBool(cell.selected, is(equalToBool(NO)));
+
+}
+
+
+- (void) testEditingEmpty {
+	tableViewController.editing = YES;
+	assertThatBool(tableViewController.editing, is(equalToBool(NO)));
+}
+
+- (void)testEditing {
+	OBTableViewSection *section = [[OBTableViewSection alloc] init];
+	[tableViewController addSection:section];
+	UITableViewCellModel *model = [[UITableViewCellModel alloc] init];
+	[tableViewController addModel:model toSection:section];
+	tableViewController.editing = YES;
+
+	assertThatBool(tableViewController.editing, is(equalToBool(YES)));
+
+}
+
+- (void)testEditingDisabledBySection {
+	OBTableViewSection *section = [[OBTableViewSection alloc] init];
+	section.editable = NO;
+	[tableViewController addSection:section];
+
+	UITableViewCellModel *model = [[UITableViewCellModel alloc] init];
+	[tableViewController addModel:model toSection:section];
+	tableViewController.editing = YES;
+
+	assertThatBool(tableViewController.editing, is(equalToBool(NO)));
+}
+
+
+- (void)testOneSectionEditable {
+	OBTableViewSection *notEditableSection = [[OBTableViewSection alloc] init];
+	notEditableSection.editable = NO;
+	[tableViewController addSection:notEditableSection];
+	[tableViewController addModel: [[UITableViewCellModel alloc] init] toSection:notEditableSection];
+
+
+	OBTableViewSection *editableSection = [[OBTableViewSection alloc] init];
+	[tableViewController addSection:editableSection];
+	[tableViewController addModel: [[UITableViewCellModel alloc] init] toSection:editableSection];
+
+	tableViewController.editing = YES;
+	assertThatBool(tableViewController.editing, is(equalToBool(YES)));
+
+
+	BOOL canEdit = [tableViewController tableView:tableViewController.tableView canEditRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	assertThatBool(canEdit, is(equalToBool(NO)));
+
+	canEdit = [tableViewController tableView:tableViewController.tableView canEditRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+	assertThatBool(canEdit, is(equalToBool(YES)));
+
+}
+
+
+- (void)testAppendModelsToSection {
+	OBTableViewSection *section = [[OBTableViewSection alloc] init];
+
+	[tableViewController addSection:section];
+
+  UITableViewCellModel *model = [[UITableViewCellModel alloc] init];
+
+	[tableViewController addModel:model toSection:section];
+
+	UITableViewCellModel *modelToInsert1 = [[UITableViewCellModel alloc] init];
+	UITableViewCellModel *modelToInsert2 = [[UITableViewCellModel alloc] init];
+	[tableViewController appendModels:@[modelToInsert1, modelToInsert2] toSection:section];
+
+	NSIndexPath *indexPath = [tableViewController indexPathForModel:modelToInsert1];
+
+	assertThatInteger(indexPath.row, is(equalToInt(1)));
+	assertThatInteger(indexPath.section, is(equalToInt(0)));
+
+	indexPath = [tableViewController indexPathForModel:modelToInsert2];
+	assertThatInteger(indexPath.row, is(equalToInt(2)));
+	assertThatInteger(indexPath.section, is(equalToInt(0)));
+
+
+	indexPath = [tableViewController indexPathForModel:model];
+	assertThatInteger(indexPath.row, is(equalToInt(0)));
+	assertThatInteger(indexPath.section, is(equalToInt(0)));
+
 }
 
 @end

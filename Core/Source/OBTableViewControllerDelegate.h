@@ -50,7 +50,8 @@
 /**
 * this method is called when a cell will be displayed
 */
-- (void)tableViewController:(OBAbstractTableViewController *)tableViewController willDisplayCell:(UITableViewCell *)cell;
+- (void)tableViewController:(OBAbstractTableViewController *)tableViewController willDisplayCell:(UITableViewCell *)cell withModel:(NSObject *)model;
+
 
 
 

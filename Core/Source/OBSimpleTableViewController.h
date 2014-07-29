@@ -1,7 +1,7 @@
 //
 //
-//
-// Created by Rene Pirringer on 19.02.14.
+// Created by rene on 19.02.14.
+
 //
 // 
 //
@@ -18,6 +18,7 @@
 
 
 - (void)addModel:(NSObject *)model;
+- (void)addModels:(NSArray *)models;
 
 
 @end

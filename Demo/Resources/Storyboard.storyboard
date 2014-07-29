@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zhd-WZ-yvA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zhd-WZ-yvA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="263" y="379"/>
         </scene>
-        <!--Demo View Controller - Demo-->
+        <!--Demo-->
         <scene sceneID="NDf-S8-WhW">
             <objects>
                 <viewController id="HPo-tR-usm" customClass="OBDemoViewController" sceneMemberID="viewController">
@@ -31,11 +31,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uRj-wM-MRr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uRj-wM-MRr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableViewCell" id="3ff-9p-kSj">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableViewCell" id="3ff-9p-kSj">
                                         <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3ff-9p-kSj" id="AIA-fx-jiu">
@@ -47,11 +47,17 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uRj-wM-MRr" firstAttribute="leading" secondItem="43E-OA-g3u" secondAttribute="leading" id="1bZ-l7-Pzn"/>
+                            <constraint firstItem="zzB-ID-0ga" firstAttribute="top" secondItem="uRj-wM-MRr" secondAttribute="bottom" id="Stt-ZM-eUr"/>
+                            <constraint firstItem="uRj-wM-MRr" firstAttribute="top" secondItem="43E-OA-g3u" secondAttribute="top" id="jus-O9-q3e"/>
+                            <constraint firstAttribute="trailing" secondItem="uRj-wM-MRr" secondAttribute="trailing" id="kly-CT-21x"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Demo" id="vsN-gc-N6L">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="iYy-pP-2cB">
                             <connections>
-                                <action selector="addItem:" destination="HPo-tR-usm" id="rZ7-o3-kR5"/>
+                                <segue destination="RuF-ax-CeS" kind="push" id="EXv-ld-nlh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -63,10 +69,45 @@
             </objects>
             <point key="canvasLocation" x="790" y="379"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6vE-UV-LSU">
+            <objects>
+                <viewController id="RuF-ax-CeS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKh-zy-VsM"/>
+                        <viewControllerLayoutGuide type="bottom" id="8g4-Ca-iyr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AGM-fi-8ey">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRr-TS-h1o">
+                                <rect key="frame" x="20" y="518" width="280" height="30"/>
+                                <state key="normal" title="Insert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XRr-TS-h1o" secondAttribute="trailing" constant="20" id="DD4-fe-79l"/>
+                            <constraint firstItem="8g4-Ca-iyr" firstAttribute="top" secondItem="XRr-TS-h1o" secondAttribute="bottom" constant="20" id="Tyt-LM-sWH"/>
+                            <constraint firstItem="XRr-TS-h1o" firstAttribute="leading" secondItem="AGM-fi-8ey" secondAttribute="leading" constant="20" id="bQA-3V-daN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oQD-oO-LgG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rbz-wR-17U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="379"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>

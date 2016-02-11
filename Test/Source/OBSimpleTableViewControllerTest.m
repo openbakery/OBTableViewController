@@ -1,17 +1,18 @@
 //
 //
-// Created by rene on 19.02.14.
+// Created by René Pirringer
 //
+// 
 //
 
 
 #import <Foundation/Foundation.h>
-#import "Mock.h"
+#import "OBTestCase.h"
 #import "OBSimpleTableViewController.h"
 #import "UITableViewCellModel.h"
 #import "OBCustomTableViewCell.h"
 
-@interface OBSimpleTableViewControllerTest : XCTestCase
+@interface OBSimpleTableViewControllerTest : OBTestCase
 @end
 
 
@@ -118,8 +119,8 @@
 	assertThatInt(cell.accessoryType, is(equalToInt(UITableViewCellAccessoryNone)));
 
 
-	MKTArgumentCaptor *indexPathsArguments = [[MKTArgumentCaptor alloc] init];
-	[verify(tableView) reloadRowsAtIndexPaths:[indexPathsArguments capture] withRowAnimation:UITableViewRowAnimationNone];
+	HCArgumentCaptor *indexPathsArguments = [[HCArgumentCaptor alloc] init];
+	[verify(tableView) reloadRowsAtIndexPaths:(id)indexPathsArguments withRowAnimation:UITableViewRowAnimationNone];
 	NSArray *indexPaths = [indexPathsArguments value];
 	assertThatInteger([indexPaths count], is(equalToInt(1)));
 	NSIndexPath *resultIndexPath = [indexPaths objectAtIndex:0];
@@ -148,8 +149,8 @@
 	indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
 	[tableViewController tableView:tableViewController.tableView didSelectRowAtIndexPath:indexPath];
 
-	MKTArgumentCaptor *indexPathsArguments = [[MKTArgumentCaptor alloc] init];
-	[verify(tableView) reloadRowsAtIndexPaths:[indexPathsArguments capture] withRowAnimation:UITableViewRowAnimationNone];
+	HCArgumentCaptor *indexPathsArguments = [[HCArgumentCaptor alloc] init];
+	[verify(tableView) reloadRowsAtIndexPaths:(id)indexPathsArguments withRowAnimation:UITableViewRowAnimationNone];
 
 	NSArray *indexPaths = [indexPathsArguments value];
 

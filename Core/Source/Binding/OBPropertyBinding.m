@@ -16,7 +16,9 @@
 - (id)initSourceName:(NSString *)sourceName sourceClass:(Class)sourceClass destinationName:(NSString *)destinationName destinationClass:(Class)destinationClass {
 	self = [super init];
 	if (self) {
-		self.sourceProperty = [[OBProperty alloc] initWithName:sourceName andClass:sourceClass];
+		if (sourceName) {
+			self.sourceProperty = [[OBProperty alloc] initWithName:sourceName andClass:sourceClass];
+		}
 		self.destinationProperty = [[OBProperty alloc] initWithName:destinationName andClass:destinationClass];
 	}
 	return self;

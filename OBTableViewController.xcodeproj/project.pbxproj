@@ -10,29 +10,32 @@
 		355B2129E006DB56CBE20409 /* UILabelToDatePropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B234C4BDDA9CF42B4F875 /* UILabelToDatePropertyBinding.m */; };
 		355B215D703DC2A95FFBB67E /* OBButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2F11799D02C2F5E79A73 /* OBButtonTableViewCell.m */; };
 		355B22AB5066B256E0D8AE21 /* OBAccessoryPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B7E748A1D46F3388333 /* OBAccessoryPropertyBinding.m */; };
+		355B22D0E05F1654ED4AE410 /* OBIntegerPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E21B4A242F9370BBDD9 /* OBIntegerPropertyBinding.m */; };
+		355B23018921812CD9D20D13 /* OBModelCellBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2D1913D5E582B24BBB49 /* OBModelCellBindingTest.m */; };
 		355B23534FD7047E63D94D73 /* OBSimpleTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2BFE2BB5AF7B639D89F1 /* OBSimpleTableViewControllerTest.m */; };
 		355B238EABD27AD5991751ED /* UITextFieldPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2FADC1B95E84CA108B9A /* UITextFieldPropertyBinding.m */; };
-		355B23DA61ECA21E7144D1CA /* UISearchBarPropertyBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B28099C6456F547F348F6 /* UISearchBarPropertyBindingTest.m */; };
 		355B24439BB826A1567BB5BE /* OBPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2FFCCCF2D783A8CD2DBF /* OBPropertyBinding.m */; };
 		355B24447EC4FA2BE37CDAA9 /* UILabelPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2CA2F3830BFB2C6F4360 /* UILabelPropertyBinding.m */; };
 		355B248E4A868927667935C8 /* UISearchBarPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25ECE0C021A8C55F81E4 /* UISearchBarPropertyBinding.m */; };
+		355B24D0A8EE7801C9BDFB16 /* UITableViewStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2058C0CBB17FB498DCFE /* UITableViewStub.m */; };
+		355B254D2F32C4A0F90FA6D2 /* UISearchBarPropertyBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B27A3D2302B17EFCF5870 /* UISearchBarPropertyBindingTest.m */; };
 		355B2560A16CA5C9A397F204 /* OBTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26CDDD0B40303AE48656 /* OBTableViewControllerTest.m */; };
-		355B25771D3CFAFF91205892 /* UISearchBarTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B23A7992DBE830508B37C /* UISearchBarTestTableViewCell.m */; };
 		355B25C9E3824F75B1F6A037 /* OBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B217D70CF3AF2312F1A8F /* OBTableViewController.m */; };
 		355B25DD447586B59F40AECD /* OBModelCellBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B21A484FCF7700D1D137D /* OBModelCellBinding.m */; };
+		355B263D86FE46D538A0186E /* OBTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2FED1592B6C99E355D50 /* OBTestCase.m */; };
 		355B265A642EB0F2A6C9B1AE /* OBSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25D1B751831C8D6C93D2 /* OBSimpleTableViewController.m */; };
 		355B265F3BC277D41C450F56 /* OBDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B21541CFC21B27110011A /* OBDemoViewController.m */; };
-		355B2684BBDE1B53C4FDB86B /* UISearchBarTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DB50339FA83AE3F9DC3 /* UISearchBarTestModel.m */; };
 		355B272E69AD7A722FFA6B00 /* UIImageViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B23D1CCD44E05D98D0F36 /* UIImageViewPropertyBinding.m */; };
 		355B2797F91ADA2F73792A29 /* OBAbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */; };
-		355B284BF11BED4165380D30 /* OBTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B24250F9556435F3D5B21 /* OBTableViewCellModel.m */; };
 		355B28D2A98416B8A17ED739 /* OBCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2F7CE7C3C217B0E54501 /* OBCustomTableViewCell.m */; };
 		355B2AA769BE9D75D2A2AC9F /* OBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B22BE0E059B7C50EE2C2D /* OBProperty.m */; };
 		355B2B80B13DE8F6562D0FF4 /* OBButtonTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B210BFED1F637237DF6B0 /* OBButtonTableViewCellModel.m */; };
 		355B2CBC378DF3E532BF5E26 /* OBTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26B987C33D692456D0B8 /* OBTableViewSection.m */; };
 		355B2D433F464CB643EA7D1C /* OBReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2D65015654E524532F02 /* OBReflection.m */; };
+		355B2EBF1746F46CD592BC68 /* UITextViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B220F1054DA7DF6C068CA /* UITextViewPropertyBinding.m */; };
+		355B2EEF54E1153B2F61BFD2 /* OBSearchBarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B219DC28E2BA7EAF6A2E2 /* OBSearchBarTableViewCell.m */; };
 		355B2F55BBF04C23EE64F050 /* UIDatePickerPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B230AF2474DA62A75CB4B /* UIDatePickerPropertyBinding.m */; };
-		355B2F6B2D2E9E1A4C3156CB /* UITableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B200E2B9C20ABF708C9A3 /* UITableViewCellModel.m */; };
+		355B2F8A790CC0D268BC84EE /* UITableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2123F178907C41F816A0 /* UITableViewCellModel.m */; };
 		851D67D16440473EB60E0017 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A44B0A337F064BB1B525C725 /* libPods-Tests.a */; };
 		A754FD3B19094CFE00F92530 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD3A19094CFE00F92530 /* Foundation.framework */; };
 		A754FD3D19094CFE00F92530 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD3C19094CFE00F92530 /* CoreGraphics.framework */; };
@@ -61,58 +64,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		355B200E2B9C20ABF708C9A3 /* UITableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewCellModel.m; sourceTree = "<group>"; };
+		2B1AFE0CED860B3992E0ED80 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		355B20114F297F3CB2189724 /* UITextViewPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewPropertyBinding.h; sourceTree = "<group>"; };
 		355B202917724E974E85772A /* OBAccessoryPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAccessoryPropertyBinding.h; sourceTree = "<group>"; };
 		355B2045B23DD29001B78D7A /* UIDatePickerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerPropertyBinding.h; sourceTree = "<group>"; };
+		355B2058C0CBB17FB498DCFE /* UITableViewStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewStub.m; sourceTree = "<group>"; };
 		355B20A12801DEE9E2C0DF42 /* OBButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBButtonTableViewCell.h; sourceTree = "<group>"; };
 		355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAbstractTableViewController.m; sourceTree = "<group>"; };
 		355B210BFED1F637237DF6B0 /* OBButtonTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBButtonTableViewCellModel.m; sourceTree = "<group>"; };
+		355B2123F178907C41F816A0 /* UITableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewCellModel.m; sourceTree = "<group>"; };
 		355B21541CFC21B27110011A /* OBDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBDemoViewController.m; sourceTree = "<group>"; };
 		355B217D70CF3AF2312F1A8F /* OBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewController.m; sourceTree = "<group>"; };
+		355B219DC28E2BA7EAF6A2E2 /* OBSearchBarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSearchBarTableViewCell.m; sourceTree = "<group>"; };
 		355B21A484FCF7700D1D137D /* OBModelCellBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBinding.m; sourceTree = "<group>"; };
+		355B21B5E2A6856A8DB9F9BA /* UITableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellModel.h; sourceTree = "<group>"; };
+		355B220F1054DA7DF6C068CA /* UITextViewPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewPropertyBinding.m; sourceTree = "<group>"; };
 		355B22BE0E059B7C50EE2C2D /* OBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBProperty.m; sourceTree = "<group>"; };
 		355B22C856FA3242F52C2729 /* OBTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewSection.h; sourceTree = "<group>"; };
 		355B230AF2474DA62A75CB4B /* UIDatePickerPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerPropertyBinding.m; sourceTree = "<group>"; };
 		355B234C4BDDA9CF42B4F875 /* UILabelToDatePropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelToDatePropertyBinding.m; sourceTree = "<group>"; };
-		355B23A7992DBE830508B37C /* UISearchBarTestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarTestTableViewCell.m; sourceTree = "<group>"; };
 		355B23D1CCD44E05D98D0F36 /* UIImageViewPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewPropertyBinding.m; sourceTree = "<group>"; };
-		355B24250F9556435F3D5B21 /* OBTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewCellModel.m; sourceTree = "<group>"; };
 		355B24C8B1113A39A1EB9336 /* OBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewController.h; sourceTree = "<group>"; };
-		355B24C9669327768AE17D17 /* UITableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellModel.h; sourceTree = "<group>"; };
 		355B2570F32C5BB4DAB19813 /* OBSimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSimpleTableViewController.h; sourceTree = "<group>"; };
 		355B258470BE994BF75E1FC6 /* OBAbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAbstractTableViewController.h; sourceTree = "<group>"; };
 		355B25D1B751831C8D6C93D2 /* OBSimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSimpleTableViewController.m; sourceTree = "<group>"; };
 		355B25ECE0C021A8C55F81E4 /* UISearchBarPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBinding.m; sourceTree = "<group>"; };
 		355B2633358B942BB632449C /* UILabelToDatePropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelToDatePropertyBinding.h; sourceTree = "<group>"; };
+		355B26915C1DF789E5E162C2 /* OBTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTestCase.h; sourceTree = "<group>"; };
 		355B26954BBE8D1C7484AEC3 /* OBButtonTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBButtonTableViewCellModel.h; sourceTree = "<group>"; };
 		355B26B987C33D692456D0B8 /* OBTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewSection.m; sourceTree = "<group>"; };
 		355B26CC11DCF0D46B6B4EEA /* UILabelPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelPropertyBinding.h; sourceTree = "<group>"; };
 		355B26CDDD0B40303AE48656 /* OBTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest.m; sourceTree = "<group>"; };
-		355B26E431D019063C3EE0BF /* OBTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewCellModel.h; sourceTree = "<group>"; };
+		355B27A3D2302B17EFCF5870 /* UISearchBarPropertyBindingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBindingTest.m; sourceTree = "<group>"; };
 		355B27DFDE3E383136D31ADA /* OBDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDemoViewController.h; sourceTree = "<group>"; };
-		355B28099C6456F547F348F6 /* UISearchBarPropertyBindingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBindingTest.m; sourceTree = "<group>"; };
 		355B280D0B200C334901D126 /* OBTableViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewControllerDelegate.h; sourceTree = "<group>"; };
 		355B28795380302DD0C11AD1 /* OBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBProperty.h; sourceTree = "<group>"; };
 		355B28DBF02C849B5651230C /* OBModelCellBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBModelCellBinding.h; sourceTree = "<group>"; };
-		355B299209172B224981BEA5 /* UISearchBarTestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchBarTestTableViewCell.h; sourceTree = "<group>"; };
+		355B2AB01B75C88B6A61D2D4 /* UITableViewStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewStub.h; sourceTree = "<group>"; };
 		355B2B019FDC69BF58EDCDCF /* OBPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBPropertyBinding.h; sourceTree = "<group>"; };
-		355B2B33B2C8AF8D7D4BC7E9 /* UISearchBarTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchBarTestModel.h; sourceTree = "<group>"; };
 		355B2B7E748A1D46F3388333 /* OBAccessoryPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAccessoryPropertyBinding.m; sourceTree = "<group>"; };
 		355B2BB8476B02A1745B4AFB /* UIImageViewPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewPropertyBinding.h; sourceTree = "<group>"; };
 		355B2BBACB9827E2B653CBE8 /* OBReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBReflection.h; sourceTree = "<group>"; };
 		355B2BFE2BB5AF7B639D89F1 /* OBSimpleTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSimpleTableViewControllerTest.m; sourceTree = "<group>"; };
+		355B2C2FE9A4259BA6A605BC /* OBSearchBarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSearchBarTableViewCell.h; sourceTree = "<group>"; };
 		355B2CA2F3830BFB2C6F4360 /* UILabelPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelPropertyBinding.m; sourceTree = "<group>"; };
+		355B2D1913D5E582B24BBB49 /* OBModelCellBindingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBindingTest.m; sourceTree = "<group>"; };
 		355B2D65015654E524532F02 /* OBReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBReflection.m; sourceTree = "<group>"; };
 		355B2DB14E52A15EF1995622 /* UITextFieldPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldPropertyBinding.h; sourceTree = "<group>"; };
-		355B2DB50339FA83AE3F9DC3 /* UISearchBarTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarTestModel.m; sourceTree = "<group>"; };
+		355B2E21B4A242F9370BBDD9 /* OBIntegerPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBIntegerPropertyBinding.m; sourceTree = "<group>"; };
 		355B2F11799D02C2F5E79A73 /* OBButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBButtonTableViewCell.m; sourceTree = "<group>"; };
+		355B2F209A32F0F285B89DF9 /* OBIntegerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBIntegerPropertyBinding.h; sourceTree = "<group>"; };
 		355B2F4F85B66FB5132CA123 /* OBCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCustomTableViewCell.h; sourceTree = "<group>"; };
 		355B2F7CE7C3C217B0E54501 /* OBCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCustomTableViewCell.m; sourceTree = "<group>"; };
 		355B2FADC1B95E84CA108B9A /* UITextFieldPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldPropertyBinding.m; sourceTree = "<group>"; };
 		355B2FC3536F7CE46FFD85C6 /* UISearchBarPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchBarPropertyBinding.h; sourceTree = "<group>"; };
+		355B2FED1592B6C99E355D50 /* OBTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTestCase.m; sourceTree = "<group>"; };
 		355B2FFCCCF2D783A8CD2DBF /* OBPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBPropertyBinding.m; sourceTree = "<group>"; };
-		71FEF2A705BD4C3EAFA073C1 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
+		7D4C711F49BF6A3F6B60E324 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		838C2C370A6340C59E6A9FCB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		898C5D42C0F7ACF88E7C2CE6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A44B0A337F064BB1B525C725 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754FD3719094CFE00F92530 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754FD3A19094CFE00F92530 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,9 +141,8 @@
 		A77E7C0B1986A685008083C5 /* OBInsertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBInsertViewController.h; sourceTree = "<group>"; };
 		A77E7C0C1986A685008083C5 /* OBInsertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBInsertViewController.m; sourceTree = "<group>"; };
 		A7E11C3D1909614700AEA800 /* Test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
-		A7E11C3E1909628F00AEA800 /* Mock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mock.h; sourceTree = "<group>"; };
 		A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		B8EF237DD8DD4A2DB9845DE7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E7AF705BC21C1DAAEEFC9C90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +195,15 @@
 			path = OBTableViewCells;
 			sourceTree = "<group>";
 		};
+		355B28404E0E1D444ED67508 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				355B2123F178907C41F816A0 /* UITableViewCellModel.m */,
+				355B21B5E2A6856A8DB9F9BA /* UITableViewCellModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		355B2AB1DF513886E39B7A7F /* Binding */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,20 +225,43 @@
 				355B230AF2474DA62A75CB4B /* UIDatePickerPropertyBinding.m */,
 				355B2633358B942BB632449C /* UILabelToDatePropertyBinding.h */,
 				355B234C4BDDA9CF42B4F875 /* UILabelToDatePropertyBinding.m */,
+				355B2F209A32F0F285B89DF9 /* OBIntegerPropertyBinding.h */,
+				355B2E21B4A242F9370BBDD9 /* OBIntegerPropertyBinding.m */,
+				355B20114F297F3CB2189724 /* UITextViewPropertyBinding.h */,
+				355B220F1054DA7DF6C068CA /* UITextViewPropertyBinding.m */,
 			);
 			path = Binding;
+			sourceTree = "<group>";
+		};
+		355B2DF98DFF4D7F62874248 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				355B2AB01B75C88B6A61D2D4 /* UITableViewStub.h */,
+				355B2058C0CBB17FB498DCFE /* UITableViewStub.m */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		355B2E782F8EC0C69CD254AB /* Binding */ = {
 			isa = PBXGroup;
 			children = (
-				355B28099C6456F547F348F6 /* UISearchBarPropertyBindingTest.m */,
-				355B2DB50339FA83AE3F9DC3 /* UISearchBarTestModel.m */,
-				355B2B33B2C8AF8D7D4BC7E9 /* UISearchBarTestModel.h */,
-				355B23A7992DBE830508B37C /* UISearchBarTestTableViewCell.m */,
-				355B299209172B224981BEA5 /* UISearchBarTestTableViewCell.h */,
+				355B2D1913D5E582B24BBB49 /* OBModelCellBindingTest.m */,
+				355B27A3D2302B17EFCF5870 /* UISearchBarPropertyBindingTest.m */,
+				355B219DC28E2BA7EAF6A2E2 /* OBSearchBarTableViewCell.m */,
+				355B2C2FE9A4259BA6A605BC /* OBSearchBarTableViewCell.h */,
 			);
 			path = Binding;
+			sourceTree = "<group>";
+		};
+		A33E8B2AB10308980CA3BCBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				898C5D42C0F7ACF88E7C2CE6 /* Pods.debug.xcconfig */,
+				E7AF705BC21C1DAAEEFC9C90 /* Pods.release.xcconfig */,
+				7D4C711F49BF6A3F6B60E324 /* Pods-Tests.debug.xcconfig */,
+				2B1AFE0CED860B3992E0ED80 /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A754FD2E19094CFE00F92530 = {
@@ -231,8 +272,7 @@
 				A754FD7D19094EB900F92530 /* Test */,
 				A754FD3919094CFE00F92530 /* Frameworks */,
 				A754FD3819094CFE00F92530 /* Products */,
-				B8EF237DD8DD4A2DB9845DE7 /* Pods.xcconfig */,
-				71FEF2A705BD4C3EAFA073C1 /* Pods-Tests.xcconfig */,
+				A33E8B2AB10308980CA3BCBE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,17 +315,14 @@
 				355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */,
 				355B2570F32C5BB4DAB19813 /* OBSimpleTableViewController.h */,
 				355B25D1B751831C8D6C93D2 /* OBSimpleTableViewController.m */,
-				355B26E431D019063C3EE0BF /* OBTableViewCellModel.h */,
-				355B24250F9556435F3D5B21 /* OBTableViewCellModel.m */,
 				355B27439DDEF1F4507308CA /* OBTableViewCells */,
 				355B24C8B1113A39A1EB9336 /* OBTableViewController.h */,
 				355B217D70CF3AF2312F1A8F /* OBTableViewController.m */,
 				355B280D0B200C334901D126 /* OBTableViewControllerDelegate.h */,
 				355B22C856FA3242F52C2729 /* OBTableViewSection.h */,
 				355B26B987C33D692456D0B8 /* OBTableViewSection.m */,
-				355B24C9669327768AE17D17 /* UITableViewCellModel.h */,
-				355B200E2B9C20ABF708C9A3 /* UITableViewCellModel.m */,
 				355B270366E27CD0ED9DFF09 /* OBReflection */,
+				355B28404E0E1D444ED67508 /* Model */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -330,7 +367,6 @@
 				A7E11C3D1909614700AEA800 /* Test-Prefix.pch */,
 				A754FD7E19094EB900F92530 /* Source */,
 				A754FD7F19094EB900F92530 /* Test-Info.plist */,
-				A7E11C3E1909628F00AEA800 /* Mock.h */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -343,6 +379,9 @@
 				355B2F7CE7C3C217B0E54501 /* OBCustomTableViewCell.m */,
 				355B2BFE2BB5AF7B639D89F1 /* OBSimpleTableViewControllerTest.m */,
 				355B26CDDD0B40303AE48656 /* OBTableViewControllerTest.m */,
+				355B2FED1592B6C99E355D50 /* OBTestCase.m */,
+				355B26915C1DF789E5E162C2 /* OBTestCase.h */,
+				355B2DF98DFF4D7F62874248 /* Stubs */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -359,6 +398,7 @@
 				A754FD3419094CFE00F92530 /* Frameworks */,
 				A754FD3519094CFE00F92530 /* Resources */,
 				265ACD997AAC40FBA896EB45 /* Copy Pods Resources */,
+				387A1E7D299432C8F76B333A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,6 +418,7 @@
 				A754FD5419094CFE00F92530 /* Frameworks */,
 				A754FD5519094CFE00F92530 /* Resources */,
 				F979848738334DDE8FADA810 /* Copy Pods Resources */,
+				B7899DADF54475BB062655CA /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -454,7 +495,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		387A1E7D299432C8F76B333A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		45816216FBC74E67BC3D53F1 /* Check Pods Manifest.lock */ = {
@@ -487,6 +543,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		B7899DADF54475BB062655CA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F979848738334DDE8FADA810 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,7 +570,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -523,15 +594,16 @@
 				355B2797F91ADA2F73792A29 /* OBAbstractTableViewController.m in Sources */,
 				355B265A642EB0F2A6C9B1AE /* OBSimpleTableViewController.m in Sources */,
 				A77E7C0D1986A685008083C5 /* OBInsertViewController.m in Sources */,
-				355B284BF11BED4165380D30 /* OBTableViewCellModel.m in Sources */,
 				355B215D703DC2A95FFBB67E /* OBButtonTableViewCell.m in Sources */,
 				355B2B80B13DE8F6562D0FF4 /* OBButtonTableViewCellModel.m in Sources */,
 				355B25C9E3824F75B1F6A037 /* OBTableViewController.m in Sources */,
 				355B2CBC378DF3E532BF5E26 /* OBTableViewSection.m in Sources */,
-				355B2F6B2D2E9E1A4C3156CB /* UITableViewCellModel.m in Sources */,
 				355B2AA769BE9D75D2A2AC9F /* OBProperty.m in Sources */,
 				355B2D433F464CB643EA7D1C /* OBReflection.m in Sources */,
 				355B265F3BC277D41C450F56 /* OBDemoViewController.m in Sources */,
+				355B22D0E05F1654ED4AE410 /* OBIntegerPropertyBinding.m in Sources */,
+				355B2EBF1746F46CD592BC68 /* UITextViewPropertyBinding.m in Sources */,
+				355B2F8A790CC0D268BC84EE /* UITableViewCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,12 +611,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				355B23DA61ECA21E7144D1CA /* UISearchBarPropertyBindingTest.m in Sources */,
 				355B28D2A98416B8A17ED739 /* OBCustomTableViewCell.m in Sources */,
 				355B23534FD7047E63D94D73 /* OBSimpleTableViewControllerTest.m in Sources */,
 				355B2560A16CA5C9A397F204 /* OBTableViewControllerTest.m in Sources */,
-				355B2684BBDE1B53C4FDB86B /* UISearchBarTestModel.m in Sources */,
-				355B25771D3CFAFF91205892 /* UISearchBarTestTableViewCell.m in Sources */,
+				355B263D86FE46D538A0186E /* OBTestCase.m in Sources */,
+				355B24D0A8EE7801C9BDFB16 /* UITableViewStub.m in Sources */,
+				355B23018921812CD9D20D13 /* OBModelCellBindingTest.m in Sources */,
+				355B254D2F32C4A0F90FA6D2 /* UISearchBarPropertyBindingTest.m in Sources */,
+				355B2EEF54E1153B2F61BFD2 /* OBSearchBarTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +707,7 @@
 		};
 		A754FD6A19094CFE00F92530 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8EF237DD8DD4A2DB9845DE7 /* Pods.xcconfig */;
+			baseConfigurationReference = 898C5D42C0F7ACF88E7C2CE6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -648,7 +722,7 @@
 		};
 		A754FD6B19094CFE00F92530 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8EF237DD8DD4A2DB9845DE7 /* Pods.xcconfig */;
+			baseConfigurationReference = E7AF705BC21C1DAAEEFC9C90 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -663,7 +737,7 @@
 		};
 		A754FD6D19094CFE00F92530 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71FEF2A705BD4C3EAFA073C1 /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = 7D4C711F49BF6A3F6B60E324 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -686,7 +760,7 @@
 		};
 		A754FD6E19094CFE00F92530 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71FEF2A705BD4C3EAFA073C1 /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = 2B1AFE0CED860B3992E0ED80 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -1,7 +1,6 @@
 //
 //
-// Created by rene on 19.02.14.
-
+// Created by René Pirringer
 //
 // 
 //
@@ -13,30 +12,30 @@
 
 
 @interface OBSimpleTableViewController ()
-@property(nonatomic, strong) NSMutableArray *models;
 @end
 
 @implementation OBSimpleTableViewController {
 
+	NSMutableArray *_models;
 }
 
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.models = [[NSMutableArray alloc] init];
+		_models = [[NSMutableArray alloc] init];
 	}
 	return self;
 }
 
 
 - (NSArray *)modelsForSectionIndex:(NSInteger)section {
-	return self.models;
+	return _models;
 }
 
 
 - (NSObject *)modelAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.row <= [self.models count]) {
-		return [self.models objectAtIndex:indexPath.row];
+	if (indexPath.row <= [_models count]) {
+		return [_models objectAtIndex:indexPath.row];
 	}
 	return nil;
 }
@@ -44,15 +43,26 @@
 
 
 - (void)addModel:(NSObject *)model {
-	[self.models addObject:model];
+	[_models addObject:model];
 }
 
 - (void)addModels:(NSArray *)models {
-	[self.models addObjectsFromArray:models];
+	[_models addObjectsFromArray:models];
 }
 
+
+- (void)setModels:(NSArray *)models {
+	_models = [[NSMutableArray alloc] initWithArray:models];
+}
+
+
+- (void)removeAllModels {
+	[_models removeAllObjects];
+}
+
+
 - (NSIndexPath *)indexPathForModel:(NSObject *)object {
-	NSInteger index = [self.models indexOfObject:object];
+	NSInteger index = [_models indexOfObject:object];
 	if (index != NSNotFound) {
 		return  [NSIndexPath indexPathForRow:index inSection:0];
 	}

@@ -1,6 +1,6 @@
 //
 //
-// Created by rene on 19.02.14.
+// Created by René Pirringer
 
 //
 // 
@@ -8,8 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "OBTableViewCellModel.h"
-
+#import <UIKit/UIKit.h>
 
 @interface UITableViewCellModel : NSObject
 @property(nonatomic, copy) NSString *text;
@@ -18,6 +17,8 @@
 @property (nonatomic, assign) UITableViewCellAccessoryType accessoryType;
 
 @property (nonatomic, assign) NSInteger tag;
+
+- (NSString *)description;
 
 
 @end

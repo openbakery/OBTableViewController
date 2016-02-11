@@ -8,14 +8,13 @@
 
 
 #import <Foundation/Foundation.h>
+#import "OBTestCase.h"
 #import "UISearchBarPropertyBinding.h"
-#import "UISearchBarTestModel.h"
-#import "UISearchBarTestTableViewCell.h"
-#import "Mock.h"
+#import "UITableViewCellModel.h"
+#import "OBSearchBarTableViewCell.h"
 
 
-
-@interface UISearchBarPropertyBindingTest : XCTestCase
+@interface UISearchBarPropertyBindingTest : OBTestCase
 @end
 
 @implementation UISearchBarPropertyBindingTest {
@@ -24,16 +23,17 @@
 
 - (void)testBinding {
 
-	UISearchBarTestModel *searchEditModel = [[UISearchBarTestModel alloc] initWithSearchText:@"Test-Search"];
+	UITableViewCellModel *model = [[UITableViewCellModel alloc] init];
+	model.text = @"Test";
 
-	UISearchBarPropertyBinding *binding = [[UISearchBarPropertyBinding alloc] initSourceName:@"searchText" andDestinationName:@"searchBar"];
-	UISearchBarTestTableViewCell *destination = [[UISearchBarTestTableViewCell alloc] init];
+	UISearchBarPropertyBinding *binding = [[UISearchBarPropertyBinding alloc] initSourceName:@"text" andDestinationName:@"searchBar"];
+	OBSearchBarTableViewCell *destination = [[OBSearchBarTableViewCell alloc] init];
 	destination.searchBar = [[UISearchBar alloc] init];
 
 
-	[binding setValueFrom:searchEditModel to:destination];
+	[binding setValueFrom:model to:destination];
 
-	assertThat(destination.searchBar.text, is(equalTo(@"Test-Search")));
+	assertThat(destination.searchBar.text, is(equalTo(@"Test")));
 }
 
 @end

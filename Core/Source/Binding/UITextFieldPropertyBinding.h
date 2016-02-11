@@ -14,7 +14,9 @@
 */
 @interface UITextFieldPropertyBinding : OBPropertyBinding
 
-- (id)initSourceName:(NSString *)string andDestinationName:(NSString *)name;
+
+- (id)initWithSourceName:(NSString *)sourceName placeholderName:(NSString *)placeholderName andDestinationName:(NSString *)destinationName;
+- (id)initWithSourceName:(NSString *)string andDestinationName:(NSString *)name;
 
 
 @end

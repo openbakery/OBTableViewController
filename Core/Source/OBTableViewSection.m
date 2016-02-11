@@ -76,9 +76,13 @@
 
 - (NSString *)description {
 	NSMutableString *description = [NSMutableString stringWithFormat:@"<%@: ", NSStringFromClass([self class])];
-
 	[description appendString:@"id="];
 	[description appendFormat:@"%d", (int)self.identifier];
+	if (self.headerTitle) {
+		[description appendString:@" headerTitle="];
+		[description appendFormat:@"%@", self.headerTitle];
+
+	}
 	[description appendString:@">"];
 	return description;
 }

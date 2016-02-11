@@ -6,6 +6,7 @@
 //
 
 
+#import <OBInjector/OBInjector.h>
 #import "OBTableViewController.h"
 #import "OBModelCellBinding.h"
 #import "UILabelPropertyBinding.h"
@@ -13,9 +14,9 @@
 #import "UILabelToDatePropertyBinding.h"
 #import "UIDatePickerPropertyBinding.h"
 #import "OBAccessoryPropertyBinding.h"
-#import "DDLog.h"
 
 @interface OBAbstractTableViewController ()
+@property(nonatomic) UIEdgeInsets defaultTableInset;
 @end
 
 @implementation OBAbstractTableViewController {
@@ -28,25 +29,36 @@
 - (id)init {
 	self = [super init];
 	if (self) {
+		self.dynamicCellHeight = NO;
 		_modelCellBindings = [[NSMutableDictionary alloc] init];
 		_propertyBindings = [[NSMutableArray alloc] init];
-
 		[self setupBinding];
-
-
+		self.defaultTableInset = UIEdgeInsetsZero;
 	}
 	return self;
 }
 
 - (void)dealloc {
+	[self disableModifyInsetsForKeyboard];
 	_tableView.dataSource = nil;
 	_tableView.delegate = nil;
+
 }
 
+- (void)enableModifyInsetsForKeyboard {
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+}
+
+- (void)disableModifyInsetsForKeyboard {
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+}
 
 - (void)setupBinding {
 	[self addPropertyBinding:[[UILabelPropertyBinding alloc] initWithSourceName:@"text" andDestinationName:@"textLabel"]];
-	[self addPropertyBinding:[[UIImageViewPropertyBinding alloc] initSourceName:@"image" andDestinationName:@"imageView"]];
+	[self addPropertyBinding:[[UILabelPropertyBinding alloc] initWithSourceName:@"detailText" andDestinationName:@"detailTextLabel"]];
+	[self addPropertyBinding:[[UIImageViewPropertyBinding alloc] initWithSourceName:@"image" andDestinationName:@"imageView"]];
 	[self addPropertyBinding:[[UILabelToDatePropertyBinding alloc] initSourceName:@"date" andDestinationName:@"detailTextLabel"]];
 	[self addPropertyBinding:[[UIDatePickerPropertyBinding alloc] initSourceName:@"date" andDestinationName:@"datePicker"]];
 	[self addPropertyBinding:[[OBAccessoryPropertyBinding alloc] initSourceName:@"accessoryType" andDestinationName:@"accessoryType"]];
@@ -68,22 +80,34 @@
 	_tableView = tableView;
 	_tableView.dataSource = self;
 	_tableView.delegate = self;
+
+	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+		_tableView.estimatedRowHeight = 44.0;
+		_tableView.rowHeight = UITableViewAutomaticDimension;
+	}
+
 }
 
-- (void)registerIdentifier:(NSString *)identifier modelClass:(Class)clazz {
+- (void)registerIdentifier:(NSString *)identifier modelClass:(Class)modelClass {
 	if (!_registeredIdentifiers) {
 		_registeredIdentifiers = [[NSMutableDictionary alloc] init];
 	}
-	[_registeredIdentifiers setObject:identifier forKey:NSStringFromClass(clazz)];
+	[_registeredIdentifiers setObject:identifier forKey:[self identifierForClass:modelClass]];
+}
+
+- (void)registerTableViewCellClass:(Class)tableViewCellClass modelClass:(Class)modelClass {
+	NSString *identifier = [self identifierForClass:tableViewCellClass];
+	[self registerIdentifier:identifier modelClass:modelClass];
+	[self.tableView registerClass:tableViewCellClass forCellReuseIdentifier:identifier];
 }
 
 - (OBModelCellBinding *)bindingForModel:(NSObject *)model andCell:(UITableViewCell *)cell {
 
 	Class modelClass = [model class];
-	OBModelCellBinding *binding = [_modelCellBindings objectForKey:NSStringFromClass(modelClass)];
+	OBModelCellBinding *binding = [_modelCellBindings objectForKey:[self identifierForClass:modelClass]];
 	if (!binding) {
 		binding = [[OBModelCellBinding alloc] initWithModelClass:modelClass andCellClass:[cell class] andPropertyBindings:_propertyBindings];
-		[_modelCellBindings setObject:binding forKey:NSStringFromClass(modelClass)];
+		[_modelCellBindings setObject:binding forKey:[self identifierForClass:modelClass]];
 	}
 	return binding;
 }
@@ -99,23 +123,24 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	NSObject *model = [self modelAtIndexPath:indexPath];
 	if (!model) {
-		DDLogDebug(@"No model found at indexPath[row=%d, section=%d] so return an empty cell", (int)indexPath.row, (int)indexPath.section);
+		//NSLog(@"No model found at indexPath[row=%d, section=%d] so return an empty cell", (int)indexPath.row, (int)indexPath.section);
 		return [[UITableViewCell alloc] init];
 	}
 
 	UITableViewCell *cell;
-	NSString *identifier = [_registeredIdentifiers objectForKey:NSStringFromClass([model class])];
+	NSString *identifier = [_registeredIdentifiers objectForKey:[self identifierForObject:model]];
 	if (identifier) {
 		cell = [tableView dequeueReusableCellWithIdentifier:identifier];
 	} else {
-		DDLogDebug(@"No identifer is registered for model class '%@', so using UITableViewCell", [model class]);
+		//NSLog(@"No identifier is registered for model class '%@', so using UITableViewCell", [model class]);
 	}
 
 	if (!cell) {
-		DDLogDebug(@"Using UITableViewCell");
+		//NSLog(@"Using UITableViewCell");
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
 	}
-
+	[OBInjectorController injectDependenciesTo:cell];
+	[cell setNeedsUpdateConstraints];
 
 
 
@@ -131,7 +156,6 @@
 			cell.accessoryType = UITableViewCellAccessoryNone;
 		}
 	}
-
 	return cell;
 }
 
@@ -157,7 +181,27 @@
 }
 
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (self.dynamicCellHeight) {
+		if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1) {
+			return UITableViewAutomaticDimension;
+		}
+	}
+	NSObject *model = [self modelAtIndexPath:indexPath];
+	if (model) {
+		return [self heightForRowWithModel:model];
+	}
+	return 44.0;
+}
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (self.dynamicCellHeight) {
+		if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1) {
+			return UITableViewAutomaticDimension;
+		}
+	}
+
 	NSObject *model = [self modelAtIndexPath:indexPath];
 	if (model) {
 		return [self heightForRowWithModel:model];
@@ -167,7 +211,7 @@
 }
 
 - (CGFloat)heightForRowWithModel:(NSObject *)model {
-	NSString *className = NSStringFromClass([model class]);
+	NSString *className = [self identifierForObject:model];
 
 	if (!_cellHeightForModelClass) {
 		// lazy initialize heights
@@ -175,6 +219,7 @@
 
 		[_registeredIdentifiers enumerateKeysAndObjectsUsingBlock:^(NSString *className, NSString *identifier, BOOL *stop) {
 			UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+
 		  CGFloat height = cell.frame.size.height;
 		  if (height == 0) {
 				height = 44.0f;
@@ -327,5 +372,49 @@
 	if (indexPath) {
 		[self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 	}
+}
+
+- (NSString *)identifierForObject:(NSObject *)object {
+	return [self identifierForClass:[object class]];
+}
+
+
+- (NSString *)identifierForClass:(Class) clazz {
+	if ([clazz isKindOfClass:[NSString class]]) {
+		return @"NSString";
+	}
+	NSString *result = NSStringFromClass(clazz);;
+	if ([result isEqualToString:@"__NSCFConstantString"] || [result isEqualToString:@"__NSCFString"]) {
+		return @"NSString";
+	}
+	return result;
+}
+
+
+- (void)keyboardDidShow:(NSNotification *)notification {
+	NSDictionary *keyInfo = [notification userInfo];
+	CGRect keyboardFrame = [[keyInfo objectForKey:@"UIKeyboardFrameEndUserInfoKey"] CGRectValue];
+	keyboardFrame = [self.tableView convertRect:keyboardFrame fromView:nil];
+	CGRect intersect = CGRectIntersection(keyboardFrame, self.tableView.bounds);
+	if (!CGRectIsNull(intersect)) {
+		NSTimeInterval duration = [[keyInfo objectForKey:@"UIKeyboardAnimationDurationUserInfoKey"] doubleValue];
+		if (UIEdgeInsetsEqualToEdgeInsets(self.defaultTableInset,UIEdgeInsetsZero)) {
+			self.defaultTableInset = self.tableView.contentInset;
+		}
+		__weak OBAbstractTableViewController *weakSelf = self;
+		[UIView animateWithDuration:duration animations:^{
+				weakSelf.tableView.contentInset = UIEdgeInsetsMake(weakSelf.defaultTableInset.top, weakSelf.defaultTableInset.left, weakSelf.defaultTableInset.bottom+intersect.size.height, weakSelf.defaultTableInset.right);
+				weakSelf.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+		}];
+	}
+}
+
+- (void)keyboardWillHide:(NSNotification *)notification {
+	NSDictionary *keyInfo = [notification userInfo];
+	NSTimeInterval duration = [[keyInfo objectForKey:@"UIKeyboardAnimationDurationUserInfoKey"] doubleValue];
+	[UIView animateWithDuration:duration animations:^{
+			self.tableView.contentInset = self.defaultTableInset;
+			self.tableView.scrollIndicatorInsets = self.defaultTableInset;
+	}];
 }
 @end

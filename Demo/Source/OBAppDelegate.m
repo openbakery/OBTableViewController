@@ -6,23 +6,16 @@
 //  Copyright (c) 2014 Rene Pirringer. All rights reserved.
 //
 
+
+
 #import "OBAppDelegate.h"
-#import "DDTTYLogger.h"
-#import "DDASLLogger.h"
-
-
-int ddLogLevel;
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 
 @implementation OBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-#ifdef DEBUG
-  ddLogLevel = LOG_LEVEL_VERBOSE;
-#else
-  ddLogLevel = LOG_LEVEL_WARN;
-#endif
 
 
 	[DDLog addLogger:[DDASLLogger sharedInstance]];
@@ -39,7 +32,7 @@ int ddLogLevel;
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
 	// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

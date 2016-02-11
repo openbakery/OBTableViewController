@@ -6,10 +6,9 @@
 //
 
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "OBTableViewController.h"
 #import "OBTableViewSection.h"
-#import "UITableViewCellModel.h"
-#import "OBAbstractTableViewController.h"
 
 @interface OBTableViewSection()
 @property (nonatomic, assign) NSInteger identifier;
@@ -46,11 +45,15 @@
 	return [NSArray arrayWithArray:_sections];
 }
 
+- (NSInteger)indexForSection:(OBTableViewSection *)section {
+	return section.identifier-1;
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex {
 	OBTableViewSection *section = [self sectionAtIndex:sectionIndex];
 	NSArray *models = [self modelsForSection:section];
-
+	//DDLogDebug(@"number rows in section %@: %@", [@(sectionIndex) stringValue], [@([models count]) stringValue]);
 	return [models count];
 
 }
@@ -71,11 +74,13 @@
 
 
 - (void)addModel:(NSObject *)model toSection:(OBTableViewSection *)section {
+	DDLogDebug(@"addModel:%@ toSection:%@", model, section);
 	NSMutableArray *models = [self modelsArrayForSection:section];
 	[models addObject:model];
 }
 
 - (void)addModels:(NSArray *)models toSection:(OBTableViewSection *)section {
+	DDLogDebug(@"addModels:%@ toSection:%@", models, section);
 	NSMutableArray *modelsForSection = [self modelsArrayForSection:section];
 	[modelsForSection addObjectsFromArray:models];
 }
@@ -121,6 +126,7 @@
 }
 
 - (void)insertModel:(NSObject *)model toSection:(OBTableViewSection *)section {
+	DDLogDebug(@"insertModel:%@ toSection:%@", model, section);
 
 	NSInteger sectionIndex = [_sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
@@ -131,6 +137,8 @@
 }
 
 - (void)insertModels:(NSArray *)models toSection:(OBTableViewSection *)section {
+	DDLogDebug(@"insertModels:%@ toSection:%@", models, section);
+
 	NSInteger sectionIndex = [_sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
 		NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:0 inSection:sectionIndex];
@@ -146,16 +154,20 @@
 }
 
 - (void)appendModels:(NSArray *)models toSection:(OBTableViewSection *)section {
+	DDLogDebug(@"appendModels:%@ toSection:%@", models, section);
+
 	NSInteger sectionIndex = [_sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
 		NSInteger modelCount = [[self modelsArrayForSection:section] count];
 		NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:modelCount inSection:sectionIndex];
-		[self insertModels:models atIndexPath:insertIndexPath];
+		[self insertModels:models atIndexPath:insertIndexPath withRowAnimation:UITableViewRowAnimationAutomatic];
 	}
 
 }
 
 - (void)insertModel:(NSObject *)model after:(NSObject *)afterModel {
+	DDLogDebug(@"insertModel:%@ after:%@", model, afterModel);
+
 	NSIndexPath *afterModelIndexPath = [self indexPathForModel:afterModel];
 	NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:afterModelIndexPath.row+1 inSection:afterModelIndexPath.section];
 	[self insertModel:model atIndexPath:insertIndexPath];
@@ -163,11 +175,19 @@
 
 
 - (void)insertModel:(NSObject *)model before:(NSObject *)before {
+	DDLogDebug(@"insertModel:%@ before:%@", model, before);
+
 	NSIndexPath *beforeModelIndexPath = [self indexPathForModel:before];
 	[self insertModel:model atIndexPath:beforeModelIndexPath];
 }
 
 - (void)insertModel:(NSObject *)model atIndexPath:(NSIndexPath *)indexPath {
+	DDLogDebug(@"insertModel:%@ atIndexPath:%@", model, indexPath);
+
+	if (ddLogLevel >= DDLogLevelDebug) {
+		[self dumpModels];
+	}
+
 	OBTableViewSection *section = [self sectionAtIndex:indexPath.section];
 
 	NSMutableArray *models = [self modelsArrayForSection:section];
@@ -178,7 +198,13 @@
 	[self.tableView endUpdates];
 }
 
-- (void)insertModels:(NSArray *)modelsToInsert atIndexPath:(NSIndexPath *)indexPath {
+- (void)insertModels:(NSArray *)modelsToInsert atIndexPath:(NSIndexPath *)indexPath  {
+	[self insertModels:modelsToInsert atIndexPath:indexPath withRowAnimation:UITableViewRowAnimationFade];
+}
+
+- (void)insertModels:(NSArray *)modelsToInsert atIndexPath:(NSIndexPath *)indexPath withRowAnimation:(UITableViewRowAnimation)rowAnimation {
+	DDLogDebug(@"insertModels:%@ atIndexPath:%@", modelsToInsert, indexPath);
+
 	OBTableViewSection *section = [self sectionAtIndex:indexPath.section];
 
 	NSMutableArray *models = [self modelsArrayForSection:section];
@@ -193,12 +219,14 @@
 	}
 
 	[self.tableView beginUpdates];
-	[self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+	[self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:rowAnimation];
 	[self.tableView endUpdates];
 }
 
 
 - (void)removeModel:(NSObject *)model {
+	DDLogDebug(@"removeModel:%@", model);
+
 	if (!model) {
 		return;
 	}
@@ -206,6 +234,7 @@
 }
 
 - (void)removeModels:(NSArray *)modelsToRemove {
+	DDLogDebug(@"removeModels:%@", modelsToRemove);
 
 	NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
 
@@ -233,8 +262,57 @@
 }
 
 
+- (void)setModels:(NSArray *)models toSection:(OBTableViewSection *)section {
+
+	NSInteger sectionIndex = [_sections indexOfObject:section];
+	if (sectionIndex ==  NSNotFound) {
+		return;
+	}
+
+	NSMutableArray *modelsInSection = [self modelsArrayForSection:section];
+
+	NSMutableArray  *modelsToDelete = [[NSMutableArray alloc] initWithArray:modelsInSection];
+	[modelsToDelete removeObjectsInArray:models];
+
+	NSMutableArray *indexPathsToDelete = [[NSMutableArray alloc] init];
+	for (NSObject *model in modelsToDelete) {
+		NSInteger index = [modelsInSection indexOfObject:model];
+		[indexPathsToDelete addObject:[NSIndexPath indexPathForRow:index inSection:sectionIndex]];
+	}
+
+
+	NSMutableArray *modelsToInsert = [[NSMutableArray alloc] initWithArray:models];
+	[modelsToInsert removeObjectsInArray:modelsInSection];
+	NSMutableArray *indexPathsToInsert = [[NSMutableArray alloc] init];
+
+
+	for (NSObject *model in modelsToInsert) {
+		NSInteger index = [models indexOfObject:model];
+		[indexPathsToInsert addObject:[NSIndexPath indexPathForRow:index inSection:sectionIndex]];
+	}
+
+
+	[modelsInSection setArray:models];
+
+	if ([indexPathsToInsert count] || [indexPathsToDelete count]) {
+		[self.tableView beginUpdates];
+	}
+	if ([indexPathsToDelete count]) {
+		[self.tableView deleteRowsAtIndexPaths:indexPathsToDelete withRowAnimation:UITableViewRowAnimationBottom];
+	}
+	if ([indexPathsToInsert count]) {
+		[self.tableView insertRowsAtIndexPaths:indexPathsToInsert withRowAnimation:UITableViewRowAnimationTop];
+	}
+	if ([indexPathsToInsert count] || [indexPathsToDelete count]) {
+		[self.tableView endUpdates];
+	}
+}
+
+
 
 - (void)reloadCellForModel:(NSObject *)model {
+	DDLogDebug(@"reloadCellForModel:%@", model);
+
 	NSIndexPath *indexPath = [self indexPathForModel:model];
 	if (indexPath) {
 		[self.tableView beginUpdates];
@@ -244,6 +322,8 @@
 }
 
 - (void)reloadTableView {
+	DDLogDebug(@"reloadTableView");
+
 	[self.tableView reloadData];
 }
 
@@ -266,11 +346,14 @@
 
 
 - (void)deleteAllModelsFromSection:(OBTableViewSection *)section {
+	DDLogDebug(@"deleteAllModelsFromSection:%@", section);
+
 	NSMutableArray *models = [self modelsArrayForSection:section];
 	[models removeAllObjects];
 }
 
 - (void)removeAllModelsFromSection:(OBTableViewSection *)section {
+	DDLogDebug(@"removeAllModelsFromSection:%@", section);
 	NSMutableArray *modelsToRemove = [self modelsArrayForSection:section];
 
 
@@ -294,6 +377,8 @@
 }
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+	DDLogDebug(@"setEditing:%@", [@(editing) stringValue]);
+
 	BOOL setEditing = NO;
 	if (editing) {
 		for (OBTableViewSection *section in _sections) {
@@ -341,5 +426,17 @@
 	}
 }
 
+- (void)dumpModels {
 
+	DDLogVerbose(@"OBTableViewController models:");
+	for (OBTableViewSection *section in self.sections) {
+		DDLogVerbose(@"\t%@", section);
+
+		for (NSObject *model in [self modelsForSection:section]) {
+			DDLogVerbose(@"\t\t%@", model);
+		}
+
+	}
+
+}
 @end

@@ -1,6 +1,6 @@
 //
 //
-// Created by rene on 26/04/14.
+// Created by René Pirringer
 //
 // 
 //

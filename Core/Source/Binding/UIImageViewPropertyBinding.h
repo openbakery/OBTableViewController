@@ -14,6 +14,6 @@
 */
 @interface UIImageViewPropertyBinding : OBPropertyBinding
 
-- (id)initSourceName:(NSString *)sourceName andDestinationName:(NSString *)destinationName;
+- (id)initWithSourceName:(NSString *)sourceName andDestinationName:(NSString *)destinationName;
 
 @end

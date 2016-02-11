@@ -5,7 +5,7 @@
 // 
 //
 
-
+#import <UIKit/UIKit.h>
 #import "UIImageViewPropertyBinding.h"
 #import "OBReflection.h"
 #import "OBProperty.h"
@@ -16,7 +16,7 @@
 }
 
 
-- (id)initSourceName:(NSString *)sourceName andDestinationName:(NSString *)destinationName {
+- (id)initWithSourceName:(NSString *)sourceName andDestinationName:(NSString *)destinationName {
 	return [super initSourceName:sourceName sourceClass:[UIImage class] destinationName:destinationName destinationClass:[UIImageView class]];
 }
 

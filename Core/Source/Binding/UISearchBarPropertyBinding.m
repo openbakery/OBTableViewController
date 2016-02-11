@@ -5,7 +5,7 @@
 // 
 //
 
-
+#import <UIKit/UIKit.h>
 #import "UISearchBarPropertyBinding.h"
 #import "OBProperty.h"
 

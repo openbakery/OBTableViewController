@@ -12,6 +12,7 @@
 @class OBModelCellBinding;
 @class OBPropertyBinding;
 @protocol OBTableViewCellConfigurator;
+@protocol OBPropertyBinding;
 
 typedef enum {
 	OBTableViewControllerSelectionModeNone = 0,
@@ -30,13 +31,20 @@ typedef enum {
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, weak) id<OBTableViewControllerDelegate> delegate;
 @property (nonatomic, readonly) NSArray* selectedModels;
+@property (nonatomic, assign) BOOL dynamicCellHeight;
 
 
 - (void) addPropertyBinding:(OBPropertyBinding *)binding;
 - (void) removeAllPropertyBindings;
 
 - (OBModelCellBinding *)bindingForModel:(id)model andCell:(UITableViewCell *)cell;
-- (void)registerIdentifier:(NSString *)string modelClass:(Class)class;
+
+/**
+* Registers a identifier for a cell from a storyboard for a model class.
+*/
+- (void)registerIdentifier:(NSString *)identifier modelClass:(Class)modelClass;
+
+- (void)registerTableViewCellClass:(Class)tableViewCellClass modelClass:(Class)modelClass;
 
 - (NSIndexPath *)indexPathForModel:(NSObject *)object;
 - (id)modelAtIndexPath:(NSIndexPath *)indexPath;
@@ -49,6 +57,17 @@ typedef enum {
 
 - (void)scrollToModel:(NSObject *)model;
 
-
 - (void)deselectAll;
+
+
+/**
+* if the keyboard appears the table view insets are modified if this was enabled using this methods
+*/
+- (void)enableModifyInsetsForKeyboard;
+
+/**
+* disables the insets modification for the table view. The should be done when the view controller disappears.
+*/
+- (void)disableModifyInsetsForKeyboard;
+
 @end

@@ -1,4 +1,4 @@
-//
+ //
 //
 // Created by Rene Pirringer.
 //
@@ -9,13 +9,14 @@
 
 
 #import <Foundation/Foundation.h>
+#import "OBTestCase.h"
 #import "OBTableViewSection.h"
 #import "OBTableViewController.h"
-#import "Mock.h"
 #import "UITableViewCellModel.h"
+#import "UITableViewStub.h"
 
 
-@interface OBTableViewControllerTest : XCTestCase
+ @interface OBTableViewControllerTest : OBTestCase
 @end
 
 @implementation OBTableViewControllerTest {
@@ -186,14 +187,14 @@
 	UITableViewCell *cell = [tableViewController tableView:tableViewController.tableView cellForRowAtIndexPath:indexPath];
 	[tableViewController tableView:tableViewController.tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
 	assertThat(cell, is(instanceOf([UITableViewCell class])));
-	assertThatBool(cell.selected, is(equalToBool(NO)));
+	assertThatBool(cell.selected, is(@NO));
 
 }
 
 
 - (void) testEditingEmpty {
 	tableViewController.editing = YES;
-	assertThatBool(tableViewController.editing, is(equalToBool(NO)));
+	assertThatBool(tableViewController.editing, is(@NO));
 }
 
 - (void)testEditing {
@@ -203,7 +204,7 @@
 	[tableViewController addModel:model toSection:section];
 	tableViewController.editing = YES;
 
-	assertThatBool(tableViewController.editing, is(equalToBool(YES)));
+	assertThatBool(tableViewController.editing, is(@YES));
 
 }
 
@@ -216,7 +217,7 @@
 	[tableViewController addModel:model toSection:section];
 	tableViewController.editing = YES;
 
-	assertThatBool(tableViewController.editing, is(equalToBool(NO)));
+	assertThatBool(tableViewController.editing, is(@NO));
 }
 
 
@@ -232,14 +233,14 @@
 	[tableViewController addModel: [[UITableViewCellModel alloc] init] toSection:editableSection];
 
 	tableViewController.editing = YES;
-	assertThatBool(tableViewController.editing, is(equalToBool(YES)));
+	assertThatBool(tableViewController.editing, is(@YES));
 
 
 	BOOL canEdit = [tableViewController tableView:tableViewController.tableView canEditRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-	assertThatBool(canEdit, is(equalToBool(NO)));
+	assertThatBool(canEdit, is(@NO));
 
 	canEdit = [tableViewController tableView:tableViewController.tableView canEditRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
-	assertThatBool(canEdit, is(equalToBool(YES)));
+	assertThatBool(canEdit, is(@YES));
 
 }
 
@@ -272,5 +273,7 @@
 	assertThatInteger(indexPath.section, is(equalToInt(0)));
 
 }
+
+
 
 @end

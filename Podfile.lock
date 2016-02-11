@@ -1,19 +1,10 @@
 PODS:
-  - CocoaLumberjack (2.2.0):
-    - CocoaLumberjack/Default (= 2.2.0)
-    - CocoaLumberjack/Extensions (= 2.2.0)
-  - CocoaLumberjack/Core (2.2.0)
-  - CocoaLumberjack/Default (2.2.0):
-    - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.2.0):
-    - CocoaLumberjack/Default
   - OBInjector (1.3.0)
   - OCHamcrest (4.3.0)
   - OCMockito (2.0.1):
     - OCHamcrest (~> 4.0)
 
 DEPENDENCIES:
-  - CocoaLumberjack (~> 2.2.0)
   - OBInjector (from `git@github.com:openbakery/OBInjector.git`, tag `1.3.0`)
   - OCHamcrest (~> 4.3.0)
   - OCMockito (~> 2.0.0)
@@ -29,7 +20,6 @@ CHECKOUT OPTIONS:
     :tag: 1.3.0
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
   OBInjector: 37685616a3fc474ae7ab186b74280ee2d54354c3
   OCHamcrest: cd63d27f48a266d4412c0b295b01b8f0940efa81
   OCMockito: f92ad4c6fac2841a88558879cfe517c40aebf91e

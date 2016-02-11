@@ -24,8 +24,6 @@
 	const char *propertyName = property_getName(property);
 	NSString *propertyNameString = [NSString stringWithUTF8String:propertyName];
 
-	//DDLogDebug(@"property name: %@", propertyNameString);
-	//DDLogDebug(@"property type: %@", typeString);
 	return [[OBProperty alloc] initWithName:propertyNameString andTypeString:typeString];
 }
 
@@ -43,19 +41,7 @@
 
 	objc_property_t* properties = class_copyPropertyList(clazz, &count);
 	for (int i=0; i<count; i++) {
-		/*
-		const char *type = property_getAttributes(*properties);
-		NSString *typeString = [NSString stringWithUTF8String:type];
-
-		const char *propertyName = property_getName(*properties);
-		NSString *propertyNameString = [NSString stringWithUTF8String:propertyName];
-
-		//DDLogDebug(@"property name: %@", propertyNameString);
-		//DDLogDebug(@"property type: %@", typeString);
-		OBProperty *property = [[OBProperty alloc] initWithName:propertyNameString andTypeString:typeString];
-		*/
 		[result addObject:[self propertyForProperty:*properties]];
-
 		properties++;
 	}
 

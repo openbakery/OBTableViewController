@@ -6,7 +6,6 @@
 //
 
 
-#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "OBTableViewController.h"
 #import "OBTableViewSection.h"
 
@@ -53,7 +52,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex {
 	OBTableViewSection *section = [self sectionAtIndex:sectionIndex];
 	NSArray *models = [self modelsForSection:section];
-	//DDLogDebug(@"number rows in section %@: %@", [@(sectionIndex) stringValue], [@([models count]) stringValue]);
+	//NSLog(@"number rows in section %@: %@", [@(sectionIndex) stringValue], [@([models count]) stringValue]);
 	return [models count];
 
 }
@@ -74,13 +73,13 @@
 
 
 - (void)addModel:(NSObject *)model toSection:(OBTableViewSection *)section {
-	DDLogDebug(@"addModel:%@ toSection:%@", model, section);
+	//NSLog(@"addModel:%@ toSection:%@", model, section);
 	NSMutableArray *models = [self modelsArrayForSection:section];
 	[models addObject:model];
 }
 
 - (void)addModels:(NSArray *)models toSection:(OBTableViewSection *)section {
-	DDLogDebug(@"addModels:%@ toSection:%@", models, section);
+	//NSLog(@"addModels:%@ toSection:%@", models, section);
 	NSMutableArray *modelsForSection = [self modelsArrayForSection:section];
 	[modelsForSection addObjectsFromArray:models];
 }
@@ -95,10 +94,10 @@
 
 	NSMutableArray *result = [_modelDictionary objectForKey:section];
 	if (!result) {
-		//DDLogDebug(@"no models found so create array");
+		//NSLog(@"no models found so create array");
 		result = [[NSMutableArray alloc] init];
 		[_modelDictionary setObject:result forKey:section];
-		//DDLogDebug(@"model created and added: %@", _modelDictionary);
+		//NSLog(@"model created and added: %@", _modelDictionary);
 
 	}
 	//DDLogVerbose(@"models: %@ in section %@",result, section);
@@ -126,7 +125,7 @@
 }
 
 - (void)insertModel:(NSObject *)model toSection:(OBTableViewSection *)section {
-	DDLogDebug(@"insertModel:%@ toSection:%@", model, section);
+	//NSLog(@"insertModel:%@ toSection:%@", model, section);
 
 	NSInteger sectionIndex = [_sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
@@ -137,7 +136,7 @@
 }
 
 - (void)insertModels:(NSArray *)models toSection:(OBTableViewSection *)section {
-	DDLogDebug(@"insertModels:%@ toSection:%@", models, section);
+	//NSLog(@"insertModels:%@ toSection:%@", models, section);
 
 	NSInteger sectionIndex = [_sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
@@ -154,7 +153,7 @@
 }
 
 - (void)appendModels:(NSArray *)models toSection:(OBTableViewSection *)section {
-	DDLogDebug(@"appendModels:%@ toSection:%@", models, section);
+	//NSLog(@"appendModels:%@ toSection:%@", models, section);
 
 	NSInteger sectionIndex = [_sections indexOfObject:section];
 	if (sectionIndex !=  NSNotFound) {
@@ -166,7 +165,7 @@
 }
 
 - (void)insertModel:(NSObject *)model after:(NSObject *)afterModel {
-	DDLogDebug(@"insertModel:%@ after:%@", model, afterModel);
+	//NSLog(@"insertModel:%@ after:%@", model, afterModel);
 
 	NSIndexPath *afterModelIndexPath = [self indexPathForModel:afterModel];
 	NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:afterModelIndexPath.row+1 inSection:afterModelIndexPath.section];
@@ -175,18 +174,16 @@
 
 
 - (void)insertModel:(NSObject *)model before:(NSObject *)before {
-	DDLogDebug(@"insertModel:%@ before:%@", model, before);
+	//NSLog(@"insertModel:%@ before:%@", model, before);
 
 	NSIndexPath *beforeModelIndexPath = [self indexPathForModel:before];
 	[self insertModel:model atIndexPath:beforeModelIndexPath];
 }
 
 - (void)insertModel:(NSObject *)model atIndexPath:(NSIndexPath *)indexPath {
-	DDLogDebug(@"insertModel:%@ atIndexPath:%@", model, indexPath);
+	//NSLog(@"insertModel:%@ atIndexPath:%@", model, indexPath);
 
-	if (ddLogLevel >= DDLogLevelDebug) {
-		[self dumpModels];
-	}
+	//[self dumpModels];
 
 	OBTableViewSection *section = [self sectionAtIndex:indexPath.section];
 
@@ -203,7 +200,7 @@
 }
 
 - (void)insertModels:(NSArray *)modelsToInsert atIndexPath:(NSIndexPath *)indexPath withRowAnimation:(UITableViewRowAnimation)rowAnimation {
-	DDLogDebug(@"insertModels:%@ atIndexPath:%@", modelsToInsert, indexPath);
+	//NSLog(@"insertModels:%@ atIndexPath:%@", modelsToInsert, indexPath);
 
 	OBTableViewSection *section = [self sectionAtIndex:indexPath.section];
 
@@ -225,7 +222,7 @@
 
 
 - (void)removeModel:(NSObject *)model {
-	DDLogDebug(@"removeModel:%@", model);
+	//NSLog(@"removeModel:%@", model);
 
 	if (!model) {
 		return;
@@ -234,7 +231,7 @@
 }
 
 - (void)removeModels:(NSArray *)modelsToRemove {
-	DDLogDebug(@"removeModels:%@", modelsToRemove);
+	//NSLog(@"removeModels:%@", modelsToRemove);
 
 	NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
 
@@ -311,7 +308,7 @@
 
 
 - (void)reloadCellForModel:(NSObject *)model {
-	DDLogDebug(@"reloadCellForModel:%@", model);
+	//NSLog(@"reloadCellForModel:%@", model);
 
 	NSIndexPath *indexPath = [self indexPathForModel:model];
 	if (indexPath) {
@@ -322,7 +319,7 @@
 }
 
 - (void)reloadTableView {
-	DDLogDebug(@"reloadTableView");
+	//NSLog(@"reloadTableView");
 
 	[self.tableView reloadData];
 }
@@ -346,14 +343,14 @@
 
 
 - (void)deleteAllModelsFromSection:(OBTableViewSection *)section {
-	DDLogDebug(@"deleteAllModelsFromSection:%@", section);
+	//NSLog(@"deleteAllModelsFromSection:%@", section);
 
 	NSMutableArray *models = [self modelsArrayForSection:section];
 	[models removeAllObjects];
 }
 
 - (void)removeAllModelsFromSection:(OBTableViewSection *)section {
-	DDLogDebug(@"removeAllModelsFromSection:%@", section);
+	//NSLog(@"removeAllModelsFromSection:%@", section);
 	NSMutableArray *modelsToRemove = [self modelsArrayForSection:section];
 
 
@@ -377,7 +374,7 @@
 }
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
-	DDLogDebug(@"setEditing:%@", [@(editing) stringValue]);
+	//NSLog(@"setEditing:%@", [@(editing) stringValue]);
 
 	BOOL setEditing = NO;
 	if (editing) {
@@ -427,16 +424,16 @@
 }
 
 - (void)dumpModels {
-
-	DDLogVerbose(@"OBTableViewController models:");
+/*
+	NSLog(@"OBTableViewController models:");
 	for (OBTableViewSection *section in self.sections) {
-		DDLogVerbose(@"\t%@", section);
+		NSLog(@"\t%@", section);
 
 		for (NSObject *model in [self modelsForSection:section]) {
-			DDLogVerbose(@"\t\t%@", model);
+			NSLog(@"\t\t%@", model);
 		}
 
 	}
-
+*/
 }
 @end

@@ -11,7 +11,4 @@
 	#import <UIKit/UIKit.h>
 	#import <Foundation/Foundation.h>
 	#import <CoreData/CoreData.h>
-	#import <CocoaLumberjack/CocoaLumberjack.h>
 #endif
-
-static const DDLogLevel ddLogLevel = DDLogLevelDebug;

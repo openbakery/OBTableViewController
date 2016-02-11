@@ -6,9 +6,9 @@
 //
 
 
+#import <UIKit/UIKit.h>
 #import "UITextViewPropertyBinding.h"
 #import "OBProperty.h"
-
 
 @implementation UITextViewPropertyBinding
 {

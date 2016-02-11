@@ -10,5 +10,14 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '6.0'
   spec.license      = 'BSD'
   spec.requires_arc = true
-  spec.source_files = ['Core/Source/*.{h,m}', 'Core/Source/Binding/*.{h,m}', 'Core/Source/Model/*.{h,m}', 'Core/Source/OBReflection/*.{h,m}', , 'Core/Source/OBTableViewCells/*.{h,m}']
+  spec.source_files = [
+		'Core/Source/*.{h,m}', 
+		'Core/Source/Binding/*.{h,m}', 
+		'Core/Source/Model/*.{h,m}', 
+		'Core/Source/OBReflection/*.{h,m}',
+		'Core/Source/OBTableViewCells/*.{h,m}' ]
+	
+	spec.dependency 'OBInjector', '~>1.3.0'
+	
+
 end

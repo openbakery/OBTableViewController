@@ -2,7 +2,7 @@ platform :ios, '6.0'
 
 
 target :"OBTableViewController" do
-	pod 'OBInjector', :git => 'git@github.com:openbakery/OBInjector.git', :tag => '1.3.0'
+	pod 'OBInjector', '~> 1.3.0'
 end
 
 	

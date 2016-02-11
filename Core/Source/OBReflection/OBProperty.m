@@ -1,8 +1,7 @@
 //
 //
 //
-// Created by Rene Pirringer on 20.02.14.
-// Copyright 2014 openbakery.org. All rights reserved.
+// Created by Rene Pirringer
 //
 // 
 //
@@ -51,6 +50,13 @@
 	return [self initWithName:name andTypeName:@"s"];
 }
 
+- (id)initBoolWithName:(NSString *)name {
+#if __LP64__
+	return [self initWithName:name andTypeName:@"B"];
+#else
+	return [self initWithName:name andTypeName:@"c"];
+#endif
+}
 
 - (id)initWithName:(NSString *)name andTypeString:(NSString *)typeString {
 	self = [super init];

@@ -1,9 +1,7 @@
 //
 //
 //
-// Created by Rene Pirringer on 20.02.14.
-// Copyright 2014 openbakery.org. All rights reserved.
-//
+// Created by Rene Pirringer
 // 
 //
 
@@ -24,6 +22,8 @@
 	const char *propertyName = property_getName(property);
 	NSString *propertyNameString = [NSString stringWithUTF8String:propertyName];
 
+	//NSLog(@"property name: %@", propertyNameString);
+	//NSLog(@"property type: %@", typeString);
 	return [[OBProperty alloc] initWithName:propertyNameString andTypeString:typeString];
 }
 
@@ -40,11 +40,12 @@
 	}
 
 	objc_property_t* properties = class_copyPropertyList(clazz, &count);
+	objc_property_t* propertiesIterator = properties;
 	for (int i=0; i<count; i++) {
-		[result addObject:[self propertyForProperty:*properties]];
-		properties++;
+		[result addObject:[self propertyForProperty:*propertiesIterator]];
+		propertiesIterator++;
 	}
-
+	free(properties);
 	return result;
 }
 

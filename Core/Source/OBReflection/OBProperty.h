@@ -1,8 +1,7 @@
 //
 //
 //
-// Created by Rene Pirringer on 20.02.14.
-// Copyright 2014 openbakery.org. All rights reserved.
+// Created by Rene Pirringer
 //
 // 
 //
@@ -18,7 +17,7 @@
 - (id)initFloatWithName:(NSString *)name;
 - (id)initLongWithName:(NSString *)name;
 - (id)initShortWithName:(NSString *)name;
-
+- (id)initBoolWithName:(NSString *)name;
 
 - (id)valueForObject:(NSObject *)object;
 

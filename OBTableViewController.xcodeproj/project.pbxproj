@@ -30,8 +30,6 @@
 		A73E94761C6CD42D001FAE1F /* UITextViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B220F1054DA7DF6C068CA /* UITextViewPropertyBinding.m */; };
 		A73E94771C6CD42D001FAE1F /* OBAbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */; };
 		A73E94781C6CD42D001FAE1F /* OBSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25D1B751831C8D6C93D2 /* OBSimpleTableViewController.m */; };
-		A73E94791C6CD42D001FAE1F /* OBButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2F11799D02C2F5E79A73 /* OBButtonTableViewCell.m */; };
-		A73E947A1C6CD42D001FAE1F /* OBButtonTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B210BFED1F637237DF6B0 /* OBButtonTableViewCellModel.m */; };
 		A73E947B1C6CD42D001FAE1F /* OBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B217D70CF3AF2312F1A8F /* OBTableViewController.m */; };
 		A73E947C1C6CD42D001FAE1F /* OBTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26B987C33D692456D0B8 /* OBTableViewSection.m */; };
 		A73E947D1C6CD433001FAE1F /* OBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B22BE0E059B7C50EE2C2D /* OBProperty.m */; };
@@ -92,9 +90,7 @@
 		355B202917724E974E85772A /* OBAccessoryPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAccessoryPropertyBinding.h; sourceTree = "<group>"; };
 		355B2045B23DD29001B78D7A /* UIDatePickerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerPropertyBinding.h; sourceTree = "<group>"; };
 		355B2058C0CBB17FB498DCFE /* UITableViewStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewStub.m; sourceTree = "<group>"; };
-		355B20A12801DEE9E2C0DF42 /* OBButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBButtonTableViewCell.h; sourceTree = "<group>"; };
 		355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAbstractTableViewController.m; sourceTree = "<group>"; };
-		355B210BFED1F637237DF6B0 /* OBButtonTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBButtonTableViewCellModel.m; sourceTree = "<group>"; };
 		355B2123F178907C41F816A0 /* UITableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewCellModel.m; sourceTree = "<group>"; };
 		355B21541CFC21B27110011A /* OBDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBDemoViewController.m; sourceTree = "<group>"; };
 		355B217D70CF3AF2312F1A8F /* OBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewController.m; sourceTree = "<group>"; };
@@ -114,7 +110,6 @@
 		355B25ECE0C021A8C55F81E4 /* UISearchBarPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBinding.m; sourceTree = "<group>"; };
 		355B2633358B942BB632449C /* UILabelToDatePropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelToDatePropertyBinding.h; sourceTree = "<group>"; };
 		355B26915C1DF789E5E162C2 /* OBTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTestCase.h; sourceTree = "<group>"; };
-		355B26954BBE8D1C7484AEC3 /* OBButtonTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBButtonTableViewCellModel.h; sourceTree = "<group>"; };
 		355B26B987C33D692456D0B8 /* OBTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewSection.m; sourceTree = "<group>"; };
 		355B26CC11DCF0D46B6B4EEA /* UILabelPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelPropertyBinding.h; sourceTree = "<group>"; };
 		355B26CDDD0B40303AE48656 /* OBTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest.m; sourceTree = "<group>"; };
@@ -135,7 +130,6 @@
 		355B2D65015654E524532F02 /* OBReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBReflection.m; sourceTree = "<group>"; };
 		355B2DB14E52A15EF1995622 /* UITextFieldPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldPropertyBinding.h; sourceTree = "<group>"; };
 		355B2E21B4A242F9370BBDD9 /* OBIntegerPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBIntegerPropertyBinding.m; sourceTree = "<group>"; };
-		355B2F11799D02C2F5E79A73 /* OBButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBButtonTableViewCell.m; sourceTree = "<group>"; };
 		355B2F209A32F0F285B89DF9 /* OBIntegerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBIntegerPropertyBinding.h; sourceTree = "<group>"; };
 		355B2F4F85B66FB5132CA123 /* OBCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCustomTableViewCell.h; sourceTree = "<group>"; };
 		355B2F7CE7C3C217B0E54501 /* OBCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCustomTableViewCell.m; sourceTree = "<group>"; };
@@ -223,17 +217,6 @@
 				355B2D65015654E524532F02 /* OBReflection.m */,
 			);
 			path = OBReflection;
-			sourceTree = "<group>";
-		};
-		355B27439DDEF1F4507308CA /* OBTableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				355B20A12801DEE9E2C0DF42 /* OBButtonTableViewCell.h */,
-				355B2F11799D02C2F5E79A73 /* OBButtonTableViewCell.m */,
-				355B26954BBE8D1C7484AEC3 /* OBButtonTableViewCellModel.h */,
-				355B210BFED1F637237DF6B0 /* OBButtonTableViewCellModel.m */,
-			);
-			path = OBTableViewCells;
 			sourceTree = "<group>";
 		};
 		355B28404E0E1D444ED67508 /* Model */ = {
@@ -365,7 +348,6 @@
 				355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */,
 				355B2570F32C5BB4DAB19813 /* OBSimpleTableViewController.h */,
 				355B25D1B751831C8D6C93D2 /* OBSimpleTableViewController.m */,
-				355B27439DDEF1F4507308CA /* OBTableViewCells */,
 				355B24C8B1113A39A1EB9336 /* OBTableViewController.h */,
 				355B217D70CF3AF2312F1A8F /* OBTableViewController.m */,
 				355B280D0B200C334901D126 /* OBTableViewControllerDelegate.h */,
@@ -614,11 +596,9 @@
 				A73E94761C6CD42D001FAE1F /* UITextViewPropertyBinding.m in Sources */,
 				A73E947C1C6CD42D001FAE1F /* OBTableViewSection.m in Sources */,
 				A73E94731C6CD42D001FAE1F /* UIDatePickerPropertyBinding.m in Sources */,
-				A73E947A1C6CD42D001FAE1F /* OBButtonTableViewCellModel.m in Sources */,
 				A73E947D1C6CD433001FAE1F /* OBProperty.m in Sources */,
 				A73E946E1C6CD42D001FAE1F /* UILabelPropertyBinding.m in Sources */,
 				A73E94701C6CD42D001FAE1F /* UIImageViewPropertyBinding.m in Sources */,
-				A73E94791C6CD42D001FAE1F /* OBButtonTableViewCell.m in Sources */,
 				A73E946D1C6CD42D001FAE1F /* OBModelCellBinding.m in Sources */,
 				A73E94711C6CD42D001FAE1F /* UISearchBarPropertyBinding.m in Sources */,
 				A73E94721C6CD42D001FAE1F /* UITextFieldPropertyBinding.m in Sources */,

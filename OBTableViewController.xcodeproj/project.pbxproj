@@ -51,6 +51,7 @@
 		A754FD8019094F4200F92530 /* OBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7C19094EB900F92530 /* OBAppDelegate.m */; };
 		A754FD8119094F9000F92530 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7A19094EB900F92530 /* main.m */; };
 		A754FD8319094F9700F92530 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754FD7819094EB900F92530 /* Images.xcassets */; };
+		A75B2C861C7741AD003D753D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75B2C851C7741AD003D753D /* LaunchScreen.storyboard */; };
 		A77E7C0D1986A685008083C5 /* OBInsertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77E7C0C1986A685008083C5 /* OBInsertViewController.m */; };
 		A7E11C4019096A3000AEA800 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -163,6 +164,7 @@
 		A754FD7B19094EB900F92530 /* OBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBAppDelegate.h; sourceTree = "<group>"; };
 		A754FD7C19094EB900F92530 /* OBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAppDelegate.m; sourceTree = "<group>"; };
 		A754FD7F19094EB900F92530 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		A75B2C851C7741AD003D753D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A77E7C0B1986A685008083C5 /* OBInsertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBInsertViewController.h; sourceTree = "<group>"; };
 		A77E7C0C1986A685008083C5 /* OBInsertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBInsertViewController.m; sourceTree = "<group>"; };
 		A7E11C3D1909614700AEA800 /* Test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 			children = (
 				A754FD7819094EB900F92530 /* Images.xcassets */,
 				A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */,
+				A75B2C851C7741AD003D753D /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75B2C861C7741AD003D753D /* LaunchScreen.storyboard in Resources */,
 				A754FD8319094F9700F92530 /* Images.xcassets in Resources */,
 				A7E11C4019096A3000AEA800 /* Storyboard.storyboard in Resources */,
 			);
@@ -760,7 +764,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Demo-Info.plist";
@@ -774,7 +777,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Demo-Info.plist";

@@ -270,7 +270,7 @@
 
 	if ([self isEmpty]) {
 		// no models are present in the table view controller, so do not animated it the first time
-		[self addModel:models toSection:section];
+		[self addModels:models toSection:section];
 		[self.tableView reloadData];
 		return;
 	}

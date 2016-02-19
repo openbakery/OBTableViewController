@@ -268,6 +268,13 @@
 
 	NSMutableArray *modelsInSection = [self modelsArrayForSection:section];
 
+	if ([self isEmpty]) {
+		// no models are present in the table view controller, so do not animated it the first time
+		[self addModel:models toSection:section];
+		[self.tableView reloadData];
+		return;
+	}
+
 	NSMutableArray  *modelsToDelete = [[NSMutableArray alloc] initWithArray:modelsInSection];
 	[modelsToDelete removeObjectsInArray:models];
 
@@ -305,6 +312,18 @@
 	}
 }
 
+- (BOOL)isEmpty {
+	if ([_modelDictionary count] == 0) {
+		return YES;
+	}
+	for (OBTableViewSection *section in [_modelDictionary allKeys]) {
+		NSArray *models = [_modelDictionary objectForKey:section];
+		if ([models count] != 0) {
+			return NO;
+		}
+	}
+	return YES;
+}
 
 
 - (void)reloadCellForModel:(NSObject *)model {

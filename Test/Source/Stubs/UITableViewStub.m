@@ -6,7 +6,13 @@
 
 
 @implementation UITableViewStub {
+	BOOL _reloadData;
+}
 
+- (instancetype)init {
+	self = [super init];
+	_reloadData = NO;
+	return self;
 }
 
 
@@ -41,5 +47,16 @@
 	}
 	return _deleteRows;
 }
+
+
+- (void)reloadData {
+	[super reloadData];
+	_reloadData = YES;
+}
+
+- (BOOL)hasReloadData {
+	return _reloadData;
+}
+
 
 @end

@@ -13,4 +13,7 @@
 @property(nonatomic, strong) NSArray *insertRows;
 @property(nonatomic, strong) NSArray *deleteRows;
 
+@property(nonatomic, readonly) BOOL hasReloadData;
+
+
 @end

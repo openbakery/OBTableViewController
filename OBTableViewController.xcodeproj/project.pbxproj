@@ -11,6 +11,7 @@
 		355B23534FD7047E63D94D73 /* OBSimpleTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2BFE2BB5AF7B639D89F1 /* OBSimpleTableViewControllerTest.m */; };
 		355B24D0A8EE7801C9BDFB16 /* UITableViewStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2058C0CBB17FB498DCFE /* UITableViewStub.m */; };
 		355B254D2F32C4A0F90FA6D2 /* UISearchBarPropertyBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B27A3D2302B17EFCF5870 /* UISearchBarPropertyBindingTest.m */; };
+		355B255402BEE645747905A7 /* OBTableViewControllerTest_SetModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B23DC1CB32883B8FC9C09 /* OBTableViewControllerTest_SetModels.m */; };
 		355B2560A16CA5C9A397F204 /* OBTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26CDDD0B40303AE48656 /* OBTableViewControllerTest.m */; };
 		355B263D86FE46D538A0186E /* OBTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2FED1592B6C99E355D50 /* OBTestCase.m */; };
 		355B265F3BC277D41C450F56 /* OBDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B21541CFC21B27110011A /* OBDemoViewController.m */; };
@@ -103,6 +104,7 @@
 		355B230AF2474DA62A75CB4B /* UIDatePickerPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerPropertyBinding.m; sourceTree = "<group>"; };
 		355B234C4BDDA9CF42B4F875 /* UILabelToDatePropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelToDatePropertyBinding.m; sourceTree = "<group>"; };
 		355B23D1CCD44E05D98D0F36 /* UIImageViewPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewPropertyBinding.m; sourceTree = "<group>"; };
+		355B23DC1CB32883B8FC9C09 /* OBTableViewControllerTest_SetModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest_SetModels.m; sourceTree = "<group>"; };
 		355B24C8B1113A39A1EB9336 /* OBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewController.h; sourceTree = "<group>"; };
 		355B2570F32C5BB4DAB19813 /* OBSimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSimpleTableViewController.h; sourceTree = "<group>"; };
 		355B258470BE994BF75E1FC6 /* OBAbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAbstractTableViewController.h; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 				355B2FED1592B6C99E355D50 /* OBTestCase.m */,
 				355B26915C1DF789E5E162C2 /* OBTestCase.h */,
 				355B2DF98DFF4D7F62874248 /* Stubs */,
+				355B23DC1CB32883B8FC9C09 /* OBTableViewControllerTest_SetModels.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -630,6 +633,7 @@
 				355B23018921812CD9D20D13 /* OBModelCellBindingTest.m in Sources */,
 				355B254D2F32C4A0F90FA6D2 /* UISearchBarPropertyBindingTest.m in Sources */,
 				355B2EEF54E1153B2F61BFD2 /* OBSearchBarTableViewCell.m in Sources */,
+				355B255402BEE645747905A7 /* OBTableViewControllerTest_SetModels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

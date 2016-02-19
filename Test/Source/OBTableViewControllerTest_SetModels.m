@@ -2,12 +2,12 @@
 // Created by Rene Pirringer on 11.02.16.
 //
 
-#import "DTTestCase.h"
 #import "OBTableViewController.h"
 #import "UITableViewStub.h"
 #import "OBTableViewSection.h"
+#import "OBTestCase.h"
 
-@interface OBTableViewControllerTest_SetModels : DTTestCase
+@interface OBTableViewControllerTest_SetModels : OBTestCase
 @end
 
 @implementation OBTableViewControllerTest_SetModels {
@@ -102,5 +102,25 @@
 	assertThat(tableView.deleteRows, hasItem([NSIndexPath indexPathForRow:1 inSection:0]));
 
 }
+
+- (void)testAnimateOnlyOnUpdate_When_Empty {
+	[tableViewController removeAllModelsFromSection:section];
+	[tableViewController setModels:@[@"E"] toSection:section];
+	assertThat(tableView.insertRows, hasCountOf(0));
+
+	assertThatInt([tableViewController tableView:tableView numberOfRowsInSection:0], is(@(1)));
+	assertThatBool(tableView.hasReloadData, is(@YES));
+}
+
+
+
+- (void)testAnimateOnUpdate_HasEntriesInAnotherSection {
+	OBTableViewSection *secondSection = [[OBTableViewSection alloc] init];
+	[tableViewController addSection:secondSection];
+	[tableViewController setModels:@[@"E"] toSection:secondSection];
+	assertThat(tableView.insertRows, hasCountOf(1));
+}
+
+
 
 @end

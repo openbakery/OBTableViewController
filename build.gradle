@@ -1,18 +1,15 @@
 buildscript {
-	repositories {
-		maven {
-			url('http://repository.openbakery.org/')
-		}
-		mavenCentral()
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
   }
-
-	dependencies {
-	    classpath "org.openbakery:xcode-plugin:0.12.+"
-	}
+  dependencies {
+    classpath "gradle.plugin.org.openbakery:xcode-plugin:0.13.0"
+  }
 }
 
 apply plugin: "org.openbakery.xcode-plugin"
-
 
 xcodebuild {
 	scheme = 'Demo App'
@@ -20,5 +17,7 @@ xcodebuild {
 	destination = [ 'iPhone 5s', 'iPad 2' ]
 }
 
-
-task continuous(dependsOn: 'xcodebuild')
+coverage {
+	outputFormat = 'html'
+	include = 'Core.*'
+}

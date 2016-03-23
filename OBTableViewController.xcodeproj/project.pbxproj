@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -79,7 +79,6 @@
 		A73E947E1C6CD433001FAE1F /* OBReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2D65015654E524532F02 /* OBReflection.m */; };
 		A73E947F1C6CD437001FAE1F /* UITableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2123F178907C41F816A0 /* UITableViewCellModel.m */; };
 		A73E94871C6CDD1F001FAE1F /* libPods-OBTableViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73E94861C6CDD1F001FAE1F /* libPods-OBTableViewController.a */; };
-		A73E94891C6CDD75001FAE1F /* libOBInjector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73E94881C6CDD75001FAE1F /* libOBInjector.a */; };
 		A754FD3B19094CFE00F92530 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD3A19094CFE00F92530 /* Foundation.framework */; };
 		A754FD3D19094CFE00F92530 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD3C19094CFE00F92530 /* CoreGraphics.framework */; };
 		A754FD3F19094CFE00F92530 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD3E19094CFE00F92530 /* UIKit.framework */; };
@@ -251,7 +250,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A73E94891C6CDD75001FAE1F /* libOBInjector.a in Frameworks */,
 				A754FD3D19094CFE00F92530 /* CoreGraphics.framework in Frameworks */,
 				A754FD4119094CFE00F92530 /* CoreData.framework in Frameworks */,
 				A754FD3F19094CFE00F92530 /* UIKit.framework in Frameworks */,
@@ -626,7 +624,7 @@
 				};
 			};
 			buildConfigurationList = A754FD3219094CFE00F92530 /* Build configuration list for PBXProject "OBTableViewController" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (

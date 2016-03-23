@@ -6,10 +6,8 @@
 //
 
 
+#import <OBTableViewController/OBTableViewController-Umbrella.h>
 #import "OBDemoViewController.h"
-#import "UITableViewCellModel.h"
-#import "OBTableViewController.h"
-#import "OBTableViewSection.h"
 #import "OBInsertViewController.h"
 
 
@@ -41,7 +39,6 @@
 
 		[_colorModels addObject:model];
 	}
-
 }
 
 

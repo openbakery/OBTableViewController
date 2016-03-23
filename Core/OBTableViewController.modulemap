@@ -1,0 +1,8 @@
+framework module OBTableViewController {
+	umbrella header "OBTableViewController-Umbrella.h"
+	
+	export *
+	module * { export * }
+	
+	
+}

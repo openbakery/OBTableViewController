@@ -9,10 +9,9 @@
 
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <OBTableViewController/OBTableViewController-Umbrella.h>
 #import "OBTestCase.h"
-#import "OBTableViewSection.h"
-#import "OBTableViewController.h"
-#import "UITableViewCellModel.h"
 #import "UITableViewStub.h"
 
 
@@ -34,7 +33,7 @@
 	[tableViewController addSection:section];
 
 	NSInteger numberOfSections = [tableViewController numberOfSectionsInTableView:tableViewController.tableView];
-	assertThatInteger(numberOfSections, is(equalToInt(1)));
+	assertThatInteger(numberOfSections, is(@1));
 }
 
 - (void)testMultipleSections {

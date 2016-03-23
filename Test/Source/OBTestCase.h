@@ -5,11 +5,9 @@
 
 #import <Foundation/Foundation.h>
 
-#define HC_SHORTHAND
-#import <OCHamcrest.h>
-
-#define MOCKITO_SHORTHAND
+#import <OCHamcrest/OCHamcrest.h>
 #import <OCMockito/OCMockito.h>
+
 
 @interface OBTestCase : XCTestCase
 @end

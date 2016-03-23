@@ -38,6 +38,16 @@
                ReferencedContainer = "container:OBTableViewController.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A7378CB01CA2CED400D30471"
+               BuildableName = "OBTableViewControllerTests.xctest"
+               BlueprintName = "OBTableViewControllerTests"
+               ReferencedContainer = "container:OBTableViewController.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

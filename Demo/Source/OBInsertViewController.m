@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Rene Pirringer. All rights reserved.
 //
 
+@import OBTableViewController;
 #import "OBInsertViewController.h"
-#import "OBTableViewSection.h"
 
 @interface OBInsertViewController ()
 

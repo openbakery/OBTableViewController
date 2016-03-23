@@ -7,9 +7,9 @@
 
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <OBTableViewController/OBTableViewController-Umbrella.h>
 #import "OBTestCase.h"
-#import "OBSimpleTableViewController.h"
-#import "UITableViewCellModel.h"
 #import "OBCustomTableViewCell.h"
 
 @interface OBSimpleTableViewControllerTest : OBTestCase

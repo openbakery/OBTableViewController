@@ -5,7 +5,6 @@
 // 
 //
 
-
 #import <OBInjector/OBInjector.h>
 #import "OBTableViewController.h"
 #import "OBModelCellBinding.h"

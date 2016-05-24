@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A754FD3619094CFE00F92530"
-               BuildableName = "Demo App.app"
-               BlueprintName = "Demo App"
+               BlueprintIdentifier = "A7961DF51CF460D900F6DFC6"
+               BuildableName = "DemoApp.app"
+               BlueprintName = "DemoApp"
                ReferencedContainer = "container:OBTableViewController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -38,23 +38,13 @@
                ReferencedContainer = "container:OBTableViewController.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7378CB01CA2CED400D30471"
-               BuildableName = "OBTableViewControllerTests.xctest"
-               BlueprintName = "OBTableViewControllerTests"
-               ReferencedContainer = "container:OBTableViewController.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A754FD3619094CFE00F92530"
-            BuildableName = "Demo App.app"
-            BlueprintName = "Demo App"
+            BlueprintIdentifier = "A7961DF51CF460D900F6DFC6"
+            BuildableName = "DemoApp.app"
+            BlueprintName = "DemoApp"
             ReferencedContainer = "container:OBTableViewController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,9 +65,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A754FD3619094CFE00F92530"
-            BuildableName = "Demo App.app"
-            BlueprintName = "Demo App"
+            BlueprintIdentifier = "A7961DF51CF460D900F6DFC6"
+            BuildableName = "DemoApp.app"
+            BlueprintName = "DemoApp"
             ReferencedContainer = "container:OBTableViewController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,9 +84,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A754FD3619094CFE00F92530"
-            BuildableName = "Demo App.app"
-            BlueprintName = "Demo App"
+            BlueprintIdentifier = "A7961DF51CF460D900F6DFC6"
+            BuildableName = "DemoApp.app"
+            BlueprintName = "DemoApp"
             ReferencedContainer = "container:OBTableViewController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

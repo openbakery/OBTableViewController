@@ -1,19 +1,10 @@
-buildscript {
-  repositories {
-    maven {
-      url "https://plugins.gradle.org/m2/"
-    }
-  }
-  dependencies {
-    classpath "gradle.plugin.org.openbakery:xcode-plugin:0.13.0"
-  }
+plugins {
+  id "org.openbakery.xcode-plugin" version "0.13.1"
 }
 
-apply plugin: "org.openbakery.xcode-plugin"
-
 xcodebuild {
-	scheme = 'Demo App'
-  target = 'Demo App'
+	scheme = 'DemoApp'
+  target = 'DemoApp'
 	destination = [ 'iPhone 5s', 'iPad 2' ]
 }
 

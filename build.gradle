@@ -1,6 +1,16 @@
-plugins {
-  id "org.openbakery.xcode-plugin" version "0.13.1"
+buildscript {
+	repositories {
+		maven {
+			url('http://repo.openbakery.org/')
+		}
+		mavenCentral()
+  }
+
+	dependencies {
+			classpath "org.openbakery:xcode-plugin:0.14.2.develop.+"
+	}
 }
+apply plugin: "org.openbakery.xcode-plugin"
 
 xcodebuild {
 	scheme = 'DemoApp'

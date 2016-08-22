@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 	spec.name         = 'OBTableViewController'
-	spec.version      = '1.0.4'
+	spec.version      = '1.1.0'
 	spec.summary      = "A table view controller that has models a datasource and you can define bindings between model properties and cell properties"
 	spec.homepage     = "https://github.com/openbakery/OBTableViewController"
 	spec.author       = { "René Pirringer" => "rene@openbakery.org" }
@@ -12,7 +12,6 @@ Pod::Spec.new do |spec|
 	spec.requires_arc = true
 	
 	spec.default_subspecs = 'Default'
-	spec.dependency 'OBInjector', '~>1.5.0'
 	
 	spec.subspec 'Default' do |ss|
 		ss.source_files = 'Core/Source/*.{h,m}'

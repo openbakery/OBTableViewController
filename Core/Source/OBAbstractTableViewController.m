@@ -163,13 +163,14 @@
 	return cell;
 }
 
+static char constCellConfiguredAssociatedObject;
 
 - (void)setCellConfigured:(UITableViewCell *)cell {
-	objc_setAssociatedObject(cell, @selector(cellConfiguredAssociatedObject), @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+	objc_setAssociatedObject(cell, &constCellConfiguredAssociatedObject, @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (BOOL)cellIsConfigured:(UITableViewCell *)cell {
-	NSNumber *value = objc_getAssociatedObject(cell, @selector(cellConfiguredAssociatedObject));
+	NSNumber *value = objc_getAssociatedObject(cell, &constCellConfiguredAssociatedObject);
 	if (value) {
 		return [value boolValue];
 	}

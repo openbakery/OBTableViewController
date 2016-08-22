@@ -302,11 +302,13 @@
 
 	UITableViewCell *cell = [[UITableViewCell alloc] init];
 
+
 	[given([tableView dequeueReusableCellWithIdentifier:anything()]) willReturn:cell];
 
 	__block NSInteger count = 0;
-	tableViewController.cellConfigurationBlock = ^(UITableViewCell *cellToConfigure) {
-			assertThat(cell, is(cellToConfigure));
+	__block UITableViewCell *cellToConfigure = nil;
+	tableViewController.cellConfigurationBlock = ^(UITableViewCell *cell) {
+			cellToConfigure = cell;
 			count++;
 	};
 
@@ -314,6 +316,8 @@
 	[tableViewController tableView:tableViewController.tableView cellForRowAtIndexPath:indexPath];
 	[tableViewController tableView:tableViewController.tableView cellForRowAtIndexPath:indexPath];
 	assertThatInteger(count, is(@1));
+	assertThat(cellToConfigure, is(cell));
+
 }
 
 @end

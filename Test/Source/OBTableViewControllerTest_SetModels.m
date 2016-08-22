@@ -108,7 +108,7 @@
 	[tableViewController setModels:@[@"E", @"F"] toSection:section];
 	assertThat(tableView.insertRows, hasCountOf(0));
 
-	assertThatInt([tableViewController tableView:tableView numberOfRowsInSection:0], is(@(2)));
+	assertThatInteger([tableViewController tableView:tableView numberOfRowsInSection:0], is(@(2)));
 	assertThatBool(tableView.hasReloadData, is(@YES));
 }
 

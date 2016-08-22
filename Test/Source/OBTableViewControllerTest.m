@@ -246,11 +246,9 @@
 
 - (void)testAppendModelsToSection {
 	OBTableViewSection *section = [[OBTableViewSection alloc] init];
-
 	[tableViewController addSection:section];
 
   UITableViewCellModel *model = [[UITableViewCellModel alloc] init];
-
 	[tableViewController addModel:model toSection:section];
 
 	UITableViewCellModel *modelToInsert1 = [[UITableViewCellModel alloc] init];
@@ -273,6 +271,49 @@
 
 }
 
+- (void)setupTableWithOneSectionAndOneRow {
+	[tableViewController registerTableViewCellClass:[UITableViewCell class] modelClass:[UITableViewCellModel class]];
 
+	OBTableViewSection *section = [[OBTableViewSection alloc] init];
+	[tableViewController addSection:section];
+
+  UITableViewCellModel *model = [[UITableViewCellModel alloc] init];
+	[tableViewController addModel:model toSection:section];
+}
+
+- (void)testCallConfigureCellBlock {
+	[self setupTableWithOneSectionAndOneRow];
+
+	tableViewController.cellConfigurationBlock = ^(UITableViewCell *cell) {
+			cell.textLabel.backgroundColor = [UIColor redColor];
+	};
+
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+	UITableViewCell *cell = [tableViewController tableView:tableViewController.tableView cellForRowAtIndexPath:indexPath];
+
+	assertThat(cell.textLabel.backgroundColor, is(equalTo([UIColor redColor])));
+}
+
+- (void)testCallConfigureCellBlock_ShouldOnlyCalledOnceIfCellExists {
+	[self setupTableWithOneSectionAndOneRow];
+
+	UITableView *tableView = mock([UITableView class]);
+	tableViewController.tableView = tableView;
+
+	UITableViewCell *cell = [[UITableViewCell alloc] init];
+
+	[given([tableView dequeueReusableCellWithIdentifier:anything()]) willReturn:cell];
+
+	__block NSInteger count = 0;
+	tableViewController.cellConfigurationBlock = ^(UITableViewCell *cellToConfigure) {
+			assertThat(cell, is(cellToConfigure));
+			count++;
+	};
+
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+	[tableViewController tableView:tableViewController.tableView cellForRowAtIndexPath:indexPath];
+	[tableViewController tableView:tableViewController.tableView cellForRowAtIndexPath:indexPath];
+	assertThatInteger(count, is(@1));
+}
 
 @end

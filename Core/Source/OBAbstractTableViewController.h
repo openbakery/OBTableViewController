@@ -14,12 +14,16 @@
 @protocol OBTableViewCellConfigurator;
 @protocol OBPropertyBinding;
 
+
+typedef void (^OBTableViewControllerCellConfigurationBlock)(UITableViewCell *);
+
 typedef enum {
 	OBTableViewControllerSelectionModeNone = 0,
 	OBTableViewControllerSelectionSingleSelection,
 	OBTableViewControllerSelectionSingleCheck, // add checkmark if the cell is selected
 	//DTTableViewControllerSelectionMultipleSelection // only single section implemented
 } OBTableViewControllerSelectionMode;
+
 
 @interface OBAbstractTableViewController : NSObject <UITableViewDataSource, UITableViewDelegate> {
 	NSMutableDictionary *_registeredIdentifiers;
@@ -33,6 +37,7 @@ typedef enum {
 @property (nonatomic, readonly) NSArray* selectedModels;
 @property (nonatomic, assign) BOOL dynamicCellHeight;
 
+@property (nonatomic, strong) OBTableViewControllerCellConfigurationBlock cellConfigurationBlock;
 
 - (void) addPropertyBinding:(OBPropertyBinding *)binding;
 - (void) removeAllPropertyBindings;

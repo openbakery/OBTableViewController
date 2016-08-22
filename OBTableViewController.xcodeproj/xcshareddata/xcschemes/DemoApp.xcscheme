@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A7961DF51CF460D900F6DFC6"
-               BuildableName = "DemoApp.app"
+               BuildableName = "DemoApp"
                BlueprintName = "DemoApp"
                ReferencedContainer = "container:OBTableViewController.xcodeproj">
             </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A7961DF51CF460D900F6DFC6"
-            BuildableName = "DemoApp.app"
+            BuildableName = "DemoApp"
             BlueprintName = "DemoApp"
             ReferencedContainer = "container:OBTableViewController.xcodeproj">
          </BuildableReference>

@@ -61,12 +61,8 @@
 		A754FD5C19094CFE00F92530 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD4019094CFE00F92530 /* CoreData.framework */; };
 		A758DB6E1D65E3F60055A886 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A758DB6A1D65E3AB0055A886 /* OCHamcrest.framework */; };
 		A758DB6F1D65E3F60055A886 /* OCMockito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A758DB6B1D65E3AB0055A886 /* OCMockito.framework */; };
-		A758DB701D65E4BC0055A886 /* OBInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ABB0BD1D64AD1800D93F68 /* OBInjector.framework */; };
-		A758DB711D65E4BC0055A886 /* OBInjector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7ABB0BD1D64AD1800D93F68 /* OBInjector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A758DB721D65E4DE0055A886 /* OBInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ABB0BD1D64AD1800D93F68 /* OBInjector.framework */; };
 		A758DB741D65E5310055A886 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A758DB6A1D65E3AB0055A886 /* OCHamcrest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A758DB751D65E5310055A886 /* OCMockito.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A758DB6B1D65E3AB0055A886 /* OCMockito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A758DB761D65E5310055A886 /* OBInjector.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7ABB0BD1D64AD1800D93F68 /* OBInjector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7961E101CF460E900F6DFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7A19094EB900F92530 /* main.m */; };
 		A7961E111CF460ED00F6DFC6 /* OBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7C19094EB900F92530 /* OBAppDelegate.m */; };
 		A7961E121CF460ED00F6DFC6 /* OBDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B21541CFC21B27110011A /* OBDemoViewController.m */; };
@@ -76,7 +72,6 @@
 		A7961E161CF4610200F6DFC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754FD7819094EB900F92530 /* Images.xcassets */; };
 		A7961E171CF4618F00F6DFC6 /* OBTableViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7378CA81CA2CED300D30471 /* OBTableViewController.framework */; };
 		A7961E181CF4618F00F6DFC6 /* OBTableViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7378CA81CA2CED300D30471 /* OBTableViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A7ABB0BE1D64AD1800D93F68 /* OBInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ABB0BD1D64AD1800D93F68 /* OBInjector.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +100,6 @@
 			files = (
 				A758DB741D65E5310055A886 /* OCHamcrest.framework in CopyFiles */,
 				A758DB751D65E5310055A886 /* OCMockito.framework in CopyFiles */,
-				A758DB761D65E5310055A886 /* OBInjector.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +110,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A7961E181CF4618F00F6DFC6 /* OBTableViewController.framework in Embed Frameworks */,
-				A758DB711D65E4BC0055A886 /* OBInjector.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,7 +177,6 @@
 		A7378CC91CA2D0AC00D30471 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7378CCB1CA2D0BD00D30471 /* OBTableViewController-Umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OBTableViewController-Umbrella.h"; sourceTree = "<group>"; };
 		A7378CE01CA2D17200D30471 /* OBTableViewController.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = OBTableViewController.modulemap; sourceTree = "<group>"; };
-		A73E94881C6CDD75001FAE1F /* libOBInjector.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOBInjector.a; path = "Pods/../build/Debug-iphoneos/libOBInjector.a"; sourceTree = "<group>"; };
 		A754FD3A19094CFE00F92530 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A754FD3C19094CFE00F92530 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A754FD3E19094CFE00F92530 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -204,7 +196,6 @@
 		A77E7C0B1986A685008083C5 /* OBInsertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBInsertViewController.h; sourceTree = "<group>"; };
 		A77E7C0C1986A685008083C5 /* OBInsertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBInsertViewController.m; sourceTree = "<group>"; };
 		A7961DF61CF460D900F6DFC6 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7ABB0BD1D64AD1800D93F68 /* OBInjector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OBInjector.framework; path = Carthage/Build/iOS/OBInjector.framework; sourceTree = "<group>"; };
 		A7E11C3D1909614700AEA800 /* Test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
 		A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		E1DBE88D365C1084DCA7C4A3 /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,7 +207,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7ABB0BE1D64AD1800D93F68 /* OBInjector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +214,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A758DB721D65E4DE0055A886 /* OBInjector.framework in Frameworks */,
 				A7378D221CA2E6A300D30471 /* OBTableViewController.framework in Frameworks */,
 				A754FD5919094CFE00F92530 /* XCTest.framework in Frameworks */,
 				A754FD5C19094CFE00F92530 /* CoreData.framework in Frameworks */,
@@ -240,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7961E171CF4618F00F6DFC6 /* OBTableViewController.framework in Frameworks */,
-				A758DB701D65E4BC0055A886 /* OBInjector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,8 +344,6 @@
 			children = (
 				A758DB6A1D65E3AB0055A886 /* OCHamcrest.framework */,
 				A758DB6B1D65E3AB0055A886 /* OCMockito.framework */,
-				A7ABB0BD1D64AD1800D93F68 /* OBInjector.framework */,
-				A73E94881C6CDD75001FAE1F /* libOBInjector.a */,
 				A754FD3A19094CFE00F92530 /* Foundation.framework */,
 				A754FD3C19094CFE00F92530 /* CoreGraphics.framework */,
 				A754FD3E19094CFE00F92530 /* UIKit.framework */,

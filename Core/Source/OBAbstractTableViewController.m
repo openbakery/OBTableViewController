@@ -5,7 +5,7 @@
 // 
 //
 
-#import <OBInjector/OBInjector.h>
+#import <objc/runtime.h>
 #import "OBTableViewController.h"
 #import "OBModelCellBinding.h"
 #import "UILabelPropertyBinding.h"
@@ -130,17 +130,22 @@
 	NSString *identifier = [_registeredIdentifiers objectForKey:[self identifierForObject:model]];
 	if (identifier) {
 		cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-	} else {
-		//NSLog(@"No identifier is registered for model class '%@', so using UITableViewCell", [model class]);
 	}
 
 	if (!cell) {
-		//NSLog(@"Using UITableViewCell");
+		// make sure that there is a cell instance
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
 	}
-	[OBInjectorController injectDependenciesTo:cell];
-	[cell setNeedsUpdateConstraints];
 
+
+	// a cell instance should only be configured once
+	// for every new instance of a cell the cellConfigurationBlock is called where the layout and other stuff of the cell can be configured
+	if (![self cellIsConfigured:cell]) {
+		if (self.cellConfigurationBlock) {
+			self.cellConfigurationBlock(cell);
+		}
+		[self setCellConfigured:cell];
+	}
 
 
 	OBModelCellBinding *binding = [self bindingForModel:model andCell:cell];
@@ -156,6 +161,19 @@
 		}
 	}
 	return cell;
+}
+
+
+- (void)setCellConfigured:(UITableViewCell *)cell {
+	objc_setAssociatedObject(cell, @selector(cellConfiguredAssociatedObject), @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (BOOL)cellIsConfigured:(UITableViewCell *)cell {
+	NSNumber *value = objc_getAssociatedObject(cell, @selector(cellConfiguredAssociatedObject));
+	if (value) {
+		return [value boolValue];
+	}
+	return NO;
 }
 
 

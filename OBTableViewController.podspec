@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
 	spec.requires_arc = true
 	
 	spec.default_subspecs = 'Default'
-	spec.dependency 'OBInjector', '~>1.4.0'
+	spec.dependency 'OBInjector', '~>1.5.0'
 	
 	spec.subspec 'Default' do |ss|
 		ss.source_files = 'Core/Source/*.{h,m}'

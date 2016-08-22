@@ -29,6 +29,10 @@
 	[self.tableViewController addSection:[[OBTableViewSection alloc] initWithHeaderTitle:@"Second"]];
 	[self.tableViewController addSection:[[OBTableViewSection alloc] initWithHeaderTitle:@"Third"]];
 	[self.tableViewController addSection:[[OBTableViewSection alloc] initWithHeaderTitle:@"Forth"]];
+	
+	self.tableViewController.cellConfigurationBlock = ^(UITableViewCell *cell) {
+		cell.textLabel.textColor = [UIColor blueColor];
+	};
 
 	NSArray *colors = @[ @"White", @"Silver", @"Gray", @"Black", @"Red", @"Maroon", @"Yellow", @"Olive", @"Lime", @"Green", @"Aqua", @"Teal", @"Blue", @"Navy", @"Fuchsia", @"Purple" ];
 

@@ -14,8 +14,8 @@ apply plugin: "org.openbakery.xcode-plugin"
 
 xcodebuild {
 	scheme = 'DemoApp'
-  target = 'DemoApp'
-	destination = [ 'iPhone 5s', 'iPad 2' ]
+	target = 'DemoApp'
+	destination = [ 'iPhone 6s', 'iPad Air' ]
 }
 
 coverage {

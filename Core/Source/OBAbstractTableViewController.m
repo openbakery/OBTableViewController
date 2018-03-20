@@ -16,10 +16,10 @@
 
 @interface OBAbstractTableViewController ()
 @property(nonatomic) UIEdgeInsets defaultTableInset;
+@property(nonatomic, strong) NSMutableDictionary *cellHeightForModelClass;
 @end
 
 @implementation OBAbstractTableViewController {
-	NSMutableDictionary *_cellHeightForModelClass;
 	NSMutableArray *_propertyBindings;
 	NSObject *_selectedModel;
 }
@@ -231,10 +231,12 @@ static char constCellConfiguredAssociatedObject;
 - (CGFloat)heightForRowWithModel:(NSObject *)model {
 	NSString *className = [self identifierForObject:model];
 
-	if (!_cellHeightForModelClass) {
+	if (!self.cellHeightForModelClass) {
 		// lazy initialize heights
-		_cellHeightForModelClass = [[NSMutableDictionary alloc] init];
+		self.cellHeightForModelClass = [[NSMutableDictionary alloc] init];
 
+		__weak OBAbstractTableViewController *weakSelf = self;
+		
 		[_registeredIdentifiers enumerateKeysAndObjectsUsingBlock:^(NSString *className, NSString *identifier, BOOL *stop) {
 			UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
 
@@ -242,12 +244,12 @@ static char constCellConfiguredAssociatedObject;
 		  if (height == 0) {
 				height = 44.0f;
 		  }
-		  [_cellHeightForModelClass setObject:@(height) forKey:className];
+		  [weakSelf.cellHeightForModelClass setObject:@(height) forKey:className];
 		}];
 
 
 	}
-	NSNumber *value = (NSNumber *)[_cellHeightForModelClass objectForKey:className];
+	NSNumber *value = (NSNumber *)[self.cellHeightForModelClass objectForKey:className];
 	if (value) {
 		return [value floatValue];
 	}

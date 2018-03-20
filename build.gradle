@@ -1,24 +1,46 @@
-buildscript {
-	repositories {
-		maven {
-			url('http://repo.openbakery.org/')
-		}
-		mavenCentral()
-  }
-
-	dependencies {
-			classpath "org.openbakery:xcode-plugin:0.14.4.develop.+"
-	}
+plugins {
+  id "org.openbakery.xcode-plugin" version "0.15.2"
 }
-apply plugin: "org.openbakery.xcode-plugin"
+
 
 xcodebuild {
 	scheme = 'DemoApp'
   target = 'DemoApp'
-	destination = [ 'iPhone 5s', 'iPad 2' ]
+	simulator = true
+	destination = ['iPhone 7']
+  
 }
 
-coverage {
-	outputFormat = 'html'
-	include = 'Core.*'
+task buildForTestOnDevice(type:org.openbakery.XcodeBuildForTestTask) {
+	scheme = 'DemoApp'
+  target = 'DemoApp'
+	simulator = false
+}
+
+
+task testOnDevice(type:org.openbakery.XcodeTestRunTask) {
+	scheme = 'DemoApp'
+  target = 'DemoApp'
+	simulator = false
+
+	destination {
+  	id = "Renes iPad 2"
+	  platform = "iOS"
+	}
+}
+
+
+
+
+gradle.taskGraph.whenReady { taskGraph ->
+  if (taskGraph.hasTask(tasks.testOnDevice)) {
+    xcodebuild {
+			// define the signig here, because if the variables like `signingCertificateURI` are not set via gradle.properties than the other task should not fail
+	    signing {
+		    certificateURI = signingCertificateURI           // e.g 'http://example.com/Provisioning/Development.p12'
+		    certificatePassword = signingCertificatePassword // the password for the certificateURI
+		    mobileProvisionURI = signingMobileProvisionURI   // e.g 'http://example.com/Provisioning/Development.mobileprovision'
+	    }
+    }
+  }
 }

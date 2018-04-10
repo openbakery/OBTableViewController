@@ -151,6 +151,9 @@
 	OBModelCellBinding *binding = [self bindingForModel:model andCell:cell];
 	[binding setValuesForCell:cell usingModel:model];
 
+	[cell setNeedsUpdateConstraints];
+	[cell updateConstraintsIfNeeded];
+
 
 	if (self.selectionMode == OBTableViewControllerSelectionSingleCheck) {
 		if ([model isEqual:_selectedModel]) {

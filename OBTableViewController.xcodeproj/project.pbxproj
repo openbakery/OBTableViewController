@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		355B22616E9A26C517A0F0ED /* OBAbstractTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2276845046B45EE861F0 /* OBAbstractTableViewControllerTest.m */; };
 		355B23018921812CD9D20D13 /* OBModelCellBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2D1913D5E582B24BBB49 /* OBModelCellBindingTest.m */; };
 		355B23534FD7047E63D94D73 /* OBSimpleTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2BFE2BB5AF7B639D89F1 /* OBSimpleTableViewControllerTest.m */; };
 		355B24D0A8EE7801C9BDFB16 /* UITableViewStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2058C0CBB17FB498DCFE /* UITableViewStub.m */; };
@@ -129,6 +130,7 @@
 		355B21A484FCF7700D1D137D /* OBModelCellBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBinding.m; sourceTree = "<group>"; };
 		355B21B5E2A6856A8DB9F9BA /* UITableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellModel.h; sourceTree = "<group>"; };
 		355B220F1054DA7DF6C068CA /* UITextViewPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewPropertyBinding.m; sourceTree = "<group>"; };
+		355B2276845046B45EE861F0 /* OBAbstractTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAbstractTableViewControllerTest.m; sourceTree = "<group>"; };
 		355B22BE0E059B7C50EE2C2D /* OBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBProperty.m; sourceTree = "<group>"; };
 		355B22C856FA3242F52C2729 /* OBTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewSection.h; sourceTree = "<group>"; };
 		355B230AF2474DA62A75CB4B /* UIDatePickerPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerPropertyBinding.m; sourceTree = "<group>"; };
@@ -422,6 +424,7 @@
 				355B26915C1DF789E5E162C2 /* OBTestCase.h */,
 				355B2DF98DFF4D7F62874248 /* Stubs */,
 				355B23DC1CB32883B8FC9C09 /* OBTableViewControllerTest_SetModels.m */,
+				355B2276845046B45EE861F0 /* OBAbstractTableViewControllerTest.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				355B254D2F32C4A0F90FA6D2 /* UISearchBarPropertyBindingTest.m in Sources */,
 				355B2EEF54E1153B2F61BFD2 /* OBSearchBarTableViewCell.m in Sources */,
 				355B255402BEE645747905A7 /* OBTableViewControllerTest_SetModels.m in Sources */,
+				355B22616E9A26C517A0F0ED /* OBAbstractTableViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

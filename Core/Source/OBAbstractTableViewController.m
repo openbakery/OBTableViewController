@@ -192,6 +192,18 @@ static char constCellConfiguredAssociatedObject;
 
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+	if ([self.delegate respondsToSelector:@selector(tableViewController:willDisplayHeader:forSection:)]) {
+		[self.delegate tableViewController:self willDisplayHeader:view forSection:section];
+	}
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section {
+	if ([self.delegate respondsToSelector:@selector(tableViewController:willDisplayFooter:forSection:)]) {
+		[self.delegate tableViewController:self willDisplayFooter:view forSection:section];
+	}
+}
+
 
 - (id) modelAtIndexPath:(NSIndexPath *)indexPath {
 	NSArray *models = [self modelsForSectionIndex:indexPath.section];

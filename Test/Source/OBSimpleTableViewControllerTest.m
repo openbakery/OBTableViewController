@@ -23,8 +23,16 @@
 
 
 - (void)setUp {
+	[super setUp];
 	tableViewController = [[OBSimpleTableViewController alloc] init];
 	tableView = [[UITableView alloc] init];
+	tableViewController.tableView = tableView;
+}
+
+- (void)tearDown {
+	tableViewController = nil;
+	tableView = nil;
+	[super tearDown];
 }
 
 - (void)testNumberRows_0 {
@@ -204,6 +212,36 @@
 
 }
 
+- (void)testRegisteredCellClass {
+	NSString *model = @"Test";
+
+	[tableViewController registerTableViewCellClass:[OBCustomTableViewCell class] modelClass:[model class]];
+	[tableViewController addModel:model];
+
+	OBCustomTableViewCell *cell =  (OBCustomTableViewCell*)[tableViewController tableView:tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+
+	assertThat(cell, is(notNilValue()));
+	assertThat(cell, is(instanceOf([OBCustomTableViewCell class])));
+
+}
+
+
+- (void)testStaticCellHeight {
+	[tableViewController registerTableViewCellClass:[OBCustomTableViewCell class] modelClass:[NSString class]];
+	NSString *model = @"Test";
+	[tableViewController addModel:model];
+	CGFloat height = [tableViewController tableView:tableView heightForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	assertThatFloat(height, is(@100));
+}
+
+- (void)testDynamicCellHeight {
+	tableViewController.dynamicCellHeight = YES;
+	[tableViewController registerTableViewCellClass:[OBCustomTableViewCell class] modelClass:[NSString class]];
+	NSString *model = @"Test";
+	[tableViewController addModel:model];
+	CGFloat height = [tableViewController tableView:tableView heightForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	assertThatFloat(height, is(@(UITableViewAutomaticDimension)));
+}
 
 
 @end

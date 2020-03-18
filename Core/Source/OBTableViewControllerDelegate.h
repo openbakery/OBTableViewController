@@ -54,6 +54,16 @@
 - (void)tableViewController:(OBAbstractTableViewController *)tableViewController willDisplayCell:(UITableViewCell *)cell withModel:(NSObject *)model;
 
 
+/**
+* this method is called when a table view header will be displayed
+*/
+- (void)tableViewController:(OBAbstractTableViewController *)tableViewController willDisplayHeader:(UIView *)view forSection:(NSInteger)section;
+
+
+/**
+* this method is called when a table view footer will be displayed
+*/
+- (void)tableViewController:(OBAbstractTableViewController *)tableViewController willDisplayFooter:(UIView *)view forSection:(NSInteger)section;
 
 
 @end

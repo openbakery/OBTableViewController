@@ -2,19 +2,22 @@
 // Created by Rene Pirringer on 23.03.15.
 //
 
-#import "DTTestCase.h"
+#import <XCTest/XCTest.h>
+#import <OCHamcrest/OCHamcrest.h>
+#import <OCMockito/OCMockito.h>
+#import "OBAbstractTableViewController.h"
 #import "OBCustomTableViewCell.h"
-#import "OBSimpleTableViewController.h"
+#import "OBTableViewControllerDelegate.h"
 
-@interface OBAbstractTableViewControllerTest : DTTestCase
+@interface OBAbstractTableViewControllerTest : XCTestCase
 @end
 
 @implementation OBAbstractTableViewControllerTest {
-	OBSimpleTableViewController *tableViewController;
+	OBAbstractTableViewController *tableViewController;
 }
 
 - (void)setUp {
-	tableViewController = [[OBSimpleTableViewController alloc] init];
+	tableViewController = [[OBAbstractTableViewController alloc] init];
 }
 
 
@@ -25,68 +28,63 @@
 	[tableViewController registerTableViewCellClass:[OBCustomTableViewCell class] modelClass:[NSString class]];
 
 	[verify(tableView) registerClass:[OBCustomTableViewCell class] forCellReuseIdentifier:@"OBCustomTableViewCell"];
-
 }
 
-- (void)testRegisteredCellClass {
-	UITableView *tableView = [[UITableView alloc] init];
-	tableViewController.tableView = tableView;
-
-	NSString *model = @"Test";
-
-	[tableViewController registerTableViewCellClass:[OBCustomTableViewCell class] modelClass:[model class]];
-	[tableViewController addModel:model];
-
-	OBCustomTableViewCell *cell =  (OBCustomTableViewCell*)[tableViewController tableView:tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-
-	assertThat(cell, is(notNilValue()));
-	assertThat(cell, is(instanceOf([OBCustomTableViewCell class])));
-
-}
 
 - (void)testDynamicHeight {
 	assertThatBool(tableViewController.dynamicCellHeight, is(@NO));
 }
 
-- (void)testStaticCellHeight {
+
+- (void)test_willDisplayCell_delegate_is_called_when_tableView_cell_will_be_displayed {
 	UITableView *tableView = [[UITableView alloc] init];
-	tableViewController.tableView = tableView;
-	[tableViewController registerTableViewCellClass:[OBCustomTableViewCell class] modelClass:[NSString class]];
-	NSString *model = @"Test";
-	[tableViewController addModel:model];
-	CGFloat height = [tableViewController tableView:tableView heightForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-	assertThatFloat(height, is(@100));
-}
+	UITableViewCell *cell = [[UITableViewCell alloc] init];
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 
-- (void)testDynamicCellHeight {
-	if (self.iOSVersion > 7) {
-		UITableView *tableView = [[UITableView alloc] init];
-		tableViewController.tableView = tableView;
-		tableViewController.dynamicCellHeight = YES;
-		[tableViewController registerTableViewCellClass:[OBCustomTableViewCell class] modelClass:[NSString class]];
-		NSString *model = @"Test";
-		[tableViewController addModel:model];
-		CGFloat height = [tableViewController tableView:tableView heightForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-		assertThatFloat(height, is(@(UITableViewAutomaticDimension)));
-	}
+	id <OBTableViewControllerDelegate> delegate = mockProtocol(@protocol(OBTableViewControllerDelegate));
+	tableViewController.delegate = delegate;
+
+	// when
+	[tableViewController tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+
+
+	// then
+	[verify(delegate) tableViewController:anything() willDisplayCell:cell withModel:anything()];
 }
 
 
-- (void)testStaticCellHeight_iOS7 {
+- (void)test_willDisplayHeader_delegate_is_called_when_tableView_header_will_be_displayed {
 	UITableView *tableView = [[UITableView alloc] init];
-	tableViewController.tableView = tableView;
-	[tableViewController registerTableViewCellClass:[OBCustomTableViewCell class] modelClass:[NSString class]];
-	NSString *model = @"Test";
-	[tableViewController addModel:model];
-	CGFloat height = [tableViewController tableView:tableView heightForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-	assertThatFloat(height, is(@100));
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+	UITableViewHeaderFooterView *headerView = [[UITableViewHeaderFooterView alloc] init];
 
-	height = [tableViewController tableView:tableView estimatedHeightForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-	assertThatFloat(height, is(@100));
+	id <OBTableViewControllerDelegate> delegate = mockProtocol(@protocol(OBTableViewControllerDelegate));
+	tableViewController.delegate = delegate;
+
+	// when
+	[tableViewController tableView:tableView willDisplayHeaderView:headerView forSection:0];
 
 
+	// then
+	[verify(delegate) tableViewController:anything() willDisplayHeader:headerView forSection:0];
 }
 
+
+- (void)test_willDisplayFooter_delegate_is_called_when_tableView_header_will_be_displayed {
+	UITableView *tableView = [[UITableView alloc] init];
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+	UITableViewHeaderFooterView *footerView = [[UITableViewHeaderFooterView alloc] init];
+
+	id <OBTableViewControllerDelegate> delegate = mockProtocol(@protocol(OBTableViewControllerDelegate));
+	tableViewController.delegate = delegate;
+
+	// when
+	[tableViewController tableView:tableView willDisplayFooterView:footerView forSection:0];
+
+
+	// then
+	[verify(delegate) tableViewController:anything() willDisplayFooter:footerView forSection:0];
+}
 
 @end
 

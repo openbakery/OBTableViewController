@@ -15,7 +15,7 @@
 #import "UITableViewStub.h"
 
 
- @interface OBTableViewControllerTest : OBTestCase
+@interface OBTableViewControllerTest : OBTestCase
 @end
 
 @implementation OBTableViewControllerTest {

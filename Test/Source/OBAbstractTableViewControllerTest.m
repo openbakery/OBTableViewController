@@ -55,7 +55,6 @@
 
 - (void)test_willDisplayHeader_delegate_is_called_when_tableView_header_will_be_displayed {
 	UITableView *tableView = [[UITableView alloc] init];
-	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 	UITableViewHeaderFooterView *headerView = [[UITableViewHeaderFooterView alloc] init];
 
 	id <OBTableViewControllerDelegate> delegate = mockProtocol(@protocol(OBTableViewControllerDelegate));
@@ -72,7 +71,6 @@
 
 - (void)test_willDisplayFooter_delegate_is_called_when_tableView_header_will_be_displayed {
 	UITableView *tableView = [[UITableView alloc] init];
-	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 	UITableViewHeaderFooterView *footerView = [[UITableViewHeaderFooterView alloc] init];
 
 	id <OBTableViewControllerDelegate> delegate = mockProtocol(@protocol(OBTableViewControllerDelegate));

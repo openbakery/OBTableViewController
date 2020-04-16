@@ -8,8 +8,8 @@ xcodebuild {
 	scheme = 'DemoApp'
   target = 'DemoApp'
 	simulator = true
-	destination = ['iPhone 7']
-  
+	destination = ['iPhone 11']
+
 }
 
 task buildForTestOnDevice(type:org.openbakery.XcodeBuildForTestTask) {

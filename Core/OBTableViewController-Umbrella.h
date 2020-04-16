@@ -28,6 +28,9 @@
 #import <OBTableViewController/OBTableViewController.h>
 #import <OBTableViewController/OBTableViewControllerDelegate.h>
 #import <OBTableViewController/OBTableViewSection.h>
+#import <OBTableViewController/OBCellModel.h>
+#import <OBTableViewController/OBTableViewCell.h>
+#import <OBTableViewController/OBModelBasedCell.h>
 
 
 #endif /* _OBTableViewController_ */

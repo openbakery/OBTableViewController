@@ -2,7 +2,7 @@
 //
 // Created by Rene Pirringer.
 //
-// 
+//
 //
 
 #import <objc/runtime.h>
@@ -13,6 +13,7 @@
 #import "UILabelToDatePropertyBinding.h"
 #import "UIDatePickerPropertyBinding.h"
 #import "OBAccessoryPropertyBinding.h"
+#import "OBModelBasedCell.h"
 
 @interface OBAbstractTableViewController ()
 @property(nonatomic) UIEdgeInsets defaultTableInset;
@@ -147,9 +148,13 @@
 		[self setCellConfigured:cell];
 	}
 
-
-	OBModelCellBinding *binding = [self bindingForModel:model andCell:cell];
-	[binding setValuesForCell:cell usingModel:model];
+	if ([cell conformsToProtocol:@protocol(OBModelBasedCell)]) {
+		UITableViewCell<OBModelBasedCell> *modelBasedCell = (UITableViewCell<OBModelBasedCell> *)cell;
+		[modelBasedCell setModel:model];
+	} else {
+		OBModelCellBinding *binding = [self bindingForModel:model andCell:cell];
+		[binding setValuesForCell:cell usingModel:model];
+	}
 
 	[cell setNeedsUpdateConstraints];
 	[cell updateConstraintsIfNeeded];
@@ -251,7 +256,7 @@ static char constCellConfiguredAssociatedObject;
 		self.cellHeightForModelClass = [[NSMutableDictionary alloc] init];
 
 		__weak OBAbstractTableViewController *weakSelf = self;
-		
+
 		[_registeredIdentifiers enumerateKeysAndObjectsUsingBlock:^(NSString *className, NSString *identifier, BOOL *stop) {
 			UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
 

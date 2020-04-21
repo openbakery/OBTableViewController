@@ -1,0 +1,5 @@
+OBTableViewController:
+  project: OBTableViewController.xcodeproj
+  sdks:
+  - iphonesimulator
+  - iphoneos

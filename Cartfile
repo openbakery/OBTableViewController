@@ -1,2 +1,2 @@
 github "jonreid/OCMockito"
-github "openbakery/OBInjector" ~> 1.5
+github "openbakery/OBInjector" ~> 1.6

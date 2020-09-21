@@ -7,7 +7,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "OBPropertyBinding.h"
+#import <OBTableViewController/OBPropertyBinding.h>
 
 /**
 * binds UIImage properties to the cell UIImageView, e.g. UIImage *image -> UIImageView *imageView

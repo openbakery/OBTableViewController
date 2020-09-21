@@ -101,7 +101,7 @@
 
 	UITableViewCell *cell = [tableViewController tableView:tableViewController.tableView cellForRowAtIndexPath:indexPath];
 
-	assertThatInt(cell.accessoryType, is(equalToInt(UITableViewCellAccessoryCheckmark)));
+	assertThatInteger(cell.accessoryType, is(equalToInt(UITableViewCellAccessoryCheckmark)));
 
 	assertThatInteger([tableViewController.selectedModels count], is(equalToInt(1)));
 
@@ -124,7 +124,8 @@
 
 	UITableViewCell *cell = [tableViewController tableView:tableViewController.tableView cellForRowAtIndexPath:indexPath];
 
-	assertThatInt(cell.accessoryType, is(equalToInt(UITableViewCellAccessoryNone)));
+	
+	assertThatInteger(cell.accessoryType, is(equalToInt(UITableViewCellAccessoryNone)));
 
 
 	HCArgumentCaptor *indexPathsArguments = [[HCArgumentCaptor alloc] init];

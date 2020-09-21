@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OBModelBasedCell.h"
+#import <OBTableViewController/OBModelBasedCell.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -7,7 +7,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "OBPropertyBinding.h"
+#import <OBTableViewController/OBPropertyBinding.h>
 
 
 @interface UITextViewPropertyBinding : OBPropertyBinding
@@ -15,3 +15,4 @@
 - (id)initWithSourceName:(NSString *)sourceName andDestinationName:(NSString *)destinationName;
 
 @end
+

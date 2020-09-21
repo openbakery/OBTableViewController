@@ -7,7 +7,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "OBAbstractTableViewController.h"
+#import <OBTableViewController/OBAbstractTableViewController.h>
 
 @class OBTableViewSection;
 

@@ -7,7 +7,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "OBPropertyBinding.h"
+#import <OBTableViewController/OBPropertyBinding.h>
 
 /**
 * binds NSString properties to the cell UITextField, e.g. NSString *value -> UILabel *valueTextField

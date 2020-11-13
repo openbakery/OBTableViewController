@@ -376,7 +376,10 @@ static char constCellConfiguredAssociatedObject;
 
 - (UITableViewCell *)cellForModel:(id)model {
 	NSIndexPath *indexPath = [self indexPathForModel:model];
-	return [self.tableView cellForRowAtIndexPath:indexPath];
+	if (indexPath) {
+		return [self.tableView cellForRowAtIndexPath:indexPath];
+	}
+	return nil;
 }
 
 

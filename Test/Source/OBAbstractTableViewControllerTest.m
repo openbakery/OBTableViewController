@@ -84,5 +84,14 @@
 	[verify(delegate) tableViewController:anything() willDisplayFooter:footerView forSection:0];
 }
 
+
+- (void)test_cell_for_model_that_was_not_added_should_not_crash {
+	// when
+	UITableViewCell *cell = [tableViewController cellForModel:@"does not exist"];
+	
+	// then
+	assertThat(cell, nilValue());
+}
+
 @end
 

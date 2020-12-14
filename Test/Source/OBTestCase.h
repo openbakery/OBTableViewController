@@ -5,8 +5,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import <OCHamcrest/OCHamcrest.h>
-#import <OCMockito/OCMockito.h>
+@import OCHamcrest;
+@import OCMockito;
 
 
 @interface OBTestCase : XCTestCase

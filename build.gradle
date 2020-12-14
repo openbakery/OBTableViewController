@@ -1,10 +1,26 @@
-plugins {
-  id "org.openbakery.xcode-plugin" version "0.19.1"
+buildscript {
+  repositories {
+    maven {
+      url('http://repo.openbakery.org/')
+    }
+    mavenCentral()
+  }
+
+  dependencies {
+    classpath "org.openbakery:xcode-plugin:0.21.0.develop.+"
+  }
 }
+
+apply plugin: "org.openbakery.xcode-plugin"
 
 project.ext.version = "1.2.0"
 
+carthage {
+	xcframework = true
+}
+
 xcodebuild {
+	version = "12.2"
 	scheme = 'DemoApp'
   target = 'DemoApp'
 	simulator = true
@@ -44,15 +60,3 @@ gradle.taskGraph.whenReady { taskGraph ->
   }
 }
 
-task carthageArchive(type:Exec) {
-    workingDir '.'
-    commandLine 'carthage', 'build', '--archive', '--platform', 'iOS'
-}
-
-task binaryRelease(type: Copy) {
-    from file("OBTableViewController.framework.zip")
-    into file("$buildDir")
-
-    rename '(.+).framework.zip', '$1-' + project.ext.version + '.zip'
-}
-binaryRelease.dependsOn carthageArchive

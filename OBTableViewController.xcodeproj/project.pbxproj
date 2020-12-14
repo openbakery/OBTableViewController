@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,14 +58,14 @@
 		A7378D201CA2E0D200D30471 /* OBReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2D65015654E524532F02 /* OBReflection.m */; };
 		A7378D211CA2E0D600D30471 /* UITableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2123F178907C41F816A0 /* UITableViewCellModel.m */; };
 		A7378D221CA2E6A300D30471 /* OBTableViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7378CA81CA2CED300D30471 /* OBTableViewController.framework */; };
-		A754FD5919094CFE00F92530 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD5819094CFE00F92530 /* XCTest.framework */; };
+		A73A214C2583CD100063C2D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73A214B2583CD100063C2D2 /* XCTest.framework */; };
+		A73A21592583CE3D0063C2D2 /* OCHamcrest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73A21442583CC8A0063C2D2 /* OCHamcrest.xcframework */; };
+		A73A215A2583CE3D0063C2D2 /* OCMockito.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73A21432583CC8A0063C2D2 /* OCMockito.xcframework */; };
+		A73A215C2583CE450063C2D2 /* OCHamcrest.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A73A21442583CC8A0063C2D2 /* OCHamcrest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A73A215D2583CE450063C2D2 /* OCMockito.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A73A21432583CC8A0063C2D2 /* OCMockito.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A754FD5A19094CFE00F92530 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD3A19094CFE00F92530 /* Foundation.framework */; };
 		A754FD5B19094CFE00F92530 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD3E19094CFE00F92530 /* UIKit.framework */; };
 		A754FD5C19094CFE00F92530 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD4019094CFE00F92530 /* CoreData.framework */; };
-		A758DB6E1D65E3F60055A886 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A758DB6A1D65E3AB0055A886 /* OCHamcrest.framework */; };
-		A758DB6F1D65E3F60055A886 /* OCMockito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A758DB6B1D65E3AB0055A886 /* OCMockito.framework */; };
-		A758DB741D65E5310055A886 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A758DB6A1D65E3AB0055A886 /* OCHamcrest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A758DB751D65E5310055A886 /* OCMockito.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A758DB6B1D65E3AB0055A886 /* OCMockito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7961E101CF460E900F6DFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7A19094EB900F92530 /* main.m */; };
 		A7961E111CF460ED00F6DFC6 /* OBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7C19094EB900F92530 /* OBAppDelegate.m */; };
 		A7961E121CF460ED00F6DFC6 /* OBDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B21541CFC21B27110011A /* OBDemoViewController.m */; };
@@ -101,12 +101,12 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		A758DB731D65E5270055A886 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A758DB741D65E5310055A886 /* OCHamcrest.framework in CopyFiles */,
-				A758DB751D65E5310055A886 /* OCMockito.framework in CopyFiles */,
+				A73A215C2583CE450063C2D2 /* OCHamcrest.xcframework in CopyFiles */,
+				A73A215D2583CE450063C2D2 /* OCMockito.xcframework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,12 +185,14 @@
 		A7378CC91CA2D0AC00D30471 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7378CCB1CA2D0BD00D30471 /* OBTableViewController-Umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OBTableViewController-Umbrella.h"; sourceTree = "<group>"; };
 		A7378CE01CA2D17200D30471 /* OBTableViewController.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = OBTableViewController.modulemap; sourceTree = "<group>"; };
+		A73A21432583CC8A0063C2D2 /* OCMockito.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMockito.xcframework; path = Carthage/Build/OCMockito.xcframework; sourceTree = "<group>"; };
+		A73A21442583CC8A0063C2D2 /* OCHamcrest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCHamcrest.xcframework; path = Carthage/Build/OCHamcrest.xcframework; sourceTree = "<group>"; };
+		A73A214B2583CD100063C2D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A754FD3A19094CFE00F92530 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A754FD3C19094CFE00F92530 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A754FD3E19094CFE00F92530 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A754FD4019094CFE00F92530 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A754FD5719094CFE00F92530 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A754FD5819094CFE00F92530 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A754FD7319094EB900F92530 /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
 		A754FD7419094EB900F92530 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		A754FD7819094EB900F92530 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -198,12 +200,9 @@
 		A754FD7B19094EB900F92530 /* OBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBAppDelegate.h; sourceTree = "<group>"; };
 		A754FD7C19094EB900F92530 /* OBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAppDelegate.m; sourceTree = "<group>"; };
 		A754FD7F19094EB900F92530 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
-		A758DB6A1D65E3AB0055A886 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Carthage/Build/iOS/OCHamcrest.framework; sourceTree = "<group>"; };
-		A758DB6B1D65E3AB0055A886 /* OCMockito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockito.framework; path = Carthage/Build/iOS/OCMockito.framework; sourceTree = "<group>"; };
 		A75B2C851C7741AD003D753D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A77E7C0B1986A685008083C5 /* OBInsertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBInsertViewController.h; sourceTree = "<group>"; };
 		A77E7C0C1986A685008083C5 /* OBInsertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBInsertViewController.m; sourceTree = "<group>"; };
-		A7913682219DC6FE00E91BE9 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		A7961DF61CF460D900F6DFC6 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E11C3D1909614700AEA800 /* Test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
 		A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -223,13 +222,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73A214C2583CD100063C2D2 /* XCTest.framework in Frameworks */,
 				A7378D221CA2E6A300D30471 /* OBTableViewController.framework in Frameworks */,
-				A754FD5919094CFE00F92530 /* XCTest.framework in Frameworks */,
 				A754FD5C19094CFE00F92530 /* CoreData.framework in Frameworks */,
 				A754FD5B19094CFE00F92530 /* UIKit.framework in Frameworks */,
 				A754FD5A19094CFE00F92530 /* Foundation.framework in Frameworks */,
-				A758DB6E1D65E3F60055A886 /* OCHamcrest.framework in Frameworks */,
-				A758DB6F1D65E3F60055A886 /* OCMockito.framework in Frameworks */,
+				A73A21592583CE3D0063C2D2 /* OCHamcrest.xcframework in Frameworks */,
+				A73A215A2583CE3D0063C2D2 /* OCMockito.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +317,6 @@
 		A754FD2E19094CFE00F92530 = {
 			isa = PBXGroup;
 			children = (
-				A7913682219DC6FE00E91BE9 /* Cartfile */,
 				A754FD6F19094EB900F92530 /* Core */,
 				A754FD7219094EB900F92530 /* Demo */,
 				A754FD7D19094EB900F92530 /* Test */,
@@ -340,13 +338,13 @@
 		A754FD3919094CFE00F92530 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A758DB6A1D65E3AB0055A886 /* OCHamcrest.framework */,
-				A758DB6B1D65E3AB0055A886 /* OCMockito.framework */,
+				A73A214B2583CD100063C2D2 /* XCTest.framework */,
+				A73A21442583CC8A0063C2D2 /* OCHamcrest.xcframework */,
+				A73A21432583CC8A0063C2D2 /* OCMockito.xcframework */,
 				A754FD3A19094CFE00F92530 /* Foundation.framework */,
 				A754FD3C19094CFE00F92530 /* CoreGraphics.framework */,
 				A754FD3E19094CFE00F92530 /* UIKit.framework */,
 				A754FD4019094CFE00F92530 /* CoreData.framework */,
-				A754FD5819094CFE00F92530 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -700,7 +698,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = Core/Info.plist;
@@ -733,7 +731,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = Core/Info.plist;
@@ -857,9 +855,16 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = ED5DV56QPQ;
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos14.2]" = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/OCMockito.xcframework/ios-arm64_armv7",
+					"$(PROJECT_DIR)/Carthage/Build/OCHamcrest.xcframework/ios-arm64_armv7",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/OCHamcrest.xcframework/ios-arm64_i386_x86_64-simulator\n$(PROJECT_DIR)/Carthage/Build/OCHamcrest.xcframework/ios-arm64_i386_x86_64-simulator\n",
+					"$(PROJECT_DIR)/Carthage/Build/OCMockito.xcframework/ios-arm64_i386_x86_64-simulator",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
@@ -882,10 +887,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = ED5DV56QPQ;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
 				INFOPLIST_FILE = "Test/Test-Info.plist";
@@ -908,11 +910,14 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Demo-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -931,11 +936,14 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Demo-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

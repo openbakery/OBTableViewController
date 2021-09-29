@@ -22,6 +22,8 @@
 
 - (NSInteger)indexForSection:(OBTableViewSection *)section;
 
+- (OBTableViewSection *)sectionAtIndex:(NSInteger)section;
+
 /**
 * Adds a model to the table into the given section
 * Added models does not trigger a reload of the table, therefor adding can be done before the table is shown,

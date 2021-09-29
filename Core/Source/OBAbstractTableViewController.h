@@ -57,7 +57,6 @@ typedef enum {
 
 - (NSArray *)modelsForSectionIndex:(NSInteger )section;
 
-- (OBTableViewSection *)sectionAtIndex:(NSInteger)section;
 
 
 - (id)modelForCell:(id)cell;

@@ -7,7 +7,7 @@
 
 
 #import "OBAccessoryPropertyBinding.h"
-#import "OBProperty.h"
+#import <OBTableViewController/OBProperty.h>
 
 
 @implementation OBAccessoryPropertyBinding {

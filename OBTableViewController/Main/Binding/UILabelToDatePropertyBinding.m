@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "UILabelToDatePropertyBinding.h"
-#import "OBProperty.h"
+#import <OBTableViewController/OBProperty.h>
 
 
 @implementation UILabelToDatePropertyBinding {

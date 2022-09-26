@@ -6,12 +6,7 @@
 //
 
 
-
-#import "OBModelCellBinding.h"
-#import "UITableViewCellModel.h"
-#import "UILabelPropertyBinding.h"
-#import "UIImageViewPropertyBinding.h"
-#import "OBAccessoryPropertyBinding.h"
+#import <OBTableViewController/OBTableViewController.h>
 #import "OBTestCase.h"
 
 @interface OBModelCellBindingTest : OBTestCase

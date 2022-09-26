@@ -7,8 +7,8 @@
 
 #import <UIKit/UIKit.h>
 #import "UILabelPropertyBinding.h"
-#import "OBProperty.h"
-#import "OBReflection.h"
+#import <OBTableViewController/OBProperty.h>
+#import <OBTableViewController/OBReflection.h>
 
 
 @implementation UILabelPropertyBinding {

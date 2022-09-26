@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UISearchBarPropertyBinding.h"
-#import "OBProperty.h"
+#import <OBTableViewController/OBProperty.h>
 
 
 @implementation UISearchBarPropertyBinding {

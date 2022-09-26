@@ -7,7 +7,7 @@
 //
 
 #import "OBTableViewCell.h"
-#import "OBCellModel.h"
+#import <OBTableViewController/OBCellModel.h>
 
 @implementation OBTableViewCell
 

@@ -9,7 +9,7 @@
 
 
 #import "OBSimpleTableViewController.h"
-#import "OBModelCellBinding.h"
+#import <OBTableViewController/OBModelCellBinding.h>
 
 
 @interface OBSimpleTableViewController ()

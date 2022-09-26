@@ -6,14 +6,14 @@
 //
 
 #import <objc/runtime.h>
-#import "OBTableViewController.h"
-#import "OBModelCellBinding.h"
-#import "UILabelPropertyBinding.h"
-#import "UIImageViewPropertyBinding.h"
-#import "UILabelToDatePropertyBinding.h"
-#import "UIDatePickerPropertyBinding.h"
-#import "OBAccessoryPropertyBinding.h"
-#import "OBModelBasedCell.h"
+#import "OBTableViewController_.h"
+#import <OBTableViewController/OBModelCellBinding.h>
+#import <OBTableViewController/UILabelPropertyBinding.h>
+#import <OBTableViewController/UIImageViewPropertyBinding.h>
+#import <OBTableViewController/UILabelToDatePropertyBinding.h>
+#import <OBTableViewController/UIDatePickerPropertyBinding.h>
+#import <OBTableViewController/OBAccessoryPropertyBinding.h>
+#import <OBTableViewController/OBModelBasedCell.h>
 
 @interface OBAbstractTableViewController ()
 @property(nonatomic) UIEdgeInsets defaultTableInset;

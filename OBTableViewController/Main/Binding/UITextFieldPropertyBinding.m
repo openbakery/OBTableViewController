@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UITextFieldPropertyBinding.h"
-#import "OBProperty.h"
+#import <OBTableViewController/OBProperty.h>
 
 @interface UITextFieldPropertyBinding ()
 @property(nonatomic, strong) OBProperty *placeholderProperty;

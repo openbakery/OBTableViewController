@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIDatePickerPropertyBinding.h"
-#import "OBProperty.h"
+#import <OBTableViewController/OBProperty.h>
 
 
 @implementation UIDatePickerPropertyBinding {

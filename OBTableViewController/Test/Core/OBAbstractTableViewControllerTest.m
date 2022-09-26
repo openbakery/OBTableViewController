@@ -5,9 +5,9 @@
 #import <XCTest/XCTest.h>
 #import <OCHamcrest/OCHamcrest.h>
 #import <OCMockito/OCMockito.h>
-#import "OBAbstractTableViewController.h"
+#import <OBTableViewController/OBTableViewController.h>
 #import "OBCustomTableViewCell.h"
-#import "OBTableViewControllerDelegate.h"
+
 
 @interface OBAbstractTableViewControllerTest : XCTestCase
 @end

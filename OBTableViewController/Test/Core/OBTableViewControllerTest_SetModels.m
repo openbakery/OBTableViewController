@@ -2,9 +2,8 @@
 // Created by Rene Pirringer on 11.02.16.
 //
 
-#import "OBTableViewController.h"
+#import <OBTableViewController/OBTableViewController.h>
 #import "UITableViewStub.h"
-#import "OBTableViewSection.h"
 #import "OBTestCase.h"
 
 @interface OBTableViewControllerTest_SetModels : OBTestCase

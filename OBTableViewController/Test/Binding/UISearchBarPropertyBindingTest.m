@@ -9,10 +9,8 @@
 
 #import <Foundation/Foundation.h>
 #import "OBTestCase.h"
-#import "UISearchBarPropertyBinding.h"
-#import "UITableViewCellModel.h"
+#import <OBTableViewController/OBTableViewController.h>
 #import "OBSearchBarTableViewCell.h"
-
 
 @interface UISearchBarPropertyBindingTest : OBTestCase
 @end

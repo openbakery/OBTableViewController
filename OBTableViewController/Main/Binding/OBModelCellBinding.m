@@ -7,8 +7,8 @@
 
 
 #import "OBModelCellBinding.h"
-#import "OBProperty.h"
-#import "OBReflection.h"
+#import <OBTableViewController/OBProperty.h>
+#import <OBTableViewController/OBReflection.h>
 #import "UIImageViewPropertyBinding.h"
 
 

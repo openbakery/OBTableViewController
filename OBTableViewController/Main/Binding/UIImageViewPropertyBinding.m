@@ -7,8 +7,8 @@
 
 #import <UIKit/UIKit.h>
 #import "UIImageViewPropertyBinding.h"
-#import "OBReflection.h"
-#import "OBProperty.h"
+#import <OBTableViewController/OBReflection.h>
+#import <OBTableViewController/OBProperty.h>
 
 
 @implementation UIImageViewPropertyBinding {

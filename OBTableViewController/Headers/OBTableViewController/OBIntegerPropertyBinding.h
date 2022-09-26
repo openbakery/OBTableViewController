@@ -1,0 +1,1 @@
+../../Main/Binding/OBIntegerPropertyBinding.h

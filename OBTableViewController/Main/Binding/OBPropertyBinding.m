@@ -7,7 +7,7 @@
 
 
 #import "OBPropertyBinding.h"
-#import "OBProperty.h"
+#import <OBTableViewController/OBProperty.h>
 
 
 @implementation OBPropertyBinding {

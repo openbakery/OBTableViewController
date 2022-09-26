@@ -3,7 +3,7 @@
 //
 
 #import "OBIntegerPropertyBinding.h"
-#import "OBProperty.h"
+#import <OBTableViewController/OBProperty.h>
 
 
 @implementation OBIntegerPropertyBinding {

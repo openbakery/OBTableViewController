@@ -1,0 +1,1 @@
+../../Main/Binding/OBAccessoryPropertyBinding.h

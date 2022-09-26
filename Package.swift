@@ -25,14 +25,7 @@ let package = Package(
             sources: [
                 "Main",
             ],
-            publicHeadersPath: "include",
-            cSettings: [
-								CSetting.headerSearchPath("Main/Core"),
-                CSetting.headerSearchPath("Main/Cell"),
-                CSetting.headerSearchPath("Main/Binding"),
-                CSetting.headerSearchPath("Main/Model"),
-                CSetting.headerSearchPath("Main/OBReflection"),
-            ]
+            publicHeadersPath: "Headers"
         ),
 				.testTarget(
 					name: "OBTableViewControllerTests",
@@ -45,12 +38,7 @@ let package = Package(
 					],
 					cSettings: [
 						CSetting.headerSearchPath("Test/Core"),
-						CSetting.headerSearchPath("Test/Stubs"),
-						CSetting.headerSearchPath("Main/Core"),
-						CSetting.headerSearchPath("Main/Cell"),
-						CSetting.headerSearchPath("Main/Binding"),
-						CSetting.headerSearchPath("Main/Model"),
-						CSetting.headerSearchPath("Main/OBReflection"),
+						CSetting.headerSearchPath("Test/Stubs")
 					]
 				)
 

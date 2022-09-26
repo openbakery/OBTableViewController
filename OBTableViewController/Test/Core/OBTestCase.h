@@ -7,6 +7,7 @@
 
 @import OCHamcrest;
 @import OCMockito;
+@import XCTest;
 
 
 @interface OBTestCase : XCTestCase

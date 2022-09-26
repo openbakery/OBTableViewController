@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <OBTableViewController/OBTableViewController-Umbrella.h>
+#import "OBTableViewController-Umbrella.h"
 #import "OBTestCase.h"
 #import "OBCustomTableViewCell.h"
 

@@ -7,7 +7,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import <OBTableViewController/OBTableViewControllerDelegate.h>
+#import "OBTableViewControllerDelegate.h"
 
 @class OBModelCellBinding;
 @class OBPropertyBinding;

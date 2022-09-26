@@ -8,7 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import <OBTableViewController/OBAbstractTableViewController.h>
+#import "OBAbstractTableViewController.h"
 
 /**
 * Simple TableViewController that supports only one section

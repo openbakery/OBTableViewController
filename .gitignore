@@ -8,3 +8,5 @@ xcuserdata
 .idea
 Pods
 Carthage
+.build
+.swiftpm

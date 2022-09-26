@@ -3,500 +3,1123 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		355B22616E9A26C517A0F0ED /* OBAbstractTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2276845046B45EE861F0 /* OBAbstractTableViewControllerTest.m */; };
-		355B23018921812CD9D20D13 /* OBModelCellBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2D1913D5E582B24BBB49 /* OBModelCellBindingTest.m */; };
-		355B23534FD7047E63D94D73 /* OBSimpleTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2BFE2BB5AF7B639D89F1 /* OBSimpleTableViewControllerTest.m */; };
-		355B24087FC53E6ACCC1E1A1 /* OBTableViewController_ModelProtocol_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B29345456AA4764F2E995 /* OBTableViewController_ModelProtocol_Test.m */; };
-		355B24D0A8EE7801C9BDFB16 /* UITableViewStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2058C0CBB17FB498DCFE /* UITableViewStub.m */; };
-		355B251D726FF57397F20B80 /* OBModelBasedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B24C82821063FCA7969D7 /* OBModelBasedCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		355B254D2F32C4A0F90FA6D2 /* UISearchBarPropertyBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B27A3D2302B17EFCF5870 /* UISearchBarPropertyBindingTest.m */; };
-		355B255402BEE645747905A7 /* OBTableViewControllerTest_SetModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B23DC1CB32883B8FC9C09 /* OBTableViewControllerTest_SetModels.m */; };
-		355B2560A16CA5C9A397F204 /* OBTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26CDDD0B40303AE48656 /* OBTableViewControllerTest.m */; };
-		355B263D86FE46D538A0186E /* OBTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2FED1592B6C99E355D50 /* OBTestCase.m */; };
-		355B28D2A98416B8A17ED739 /* OBCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2F7CE7C3C217B0E54501 /* OBCustomTableViewCell.m */; };
-		355B2EEF54E1153B2F61BFD2 /* OBSearchBarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B219DC28E2BA7EAF6A2E2 /* OBSearchBarTableViewCell.m */; };
-		A7378CCC1CA2D0BF00D30471 /* OBTableViewController-Umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7378CCB1CA2D0BD00D30471 /* OBTableViewController-Umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CCD1CA2D12000D30471 /* OBPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2B019FDC69BF58EDCDCF /* OBPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CCE1CA2D12000D30471 /* OBModelCellBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B28DBF02C849B5651230C /* OBModelCellBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CCF1CA2D12000D30471 /* UILabelPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B26CC11DCF0D46B6B4EEA /* UILabelPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD01CA2D12000D30471 /* OBAccessoryPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B202917724E974E85772A /* OBAccessoryPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD11CA2D12000D30471 /* UIImageViewPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2BB8476B02A1745B4AFB /* UIImageViewPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD21CA2D12000D30471 /* UISearchBarPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2FC3536F7CE46FFD85C6 /* UISearchBarPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD31CA2D12000D30471 /* UITextFieldPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2DB14E52A15EF1995622 /* UITextFieldPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD41CA2D12000D30471 /* UIDatePickerPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2045B23DD29001B78D7A /* UIDatePickerPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD51CA2D12000D30471 /* UILabelToDatePropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2633358B942BB632449C /* UILabelToDatePropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD61CA2D12000D30471 /* OBIntegerPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2F209A32F0F285B89DF9 /* OBIntegerPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD71CA2D12000D30471 /* UITextViewPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B20114F297F3CB2189724 /* UITextViewPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD81CA2D12000D30471 /* OBAbstractTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B258470BE994BF75E1FC6 /* OBAbstractTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CD91CA2D12000D30471 /* OBSimpleTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2570F32C5BB4DAB19813 /* OBSimpleTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CDA1CA2D12000D30471 /* OBTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B24C8B1113A39A1EB9336 /* OBTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CDB1CA2D12000D30471 /* OBTableViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B280D0B200C334901D126 /* OBTableViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CDC1CA2D12000D30471 /* OBTableViewSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B22C856FA3242F52C2729 /* OBTableViewSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CDD1CA2D12000D30471 /* OBProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B28795380302DD0C11AD1 /* OBProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CDE1CA2D12000D30471 /* OBReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2BBACB9827E2B653CBE8 /* OBReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CDF1CA2D12000D30471 /* UITableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B21B5E2A6856A8DB9F9BA /* UITableViewCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7378CE11CA2D28700D30471 /* UILabelToDatePropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B234C4BDDA9CF42B4F875 /* UILabelToDatePropertyBinding.m */; };
-		A7378CE31CA2DBC400D30471 /* OBPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2FFCCCF2D783A8CD2DBF /* OBPropertyBinding.m */; };
-		A7378CE41CA2DBCD00D30471 /* OBModelCellBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B21A484FCF7700D1D137D /* OBModelCellBinding.m */; };
-		A7378CE51CA2DBCD00D30471 /* UILabelPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2CA2F3830BFB2C6F4360 /* UILabelPropertyBinding.m */; };
-		A7378CE61CA2DBCD00D30471 /* OBAccessoryPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B7E748A1D46F3388333 /* OBAccessoryPropertyBinding.m */; };
-		A7378CE71CA2DBCD00D30471 /* UIImageViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B23D1CCD44E05D98D0F36 /* UIImageViewPropertyBinding.m */; };
-		A7378CE81CA2DBCD00D30471 /* UISearchBarPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25ECE0C021A8C55F81E4 /* UISearchBarPropertyBinding.m */; };
-		A7378CE91CA2DBCD00D30471 /* UITextFieldPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2FADC1B95E84CA108B9A /* UITextFieldPropertyBinding.m */; };
-		A7378CEA1CA2DBCD00D30471 /* UIDatePickerPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B230AF2474DA62A75CB4B /* UIDatePickerPropertyBinding.m */; };
-		A7378CEB1CA2DBCD00D30471 /* OBIntegerPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E21B4A242F9370BBDD9 /* OBIntegerPropertyBinding.m */; };
-		A7378CEC1CA2DBCD00D30471 /* UITextViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B220F1054DA7DF6C068CA /* UITextViewPropertyBinding.m */; };
-		A7378CED1CA2DBD400D30471 /* OBAbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */; };
-		A7378CEE1CA2DBD400D30471 /* OBSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25D1B751831C8D6C93D2 /* OBSimpleTableViewController.m */; };
-		A7378CEF1CA2DBD400D30471 /* OBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B217D70CF3AF2312F1A8F /* OBTableViewController.m */; };
-		A7378CF01CA2DBD400D30471 /* OBTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26B987C33D692456D0B8 /* OBTableViewSection.m */; };
-		A7378D1F1CA2E0D000D30471 /* OBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B22BE0E059B7C50EE2C2D /* OBProperty.m */; };
-		A7378D201CA2E0D200D30471 /* OBReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2D65015654E524532F02 /* OBReflection.m */; };
-		A7378D211CA2E0D600D30471 /* UITableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2123F178907C41F816A0 /* UITableViewCellModel.m */; };
-		A7378D221CA2E6A300D30471 /* OBTableViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7378CA81CA2CED300D30471 /* OBTableViewController.framework */; };
-		A73A214C2583CD100063C2D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73A214B2583CD100063C2D2 /* XCTest.framework */; };
-		A73A21592583CE3D0063C2D2 /* OCHamcrest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73A21442583CC8A0063C2D2 /* OCHamcrest.xcframework */; };
-		A73A215A2583CE3D0063C2D2 /* OCMockito.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73A21432583CC8A0063C2D2 /* OCMockito.xcframework */; };
-		A73A215C2583CE450063C2D2 /* OCHamcrest.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A73A21442583CC8A0063C2D2 /* OCHamcrest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A73A215D2583CE450063C2D2 /* OCMockito.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A73A21432583CC8A0063C2D2 /* OCMockito.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A754FD5A19094CFE00F92530 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD3A19094CFE00F92530 /* Foundation.framework */; };
-		A754FD5B19094CFE00F92530 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD3E19094CFE00F92530 /* UIKit.framework */; };
-		A754FD5C19094CFE00F92530 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A754FD4019094CFE00F92530 /* CoreData.framework */; };
-		A7961E101CF460E900F6DFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7A19094EB900F92530 /* main.m */; };
-		A7961E111CF460ED00F6DFC6 /* OBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A754FD7C19094EB900F92530 /* OBAppDelegate.m */; };
-		A7961E121CF460ED00F6DFC6 /* OBDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B21541CFC21B27110011A /* OBDemoViewController.m */; };
-		A7961E131CF460ED00F6DFC6 /* OBInsertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77E7C0C1986A685008083C5 /* OBInsertViewController.m */; };
-		A7961E141CF460F300F6DFC6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */; };
-		A7961E151CF460F300F6DFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75B2C851C7741AD003D753D /* LaunchScreen.storyboard */; };
-		A7961E161CF4610200F6DFC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754FD7819094EB900F92530 /* Images.xcassets */; };
-		A7961E171CF4618F00F6DFC6 /* OBTableViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7378CA81CA2CED300D30471 /* OBTableViewController.framework */; };
-		A7961E181CF4618F00F6DFC6 /* OBTableViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7378CA81CA2CED300D30471 /* OBTableViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A7F8C772244863E5007965E7 /* OBCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2AD7F3C13970201A4F8B /* OBCellModel.m */; };
-		A7F8C773244863EB007965E7 /* OBCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B273B4E3A0D2480A29D7A /* OBCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7F8C77724486578007965E7 /* OBTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F8C77524486578007965E7 /* OBTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7F8C77824486578007965E7 /* OBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F8C77624486578007965E7 /* OBTableViewCell.m */; };
+		A7F93E0628E20E3C009A43F5 /* OBAccessoryPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* OBAccessoryPropertyBinding.m */; };
+		A7F93E0728E20E3C009A43F5 /* OBIntegerPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* OBIntegerPropertyBinding.m */; };
+		A7F93E0828E20E3C009A43F5 /* OBModelCellBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* OBModelCellBinding.m */; };
+		A7F93E0928E20E3C009A43F5 /* OBPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* OBPropertyBinding.m */; };
+		A7F93E0A28E20E3C009A43F5 /* UIDatePickerPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* UIDatePickerPropertyBinding.m */; };
+		A7F93E0B28E20E3C009A43F5 /* UIImageViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* UIImageViewPropertyBinding.m */; };
+		A7F93E0C28E20E3C009A43F5 /* UILabelPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* UILabelPropertyBinding.m */; };
+		A7F93E0D28E20E3C009A43F5 /* UILabelToDatePropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* UILabelToDatePropertyBinding.m */; };
+		A7F93E0E28E20E3C009A43F5 /* UISearchBarPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* UISearchBarPropertyBinding.m */; };
+		A7F93E0F28E20E3C009A43F5 /* UITextFieldPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* UITextFieldPropertyBinding.m */; };
+		A7F93E1028E20E3C009A43F5 /* UITextViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* UITextViewPropertyBinding.m */; };
+		A7F93E1128E20E3C009A43F5 /* OBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* OBTableViewCell.m */; };
+		A7F93E1228E20E3C009A43F5 /* OBAbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* OBAbstractTableViewController.m */; };
+		A7F93E1328E20E3C009A43F5 /* OBSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* OBSimpleTableViewController.m */; };
+		A7F93E1428E20E3C009A43F5 /* OBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* OBTableViewController.m */; };
+		A7F93E1528E20E3C009A43F5 /* OBTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* OBTableViewSection.m */; };
+		A7F93E1628E20E3C009A43F5 /* OBCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* OBCellModel.m */; };
+		A7F93E1728E20E3C009A43F5 /* UITableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* UITableViewCellModel.m */; };
+		A7F93E1828E20E3C009A43F5 /* OBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* OBProperty.m */; };
+		A7F93E1928E20E3C009A43F5 /* OBReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* OBReflection.m */; };
+		A7F93E3E28E20FE3009A43F5 /* UILabelToDatePropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3328E20FE3009A43F5 /* UILabelToDatePropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E3F28E20FE3009A43F5 /* UISearchBarPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3428E20FE3009A43F5 /* UISearchBarPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4028E20FE3009A43F5 /* OBPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3528E20FE3009A43F5 /* OBPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4128E20FE3009A43F5 /* UITextViewPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3628E20FE3009A43F5 /* UITextViewPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4228E20FE3009A43F5 /* UITextFieldPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3728E20FE3009A43F5 /* UITextFieldPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4328E20FE3009A43F5 /* OBAccessoryPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3828E20FE3009A43F5 /* OBAccessoryPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4428E20FE3009A43F5 /* OBIntegerPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3928E20FE3009A43F5 /* OBIntegerPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4528E20FE3009A43F5 /* UIImageViewPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3A28E20FE3009A43F5 /* UIImageViewPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4628E20FE3009A43F5 /* UILabelPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3B28E20FE3009A43F5 /* UILabelPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4728E20FE3009A43F5 /* OBModelCellBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3C28E20FE3009A43F5 /* OBModelCellBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4828E20FE3009A43F5 /* UIDatePickerPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E3D28E20FE3009A43F5 /* UIDatePickerPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4D28E2100C009A43F5 /* OBTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E4A28E2100C009A43F5 /* OBTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E4E28E2100C009A43F5 /* OBModelBasedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E4B28E2100C009A43F5 /* OBModelBasedCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E5528E21015009A43F5 /* OBTableViewSection.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E4F28E21015009A43F5 /* OBTableViewSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E5628E21015009A43F5 /* OBTableViewController_.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E5028E21015009A43F5 /* OBTableViewController_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E5728E21015009A43F5 /* OBSimpleTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E5128E21015009A43F5 /* OBSimpleTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E5828E21016009A43F5 /* OBTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E5228E21015009A43F5 /* OBTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E5928E21016009A43F5 /* OBAbstractTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E5328E21015009A43F5 /* OBAbstractTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E5A28E21016009A43F5 /* OBTableViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E5428E21015009A43F5 /* OBTableViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E5D28E2101E009A43F5 /* OBCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E5B28E2101E009A43F5 /* OBCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E5E28E2101E009A43F5 /* UITableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E5C28E2101E009A43F5 /* UITableViewCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E6128E21026009A43F5 /* OBReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E5F28E21026009A43F5 /* OBReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F93E6228E21026009A43F5 /* OBProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F93E6028E21026009A43F5 /* OBProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_389 /* OBModelCellBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* OBModelCellBindingTest.m */; };
+		OBJ_390 /* OBSearchBarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* OBSearchBarTableViewCell.m */; };
+		OBJ_391 /* UISearchBarPropertyBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* UISearchBarPropertyBindingTest.m */; };
+		OBJ_392 /* OBAbstractTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* OBAbstractTableViewControllerTest.m */; };
+		OBJ_393 /* OBCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* OBCustomTableViewCell.m */; };
+		OBJ_394 /* OBSimpleTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* OBSimpleTableViewControllerTest.m */; };
+		OBJ_395 /* OBTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* OBTableViewControllerTest.m */; };
+		OBJ_396 /* OBTableViewControllerTest_SetModels.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* OBTableViewControllerTest_SetModels.m */; };
+		OBJ_397 /* OBTableViewController_ModelProtocol_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* OBTableViewController_ModelProtocol_Test.m */; };
+		OBJ_398 /* OBTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* OBTestCase.m */; };
+		OBJ_399 /* UITableViewStub.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* UITableViewStub.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A7961E191CF4618F00F6DFC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A754FD2F19094CFE00F92530 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7378CA71CA2CED300D30471;
-			remoteInfo = OBTableViewController;
-		};
-		A7961E1C1CF4627B00F6DFC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A754FD2F19094CFE00F92530 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7961DF51CF460D900F6DFC6;
-			remoteInfo = DemoApp;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A758DB731D65E5270055A886 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A73A215C2583CE450063C2D2 /* OCHamcrest.xcframework in CopyFiles */,
-				A73A215D2583CE450063C2D2 /* OCMockito.xcframework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7961E1B1CF4618F00F6DFC6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A7961E181CF4618F00F6DFC6 /* OBTableViewController.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		355B20114F297F3CB2189724 /* UITextViewPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewPropertyBinding.h; sourceTree = "<group>"; };
-		355B202917724E974E85772A /* OBAccessoryPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAccessoryPropertyBinding.h; sourceTree = "<group>"; };
-		355B2045B23DD29001B78D7A /* UIDatePickerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerPropertyBinding.h; sourceTree = "<group>"; };
-		355B2058C0CBB17FB498DCFE /* UITableViewStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewStub.m; sourceTree = "<group>"; };
-		355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAbstractTableViewController.m; sourceTree = "<group>"; };
-		355B2123F178907C41F816A0 /* UITableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewCellModel.m; sourceTree = "<group>"; };
-		355B21541CFC21B27110011A /* OBDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBDemoViewController.m; sourceTree = "<group>"; };
-		355B217D70CF3AF2312F1A8F /* OBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewController.m; sourceTree = "<group>"; };
-		355B219DC28E2BA7EAF6A2E2 /* OBSearchBarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSearchBarTableViewCell.m; sourceTree = "<group>"; };
-		355B21A484FCF7700D1D137D /* OBModelCellBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBinding.m; sourceTree = "<group>"; };
-		355B21B5E2A6856A8DB9F9BA /* UITableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellModel.h; sourceTree = "<group>"; };
-		355B220F1054DA7DF6C068CA /* UITextViewPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewPropertyBinding.m; sourceTree = "<group>"; };
-		355B2276845046B45EE861F0 /* OBAbstractTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAbstractTableViewControllerTest.m; sourceTree = "<group>"; };
-		355B22BE0E059B7C50EE2C2D /* OBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBProperty.m; sourceTree = "<group>"; };
-		355B22C856FA3242F52C2729 /* OBTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewSection.h; sourceTree = "<group>"; };
-		355B230AF2474DA62A75CB4B /* UIDatePickerPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerPropertyBinding.m; sourceTree = "<group>"; };
-		355B234C4BDDA9CF42B4F875 /* UILabelToDatePropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelToDatePropertyBinding.m; sourceTree = "<group>"; };
-		355B23D1CCD44E05D98D0F36 /* UIImageViewPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewPropertyBinding.m; sourceTree = "<group>"; };
-		355B23DC1CB32883B8FC9C09 /* OBTableViewControllerTest_SetModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest_SetModels.m; sourceTree = "<group>"; };
-		355B24C82821063FCA7969D7 /* OBModelBasedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBModelBasedCell.h; sourceTree = "<group>"; };
-		355B24C8B1113A39A1EB9336 /* OBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewController.h; sourceTree = "<group>"; };
-		355B2570F32C5BB4DAB19813 /* OBSimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSimpleTableViewController.h; sourceTree = "<group>"; };
-		355B258470BE994BF75E1FC6 /* OBAbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAbstractTableViewController.h; sourceTree = "<group>"; };
-		355B25D1B751831C8D6C93D2 /* OBSimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSimpleTableViewController.m; sourceTree = "<group>"; };
-		355B25ECE0C021A8C55F81E4 /* UISearchBarPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBinding.m; sourceTree = "<group>"; };
-		355B2633358B942BB632449C /* UILabelToDatePropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelToDatePropertyBinding.h; sourceTree = "<group>"; };
-		355B26915C1DF789E5E162C2 /* OBTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTestCase.h; sourceTree = "<group>"; };
-		355B26B987C33D692456D0B8 /* OBTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewSection.m; sourceTree = "<group>"; };
-		355B26CC11DCF0D46B6B4EEA /* UILabelPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelPropertyBinding.h; sourceTree = "<group>"; };
-		355B26CDDD0B40303AE48656 /* OBTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest.m; sourceTree = "<group>"; };
-		355B273B4E3A0D2480A29D7A /* OBCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCellModel.h; sourceTree = "<group>"; };
-		355B27A3D2302B17EFCF5870 /* UISearchBarPropertyBindingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBindingTest.m; sourceTree = "<group>"; };
-		355B27DFDE3E383136D31ADA /* OBDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDemoViewController.h; sourceTree = "<group>"; };
-		355B280D0B200C334901D126 /* OBTableViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewControllerDelegate.h; sourceTree = "<group>"; };
-		355B28795380302DD0C11AD1 /* OBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBProperty.h; sourceTree = "<group>"; };
-		355B28DBF02C849B5651230C /* OBModelCellBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBModelCellBinding.h; sourceTree = "<group>"; };
-		355B29345456AA4764F2E995 /* OBTableViewController_ModelProtocol_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewController_ModelProtocol_Test.m; sourceTree = "<group>"; };
-		355B2AB01B75C88B6A61D2D4 /* UITableViewStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewStub.h; sourceTree = "<group>"; };
-		355B2AD7F3C13970201A4F8B /* OBCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCellModel.m; sourceTree = "<group>"; };
-		355B2B019FDC69BF58EDCDCF /* OBPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBPropertyBinding.h; sourceTree = "<group>"; };
-		355B2B7E748A1D46F3388333 /* OBAccessoryPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAccessoryPropertyBinding.m; sourceTree = "<group>"; };
-		355B2BB8476B02A1745B4AFB /* UIImageViewPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewPropertyBinding.h; sourceTree = "<group>"; };
-		355B2BBACB9827E2B653CBE8 /* OBReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBReflection.h; sourceTree = "<group>"; };
-		355B2BFE2BB5AF7B639D89F1 /* OBSimpleTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSimpleTableViewControllerTest.m; sourceTree = "<group>"; };
-		355B2C2FE9A4259BA6A605BC /* OBSearchBarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSearchBarTableViewCell.h; sourceTree = "<group>"; };
-		355B2CA2F3830BFB2C6F4360 /* UILabelPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelPropertyBinding.m; sourceTree = "<group>"; };
-		355B2D1913D5E582B24BBB49 /* OBModelCellBindingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBindingTest.m; sourceTree = "<group>"; };
-		355B2D65015654E524532F02 /* OBReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBReflection.m; sourceTree = "<group>"; };
-		355B2DB14E52A15EF1995622 /* UITextFieldPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldPropertyBinding.h; sourceTree = "<group>"; };
-		355B2E21B4A242F9370BBDD9 /* OBIntegerPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBIntegerPropertyBinding.m; sourceTree = "<group>"; };
-		355B2F209A32F0F285B89DF9 /* OBIntegerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBIntegerPropertyBinding.h; sourceTree = "<group>"; };
-		355B2F4F85B66FB5132CA123 /* OBCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCustomTableViewCell.h; sourceTree = "<group>"; };
-		355B2F7CE7C3C217B0E54501 /* OBCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCustomTableViewCell.m; sourceTree = "<group>"; };
-		355B2FADC1B95E84CA108B9A /* UITextFieldPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldPropertyBinding.m; sourceTree = "<group>"; };
-		355B2FC3536F7CE46FFD85C6 /* UISearchBarPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchBarPropertyBinding.h; sourceTree = "<group>"; };
-		355B2FED1592B6C99E355D50 /* OBTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTestCase.m; sourceTree = "<group>"; };
-		355B2FFCCCF2D783A8CD2DBF /* OBPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBPropertyBinding.m; sourceTree = "<group>"; };
-		A7378CA81CA2CED300D30471 /* OBTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OBTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7378CC91CA2D0AC00D30471 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7378CCB1CA2D0BD00D30471 /* OBTableViewController-Umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OBTableViewController-Umbrella.h"; sourceTree = "<group>"; };
-		A7378CE01CA2D17200D30471 /* OBTableViewController.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = OBTableViewController.modulemap; sourceTree = "<group>"; };
-		A73A21432583CC8A0063C2D2 /* OCMockito.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMockito.xcframework; path = Carthage/Build/OCMockito.xcframework; sourceTree = "<group>"; };
-		A73A21442583CC8A0063C2D2 /* OCHamcrest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCHamcrest.xcframework; path = Carthage/Build/OCHamcrest.xcframework; sourceTree = "<group>"; };
-		A73A214B2583CD100063C2D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A754FD3A19094CFE00F92530 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A754FD3C19094CFE00F92530 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A754FD3E19094CFE00F92530 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A754FD4019094CFE00F92530 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A754FD5719094CFE00F92530 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A754FD7319094EB900F92530 /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
-		A754FD7419094EB900F92530 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
-		A754FD7819094EB900F92530 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A754FD7A19094EB900F92530 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A754FD7B19094EB900F92530 /* OBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBAppDelegate.h; sourceTree = "<group>"; };
-		A754FD7C19094EB900F92530 /* OBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAppDelegate.m; sourceTree = "<group>"; };
-		A754FD7F19094EB900F92530 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
-		A75B2C851C7741AD003D753D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A77E7C0B1986A685008083C5 /* OBInsertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBInsertViewController.h; sourceTree = "<group>"; };
-		A77E7C0C1986A685008083C5 /* OBInsertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBInsertViewController.m; sourceTree = "<group>"; };
-		A7961DF61CF460D900F6DFC6 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7E11C3D1909614700AEA800 /* Test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
-		A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		A7F8C77524486578007965E7 /* OBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBTableViewCell.h; sourceTree = "<group>"; };
-		A7F8C77624486578007965E7 /* OBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBTableViewCell.m; sourceTree = "<group>"; };
+		A7F93DFF28E20DF1009A43F5 /* OBTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OBTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F93E0128E20DF1009A43F5 /* OBTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBTableViewController.h; sourceTree = "<group>"; };
+		A7F93E3328E20FE3009A43F5 /* UILabelToDatePropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelToDatePropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E3428E20FE3009A43F5 /* UISearchBarPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchBarPropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E3528E20FE3009A43F5 /* OBPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBPropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E3628E20FE3009A43F5 /* UITextViewPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewPropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E3728E20FE3009A43F5 /* UITextFieldPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldPropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E3828E20FE3009A43F5 /* OBAccessoryPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAccessoryPropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E3928E20FE3009A43F5 /* OBIntegerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBIntegerPropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E3A28E20FE3009A43F5 /* UIImageViewPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewPropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E3B28E20FE3009A43F5 /* UILabelPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelPropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E3C28E20FE3009A43F5 /* OBModelCellBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBModelCellBinding.h; sourceTree = "<group>"; };
+		A7F93E3D28E20FE3009A43F5 /* UIDatePickerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerPropertyBinding.h; sourceTree = "<group>"; };
+		A7F93E4928E2100C009A43F5 /* OBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewController.h; sourceTree = "<group>"; };
+		A7F93E4A28E2100C009A43F5 /* OBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewCell.h; sourceTree = "<group>"; };
+		A7F93E4B28E2100C009A43F5 /* OBModelBasedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBModelBasedCell.h; sourceTree = "<group>"; };
+		A7F93E4F28E21015009A43F5 /* OBTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewSection.h; sourceTree = "<group>"; };
+		A7F93E5028E21015009A43F5 /* OBTableViewController_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewController_.h; sourceTree = "<group>"; };
+		A7F93E5128E21015009A43F5 /* OBSimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSimpleTableViewController.h; sourceTree = "<group>"; };
+		A7F93E5228E21015009A43F5 /* OBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewController.h; sourceTree = "<group>"; };
+		A7F93E5328E21015009A43F5 /* OBAbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAbstractTableViewController.h; sourceTree = "<group>"; };
+		A7F93E5428E21015009A43F5 /* OBTableViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewControllerDelegate.h; sourceTree = "<group>"; };
+		A7F93E5B28E2101E009A43F5 /* OBCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCellModel.h; sourceTree = "<group>"; };
+		A7F93E5C28E2101E009A43F5 /* UITableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellModel.h; sourceTree = "<group>"; };
+		A7F93E5F28E21026009A43F5 /* OBReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBReflection.h; sourceTree = "<group>"; };
+		A7F93E6028E21026009A43F5 /* OBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBProperty.h; sourceTree = "<group>"; };
+		OBJ_100 /* MKTSelectorArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTSelectorArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_101 /* MKTShortArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTShortArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_102 /* MKTStructArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTStructArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_103 /* MKTUnsignedCharArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedCharArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_104 /* MKTUnsignedIntArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedIntArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_105 /* MKTUnsignedLongArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedLongArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_106 /* MKTUnsignedLongLongArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedLongLongArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_107 /* MKTUnsignedShortArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedShortArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_109 /* MKTBoolReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTBoolReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_110 /* MKTCharReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTCharReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_111 /* MKTClassReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTClassReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_112 /* MKTDoubleReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTDoubleReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_113 /* MKTFloatReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTFloatReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_114 /* MKTIntReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTIntReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_115 /* MKTLongLongReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTLongLongReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_116 /* MKTLongReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTLongReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_117 /* MKTObjectReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTObjectReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_118 /* MKTReturnValueSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTReturnValueSetter.m; sourceTree = "<group>"; };
+		OBJ_119 /* MKTReturnValueSetterChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTReturnValueSetterChain.m; sourceTree = "<group>"; };
+		OBJ_12 /* OBAccessoryPropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAccessoryPropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_120 /* MKTShortReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTShortReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_121 /* MKTStructReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTStructReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_122 /* MKTUnsignedCharReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedCharReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_123 /* MKTUnsignedIntReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedIntReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_124 /* MKTUnsignedLongLongReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedLongLongReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_125 /* MKTUnsignedLongReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedLongReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_126 /* MKTUnsignedShortReturnSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTUnsignedShortReturnSetter.m; sourceTree = "<group>"; };
+		OBJ_128 /* MKTCallStackElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTCallStackElement.m; sourceTree = "<group>"; };
+		OBJ_129 /* MKTFilterCallStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTFilterCallStack.m; sourceTree = "<group>"; };
+		OBJ_13 /* OBIntegerPropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBIntegerPropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_130 /* MKTInvocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTInvocation.m; sourceTree = "<group>"; };
+		OBJ_131 /* MKTInvocationMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTInvocationMatcher.m; sourceTree = "<group>"; };
+		OBJ_132 /* MKTLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTLocation.m; sourceTree = "<group>"; };
+		OBJ_133 /* MKTMatchingInvocationsFinder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTMatchingInvocationsFinder.m; sourceTree = "<group>"; };
+		OBJ_134 /* MKTParseCallStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTParseCallStack.m; sourceTree = "<group>"; };
+		OBJ_135 /* MKTPrinter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTPrinter.m; sourceTree = "<group>"; };
+		OBJ_136 /* MKT_TPDWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKT_TPDWeakProxy.m; sourceTree = "<group>"; };
+		OBJ_137 /* NSInvocation+OCMockito.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+OCMockito.m"; sourceTree = "<group>"; };
+		OBJ_139 /* MKTBaseMockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTBaseMockObject.m; sourceTree = "<group>"; };
+		OBJ_14 /* OBModelCellBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBinding.m; sourceTree = "<group>"; };
+		OBJ_140 /* MKTClassObjectMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTClassObjectMock.m; sourceTree = "<group>"; };
+		OBJ_141 /* MKTDynamicProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTDynamicProperties.m; sourceTree = "<group>"; };
+		OBJ_142 /* MKTObjectAndProtocolMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTObjectAndProtocolMock.m; sourceTree = "<group>"; };
+		OBJ_143 /* MKTObjectMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTObjectMock.m; sourceTree = "<group>"; };
+		OBJ_144 /* MKTProtocolMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTProtocolMock.m; sourceTree = "<group>"; };
+		OBJ_145 /* MKTSingletonSwizzler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTSingletonSwizzler.m; sourceTree = "<group>"; };
+		OBJ_147 /* MKTExecutesBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTExecutesBlock.m; sourceTree = "<group>"; };
+		OBJ_148 /* MKTInvocationContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTInvocationContainer.m; sourceTree = "<group>"; };
+		OBJ_149 /* MKTOngoingStubbing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTOngoingStubbing.m; sourceTree = "<group>"; };
+		OBJ_15 /* OBPropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBPropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_150 /* MKTReturnsValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTReturnsValue.m; sourceTree = "<group>"; };
+		OBJ_151 /* MKTStubbedInvocationMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTStubbedInvocationMatcher.m; sourceTree = "<group>"; };
+		OBJ_152 /* MKTThrowsException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTThrowsException.m; sourceTree = "<group>"; };
+		OBJ_154 /* MKTAtLeastNumberOfInvocationsChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTAtLeastNumberOfInvocationsChecker.m; sourceTree = "<group>"; };
+		OBJ_155 /* MKTAtLeastTimes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTAtLeastTimes.m; sourceTree = "<group>"; };
+		OBJ_156 /* MKTAtMostNumberOfInvocationsChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTAtMostNumberOfInvocationsChecker.m; sourceTree = "<group>"; };
+		OBJ_157 /* MKTAtMostTimes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTAtMostTimes.m; sourceTree = "<group>"; };
+		OBJ_158 /* MKTExactTimes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTExactTimes.m; sourceTree = "<group>"; };
+		OBJ_159 /* MKTInvocationsChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTInvocationsChecker.m; sourceTree = "<group>"; };
+		OBJ_16 /* UIDatePickerPropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerPropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_160 /* MKTMissingInvocationChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTMissingInvocationChecker.m; sourceTree = "<group>"; };
+		OBJ_161 /* MKTNumberOfInvocationsChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTNumberOfInvocationsChecker.m; sourceTree = "<group>"; };
+		OBJ_162 /* MKTVerificationData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTVerificationData.m; sourceTree = "<group>"; };
+		OBJ_165 /* MKTNonObjectArgumentMatching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTNonObjectArgumentMatching.h; sourceTree = "<group>"; };
+		OBJ_166 /* MKTClassObjectMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTClassObjectMock.h; sourceTree = "<group>"; };
+		OBJ_167 /* MKTBaseMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTBaseMockObject.h; sourceTree = "<group>"; };
+		OBJ_168 /* OCMockito.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMockito.h; sourceTree = "<group>"; };
+		OBJ_169 /* MKTOngoingStubbing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTOngoingStubbing.h; sourceTree = "<group>"; };
+		OBJ_17 /* UIImageViewPropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewPropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_170 /* MKTObjectMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTObjectMock.h; sourceTree = "<group>"; };
+		OBJ_171 /* NSInvocation+OCMockito.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+OCMockito.h"; sourceTree = "<group>"; };
+		OBJ_172 /* MKTProtocolMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTProtocolMock.h; sourceTree = "<group>"; };
+		OBJ_173 /* MKTObjectAndProtocolMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTObjectAndProtocolMock.h; sourceTree = "<group>"; };
+		OBJ_174 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/rene/workspace/openbakery/frameworks/OBTableViewController/OBTableViewController.xcodeproj/GeneratedModuleMap/OCMockito/module.modulemap; sourceTree = "<group>"; };
+		OBJ_176 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/rene/workspace/openbakery/frameworks/OBTableViewController/.build/checkouts/OCHamcrest/Package.swift; sourceTree = "<group>"; };
+		OBJ_178 /* HCAssertThat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCAssertThat.m; sourceTree = "<group>"; };
+		OBJ_179 /* HCBaseDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCBaseDescription.m; sourceTree = "<group>"; };
+		OBJ_18 /* UILabelPropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelPropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_180 /* HCBaseMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCBaseMatcher.m; sourceTree = "<group>"; };
+		OBJ_181 /* HCDiagnosingMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDiagnosingMatcher.m; sourceTree = "<group>"; };
+		OBJ_182 /* HCStringDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCStringDescription.m; sourceTree = "<group>"; };
+		OBJ_184 /* HCCollect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCCollect.m; sourceTree = "<group>"; };
+		OBJ_185 /* HCInvocationMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCInvocationMatcher.m; sourceTree = "<group>"; };
+		OBJ_186 /* HCRequireNonNilObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCRequireNonNilObject.m; sourceTree = "<group>"; };
+		OBJ_187 /* HCRunloopRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCRunloopRunner.m; sourceTree = "<group>"; };
+		OBJ_188 /* HCWrapInMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCWrapInMatcher.m; sourceTree = "<group>"; };
+		OBJ_189 /* NSInvocation+OCHamcrest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+OCHamcrest.m"; sourceTree = "<group>"; };
+		OBJ_19 /* UILabelToDatePropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelToDatePropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_191 /* HCBoolReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCBoolReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_192 /* HCCharReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCCharReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_193 /* HCDoubleReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDoubleReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_194 /* HCFloatReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCFloatReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_195 /* HCIntReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIntReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_196 /* HCLongLongReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCLongLongReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_197 /* HCLongReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCLongReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_198 /* HCObjectReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCObjectReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_199 /* HCReturnTypeHandlerChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCReturnTypeHandlerChain.m; sourceTree = "<group>"; };
+		OBJ_20 /* UISearchBarPropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_200 /* HCReturnValueGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCReturnValueGetter.m; sourceTree = "<group>"; };
+		OBJ_201 /* HCShortReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCShortReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_202 /* HCUnsignedCharReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCUnsignedCharReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_203 /* HCUnsignedIntReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCUnsignedIntReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_204 /* HCUnsignedLongLongReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCUnsignedLongLongReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_205 /* HCUnsignedLongReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCUnsignedLongReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_206 /* HCUnsignedShortReturnGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCUnsignedShortReturnGetter.m; sourceTree = "<group>"; };
+		OBJ_208 /* HCGenericTestFailureReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCGenericTestFailureReporter.m; sourceTree = "<group>"; };
+		OBJ_209 /* HCSenTestFailureReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCSenTestFailureReporter.m; sourceTree = "<group>"; };
+		OBJ_21 /* UITextFieldPropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextFieldPropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_210 /* HCTestFailure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCTestFailure.m; sourceTree = "<group>"; };
+		OBJ_211 /* HCTestFailureReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCTestFailureReporter.m; sourceTree = "<group>"; };
+		OBJ_212 /* HCTestFailureReporterChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCTestFailureReporterChain.m; sourceTree = "<group>"; };
+		OBJ_213 /* HCXCTestFailureReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCXCTestFailureReporter.m; sourceTree = "<group>"; };
+		OBJ_214 /* HCXCTestIssueFailureReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCXCTestIssueFailureReporter.m; sourceTree = "<group>"; };
+		OBJ_217 /* HCEvery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCEvery.m; sourceTree = "<group>"; };
+		OBJ_218 /* HCHasCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCHasCount.m; sourceTree = "<group>"; };
+		OBJ_219 /* HCIsCollectionContaining.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsCollectionContaining.m; sourceTree = "<group>"; };
+		OBJ_22 /* UITextViewPropertyBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewPropertyBinding.m; sourceTree = "<group>"; };
+		OBJ_220 /* HCIsCollectionContainingInAnyOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsCollectionContainingInAnyOrder.m; sourceTree = "<group>"; };
+		OBJ_221 /* HCIsCollectionContainingInOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsCollectionContainingInOrder.m; sourceTree = "<group>"; };
+		OBJ_222 /* HCIsCollectionContainingInRelativeOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsCollectionContainingInRelativeOrder.m; sourceTree = "<group>"; };
+		OBJ_223 /* HCIsCollectionOnlyContaining.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsCollectionOnlyContaining.m; sourceTree = "<group>"; };
+		OBJ_224 /* HCIsDictionaryContaining.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsDictionaryContaining.m; sourceTree = "<group>"; };
+		OBJ_225 /* HCIsDictionaryContainingEntries.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsDictionaryContainingEntries.m; sourceTree = "<group>"; };
+		OBJ_226 /* HCIsDictionaryContainingKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsDictionaryContainingKey.m; sourceTree = "<group>"; };
+		OBJ_227 /* HCIsDictionaryContainingValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsDictionaryContainingValue.m; sourceTree = "<group>"; };
+		OBJ_228 /* HCIsEmptyCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsEmptyCollection.m; sourceTree = "<group>"; };
+		OBJ_229 /* HCIsIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsIn.m; sourceTree = "<group>"; };
+		OBJ_231 /* HCDescribedAs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDescribedAs.m; sourceTree = "<group>"; };
+		OBJ_232 /* HCIs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIs.m; sourceTree = "<group>"; };
+		OBJ_234 /* HCAllOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCAllOf.m; sourceTree = "<group>"; };
+		OBJ_235 /* HCAnyOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCAnyOf.m; sourceTree = "<group>"; };
+		OBJ_236 /* HCIsAnything.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsAnything.m; sourceTree = "<group>"; };
+		OBJ_237 /* HCIsNot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsNot.m; sourceTree = "<group>"; };
+		OBJ_239 /* HCIsCloseTo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsCloseTo.m; sourceTree = "<group>"; };
+		OBJ_24 /* OBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBTableViewCell.m; sourceTree = "<group>"; };
+		OBJ_240 /* HCIsEqualToNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsEqualToNumber.m; sourceTree = "<group>"; };
+		OBJ_241 /* HCIsTrueFalse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsTrueFalse.m; sourceTree = "<group>"; };
+		OBJ_242 /* HCNumberAssert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNumberAssert.m; sourceTree = "<group>"; };
+		OBJ_243 /* HCOrderingComparison.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCOrderingComparison.m; sourceTree = "<group>"; };
+		OBJ_245 /* HCArgumentCaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCArgumentCaptor.m; sourceTree = "<group>"; };
+		OBJ_246 /* HCClassMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCClassMatcher.m; sourceTree = "<group>"; };
+		OBJ_247 /* HCConformsToProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCConformsToProtocol.m; sourceTree = "<group>"; };
+		OBJ_248 /* HCHasDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCHasDescription.m; sourceTree = "<group>"; };
+		OBJ_249 /* HCHasProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCHasProperty.m; sourceTree = "<group>"; };
+		OBJ_250 /* HCIsEqual.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsEqual.m; sourceTree = "<group>"; };
+		OBJ_251 /* HCIsInstanceOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsInstanceOf.m; sourceTree = "<group>"; };
+		OBJ_252 /* HCIsNil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsNil.m; sourceTree = "<group>"; };
+		OBJ_253 /* HCIsSame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsSame.m; sourceTree = "<group>"; };
+		OBJ_254 /* HCIsTypeOf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsTypeOf.m; sourceTree = "<group>"; };
+		OBJ_255 /* HCThrowsException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCThrowsException.m; sourceTree = "<group>"; };
+		OBJ_257 /* HCIsEqualCompressingWhiteSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsEqualCompressingWhiteSpace.m; sourceTree = "<group>"; };
+		OBJ_258 /* HCIsEqualIgnoringCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCIsEqualIgnoringCase.m; sourceTree = "<group>"; };
+		OBJ_259 /* HCStringContains.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCStringContains.m; sourceTree = "<group>"; };
+		OBJ_26 /* OBAbstractTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAbstractTableViewController.m; sourceTree = "<group>"; };
+		OBJ_260 /* HCStringContainsInOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCStringContainsInOrder.m; sourceTree = "<group>"; };
+		OBJ_261 /* HCStringEndsWith.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCStringEndsWith.m; sourceTree = "<group>"; };
+		OBJ_262 /* HCStringStartsWith.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCStringStartsWith.m; sourceTree = "<group>"; };
+		OBJ_263 /* HCSubstringMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCSubstringMatcher.m; sourceTree = "<group>"; };
+		OBJ_266 /* HCIsEmptyCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsEmptyCollection.h; sourceTree = "<group>"; };
+		OBJ_267 /* HCNumberAssert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCNumberAssert.h; sourceTree = "<group>"; };
+		OBJ_268 /* HCTestFailure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCTestFailure.h; sourceTree = "<group>"; };
+		OBJ_269 /* HCIsEqual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsEqual.h; sourceTree = "<group>"; };
+		OBJ_27 /* OBSimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBSimpleTableViewController.m; sourceTree = "<group>"; };
+		OBJ_270 /* HCStringEndsWith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCStringEndsWith.h; sourceTree = "<group>"; };
+		OBJ_271 /* HCIsCollectionContaining.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsCollectionContaining.h; sourceTree = "<group>"; };
+		OBJ_272 /* HCStringContains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCStringContains.h; sourceTree = "<group>"; };
+		OBJ_273 /* HCOrderingComparison.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCOrderingComparison.h; sourceTree = "<group>"; };
+		OBJ_274 /* HCClassMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCClassMatcher.h; sourceTree = "<group>"; };
+		OBJ_275 /* HCBaseDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCBaseDescription.h; sourceTree = "<group>"; };
+		OBJ_276 /* HCIsIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsIn.h; sourceTree = "<group>"; };
+		OBJ_277 /* HCAllOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCAllOf.h; sourceTree = "<group>"; };
+		OBJ_278 /* HCIsInstanceOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsInstanceOf.h; sourceTree = "<group>"; };
+		OBJ_279 /* HCMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCMatcher.h; sourceTree = "<group>"; };
+		OBJ_28 /* OBTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBTableViewController.m; sourceTree = "<group>"; };
+		OBJ_280 /* OCHamcrest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCHamcrest.h; sourceTree = "<group>"; };
+		OBJ_281 /* HCIs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIs.h; sourceTree = "<group>"; };
+		OBJ_282 /* HCStringStartsWith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCStringStartsWith.h; sourceTree = "<group>"; };
+		OBJ_283 /* HCStringDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCStringDescription.h; sourceTree = "<group>"; };
+		OBJ_284 /* HCHasProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCHasProperty.h; sourceTree = "<group>"; };
+		OBJ_285 /* HCInvocationMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCInvocationMatcher.h; sourceTree = "<group>"; };
+		OBJ_286 /* HCDiagnosingMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDiagnosingMatcher.h; sourceTree = "<group>"; };
+		OBJ_287 /* HCConformsToProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCConformsToProtocol.h; sourceTree = "<group>"; };
+		OBJ_288 /* HCArgumentCaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCArgumentCaptor.h; sourceTree = "<group>"; };
+		OBJ_289 /* HCAssertThat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCAssertThat.h; sourceTree = "<group>"; };
+		OBJ_29 /* OBTableViewSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBTableViewSection.m; sourceTree = "<group>"; };
+		OBJ_290 /* HCIsCollectionContainingInRelativeOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsCollectionContainingInRelativeOrder.h; sourceTree = "<group>"; };
+		OBJ_291 /* HCIsNil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsNil.h; sourceTree = "<group>"; };
+		OBJ_292 /* HCSubstringMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCSubstringMatcher.h; sourceTree = "<group>"; };
+		OBJ_293 /* HCTestFailureReporterChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCTestFailureReporterChain.h; sourceTree = "<group>"; };
+		OBJ_294 /* HCIsEqualIgnoringCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsEqualIgnoringCase.h; sourceTree = "<group>"; };
+		OBJ_295 /* HCIsTrueFalse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsTrueFalse.h; sourceTree = "<group>"; };
+		OBJ_296 /* HCEvery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCEvery.h; sourceTree = "<group>"; };
+		OBJ_297 /* HCIsDictionaryContaining.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsDictionaryContaining.h; sourceTree = "<group>"; };
+		OBJ_298 /* HCIsNot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsNot.h; sourceTree = "<group>"; };
+		OBJ_299 /* HCIsAnything.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsAnything.h; sourceTree = "<group>"; };
+		OBJ_300 /* HCIsSame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsSame.h; sourceTree = "<group>"; };
+		OBJ_301 /* HCDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDescription.h; sourceTree = "<group>"; };
+		OBJ_302 /* HCBaseMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCBaseMatcher.h; sourceTree = "<group>"; };
+		OBJ_303 /* HCIsTypeOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsTypeOf.h; sourceTree = "<group>"; };
+		OBJ_304 /* HCIsCollectionContainingInAnyOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsCollectionContainingInAnyOrder.h; sourceTree = "<group>"; };
+		OBJ_305 /* HCIsCloseTo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsCloseTo.h; sourceTree = "<group>"; };
+		OBJ_306 /* HCIsCollectionOnlyContaining.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsCollectionOnlyContaining.h; sourceTree = "<group>"; };
+		OBJ_307 /* HCIsDictionaryContainingEntries.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsDictionaryContainingEntries.h; sourceTree = "<group>"; };
+		OBJ_308 /* HCWrapInMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCWrapInMatcher.h; sourceTree = "<group>"; };
+		OBJ_309 /* HCSelfDescribing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCSelfDescribing.h; sourceTree = "<group>"; };
+		OBJ_31 /* OBCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBCellModel.m; sourceTree = "<group>"; };
+		OBJ_310 /* HCIsEqualCompressingWhiteSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsEqualCompressingWhiteSpace.h; sourceTree = "<group>"; };
+		OBJ_311 /* HCIsEqualToNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsEqualToNumber.h; sourceTree = "<group>"; };
+		OBJ_312 /* HCStringContainsInOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCStringContainsInOrder.h; sourceTree = "<group>"; };
+		OBJ_313 /* HCThrowsException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCThrowsException.h; sourceTree = "<group>"; };
+		OBJ_314 /* HCDescribedAs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDescribedAs.h; sourceTree = "<group>"; };
+		OBJ_315 /* HCHasCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCHasCount.h; sourceTree = "<group>"; };
+		OBJ_316 /* HCRequireNonNilObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCRequireNonNilObject.h; sourceTree = "<group>"; };
+		OBJ_317 /* HCIsCollectionContainingInOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsCollectionContainingInOrder.h; sourceTree = "<group>"; };
+		OBJ_318 /* HCTestFailureReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCTestFailureReporter.h; sourceTree = "<group>"; };
+		OBJ_319 /* HCIsDictionaryContainingValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsDictionaryContainingValue.h; sourceTree = "<group>"; };
+		OBJ_32 /* UITableViewCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewCellModel.m; sourceTree = "<group>"; };
+		OBJ_320 /* HCAnyOf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCAnyOf.h; sourceTree = "<group>"; };
+		OBJ_321 /* HCIsDictionaryContainingKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCIsDictionaryContainingKey.h; sourceTree = "<group>"; };
+		OBJ_322 /* HCHasDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCHasDescription.h; sourceTree = "<group>"; };
+		OBJ_323 /* HCCollect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCCollect.h; sourceTree = "<group>"; };
+		OBJ_324 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/rene/workspace/openbakery/frameworks/OBTableViewController/OBTableViewController.xcodeproj/GeneratedModuleMap/OCHamcrest/module.modulemap; sourceTree = "<group>"; };
+		OBJ_330 /* Demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Demo; sourceTree = SOURCE_ROOT; };
+		OBJ_331 /* OBTableViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OBTableViewController; sourceTree = SOURCE_ROOT; };
+		OBJ_332 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Core; sourceTree = SOURCE_ROOT; };
+		OBJ_333 /* gradle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gradle; sourceTree = SOURCE_ROOT; };
+		OBJ_334 /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = SOURCE_ROOT; };
+		OBJ_335 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_336 /* Changelog.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Changelog.md; sourceTree = "<group>"; };
+		OBJ_337 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		OBJ_338 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		OBJ_339 /* gradlew */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradlew; sourceTree = "<group>"; };
+		OBJ_34 /* OBProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBProperty.m; sourceTree = "<group>"; };
+		OBJ_340 /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		OBJ_35 /* OBReflection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBReflection.m; sourceTree = "<group>"; };
+		OBJ_38 /* OBModelBasedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBModelBasedCell.h; sourceTree = "<group>"; };
+		OBJ_39 /* OBTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBTableViewController.h; sourceTree = "<group>"; };
+		OBJ_40 /* OBPropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBPropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_41 /* OBTableViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBTableViewControllerDelegate.h; sourceTree = "<group>"; };
+		OBJ_42 /* OBAbstractTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBAbstractTableViewController.h; sourceTree = "<group>"; };
+		OBJ_43 /* UITextFieldPropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldPropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_44 /* OBProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBProperty.h; sourceTree = "<group>"; };
+		OBJ_45 /* UILabelPropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelPropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_46 /* UIDatePickerPropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDatePickerPropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_47 /* OBTableViewSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBTableViewSection.h; sourceTree = "<group>"; };
+		OBJ_48 /* UITextViewPropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewPropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_49 /* OBReflection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBReflection.h; sourceTree = "<group>"; };
+		OBJ_50 /* UIImageViewPropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewPropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_51 /* OBModelCellBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBModelCellBinding.h; sourceTree = "<group>"; };
+		OBJ_52 /* UITableViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewCellModel.h; sourceTree = "<group>"; };
+		OBJ_53 /* OBTableViewController_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBTableViewController_.h; sourceTree = "<group>"; };
+		OBJ_54 /* OBCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBCellModel.h; sourceTree = "<group>"; };
+		OBJ_55 /* OBIntegerPropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBIntegerPropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_56 /* OBSimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBSimpleTableViewController.h; sourceTree = "<group>"; };
+		OBJ_57 /* OBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBTableViewCell.h; sourceTree = "<group>"; };
+		OBJ_58 /* UISearchBarPropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISearchBarPropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_59 /* UILabelToDatePropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelToDatePropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* OBAccessoryPropertyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBAccessoryPropertyBinding.h; sourceTree = "<group>"; };
+		OBJ_61 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/rene/workspace/openbakery/frameworks/OBTableViewController/OBTableViewController.xcodeproj/GeneratedModuleMap/OBTableViewController/module.modulemap; sourceTree = "<group>"; };
+		OBJ_64 /* OBModelCellBindingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBindingTest.m; sourceTree = "<group>"; };
+		OBJ_65 /* OBSearchBarTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBSearchBarTableViewCell.m; sourceTree = "<group>"; };
+		OBJ_66 /* UISearchBarPropertyBindingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBindingTest.m; sourceTree = "<group>"; };
+		OBJ_68 /* OBAbstractTableViewControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBAbstractTableViewControllerTest.m; sourceTree = "<group>"; };
+		OBJ_69 /* OBCustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBCustomTableViewCell.m; sourceTree = "<group>"; };
+		OBJ_70 /* OBSimpleTableViewControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBSimpleTableViewControllerTest.m; sourceTree = "<group>"; };
+		OBJ_71 /* OBTableViewControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest.m; sourceTree = "<group>"; };
+		OBJ_72 /* OBTableViewControllerTest_SetModels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest_SetModels.m; sourceTree = "<group>"; };
+		OBJ_73 /* OBTableViewController_ModelProtocol_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBTableViewController_ModelProtocol_Test.m; sourceTree = "<group>"; };
+		OBJ_74 /* OBTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBTestCase.m; sourceTree = "<group>"; };
+		OBJ_76 /* UITableViewStub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewStub.m; sourceTree = "<group>"; };
+		OBJ_79 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/rene/workspace/openbakery/frameworks/OBTableViewController/.build/checkouts/OCMockito/Package.swift; sourceTree = "<group>"; };
+		OBJ_82 /* MKTMockingProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTMockingProgress.m; sourceTree = "<group>"; };
+		OBJ_83 /* MKTMockitoCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTMockitoCore.m; sourceTree = "<group>"; };
+		OBJ_84 /* MKTTestLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTTestLocation.m; sourceTree = "<group>"; };
+		OBJ_85 /* OCMockito.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMockito.m; sourceTree = "<group>"; };
+		OBJ_88 /* MKTArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_89 /* MKTArgumentGetterChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTArgumentGetterChain.m; sourceTree = "<group>"; };
+		OBJ_90 /* MKTBoolArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTBoolArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_91 /* MKTCharArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTCharArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_92 /* MKTClassArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTClassArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_93 /* MKTDoubleArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTDoubleArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_94 /* MKTFloatArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTFloatArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_95 /* MKTIntArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTIntArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_96 /* MKTLongArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTLongArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_97 /* MKTLongLongArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTLongLongArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_98 /* MKTObjectArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTObjectArgumentGetter.m; sourceTree = "<group>"; };
+		OBJ_99 /* MKTPointerArgumentGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTPointerArgumentGetter.m; sourceTree = "<group>"; };
+		"obtableviewcontroller::OBTableViewControllerTests::Product" /* OBTableViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = OBTableViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A7378CA41CA2CED300D30471 /* Frameworks */ = {
+		A7F93DFC28E20DF1009A43F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A754FD5419094CFE00F92530 /* Frameworks */ = {
+		OBJ_400 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A73A214C2583CD100063C2D2 /* XCTest.framework in Frameworks */,
-				A7378D221CA2E6A300D30471 /* OBTableViewController.framework in Frameworks */,
-				A754FD5C19094CFE00F92530 /* CoreData.framework in Frameworks */,
-				A754FD5B19094CFE00F92530 /* UIKit.framework in Frameworks */,
-				A754FD5A19094CFE00F92530 /* Foundation.framework in Frameworks */,
-				A73A21592583CE3D0063C2D2 /* OCHamcrest.xcframework in Frameworks */,
-				A73A215A2583CE3D0063C2D2 /* OCMockito.xcframework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7961DF31CF460D900F6DFC6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7961E171CF4618F00F6DFC6 /* OBTableViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		355B270366E27CD0ED9DFF09 /* OBReflection */ = {
+		A7F93E0028E20DF1009A43F5 /* OBTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				355B28795380302DD0C11AD1 /* OBProperty.h */,
-				355B22BE0E059B7C50EE2C2D /* OBProperty.m */,
-				355B2BBACB9827E2B653CBE8 /* OBReflection.h */,
-				355B2D65015654E524532F02 /* OBReflection.m */,
+				A7F93E0128E20DF1009A43F5 /* OBTableViewController.h */,
 			);
-			path = OBReflection;
+			path = OBTableViewController;
 			sourceTree = "<group>";
 		};
-		355B28404E0E1D444ED67508 /* Model */ = {
+		OBJ_10 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				355B2123F178907C41F816A0 /* UITableViewCellModel.m */,
-				355B21B5E2A6856A8DB9F9BA /* UITableViewCellModel.h */,
-				355B2AD7F3C13970201A4F8B /* OBCellModel.m */,
-				355B273B4E3A0D2480A29D7A /* OBCellModel.h */,
+				OBJ_11 /* Binding */,
+				OBJ_23 /* Cell */,
+				OBJ_25 /* Core */,
+				OBJ_30 /* Model */,
+				OBJ_33 /* OBReflection */,
 			);
-			path = Model;
+			path = Main;
 			sourceTree = "<group>";
 		};
-		355B2AB1DF513886E39B7A7F /* Binding */ = {
+		OBJ_108 /* ReturnValueSetters */ = {
 			isa = PBXGroup;
 			children = (
-				355B2B019FDC69BF58EDCDCF /* OBPropertyBinding.h */,
-				355B2FFCCCF2D783A8CD2DBF /* OBPropertyBinding.m */,
-				355B28DBF02C849B5651230C /* OBModelCellBinding.h */,
-				355B21A484FCF7700D1D137D /* OBModelCellBinding.m */,
-				355B26CC11DCF0D46B6B4EEA /* UILabelPropertyBinding.h */,
-				355B2CA2F3830BFB2C6F4360 /* UILabelPropertyBinding.m */,
-				355B202917724E974E85772A /* OBAccessoryPropertyBinding.h */,
-				355B2B7E748A1D46F3388333 /* OBAccessoryPropertyBinding.m */,
-				355B2BB8476B02A1745B4AFB /* UIImageViewPropertyBinding.h */,
-				355B23D1CCD44E05D98D0F36 /* UIImageViewPropertyBinding.m */,
-				355B2FC3536F7CE46FFD85C6 /* UISearchBarPropertyBinding.h */,
-				355B25ECE0C021A8C55F81E4 /* UISearchBarPropertyBinding.m */,
-				355B2DB14E52A15EF1995622 /* UITextFieldPropertyBinding.h */,
-				355B2FADC1B95E84CA108B9A /* UITextFieldPropertyBinding.m */,
-				355B2045B23DD29001B78D7A /* UIDatePickerPropertyBinding.h */,
-				355B230AF2474DA62A75CB4B /* UIDatePickerPropertyBinding.m */,
-				355B2633358B942BB632449C /* UILabelToDatePropertyBinding.h */,
-				355B234C4BDDA9CF42B4F875 /* UILabelToDatePropertyBinding.m */,
-				355B2F209A32F0F285B89DF9 /* OBIntegerPropertyBinding.h */,
-				355B2E21B4A242F9370BBDD9 /* OBIntegerPropertyBinding.m */,
-				355B20114F297F3CB2189724 /* UITextViewPropertyBinding.h */,
-				355B220F1054DA7DF6C068CA /* UITextViewPropertyBinding.m */,
+				OBJ_109 /* MKTBoolReturnSetter.m */,
+				OBJ_110 /* MKTCharReturnSetter.m */,
+				OBJ_111 /* MKTClassReturnSetter.m */,
+				OBJ_112 /* MKTDoubleReturnSetter.m */,
+				OBJ_113 /* MKTFloatReturnSetter.m */,
+				OBJ_114 /* MKTIntReturnSetter.m */,
+				OBJ_115 /* MKTLongLongReturnSetter.m */,
+				OBJ_116 /* MKTLongReturnSetter.m */,
+				OBJ_117 /* MKTObjectReturnSetter.m */,
+				OBJ_118 /* MKTReturnValueSetter.m */,
+				OBJ_119 /* MKTReturnValueSetterChain.m */,
+				OBJ_120 /* MKTShortReturnSetter.m */,
+				OBJ_121 /* MKTStructReturnSetter.m */,
+				OBJ_122 /* MKTUnsignedCharReturnSetter.m */,
+				OBJ_123 /* MKTUnsignedIntReturnSetter.m */,
+				OBJ_124 /* MKTUnsignedLongLongReturnSetter.m */,
+				OBJ_125 /* MKTUnsignedLongReturnSetter.m */,
+				OBJ_126 /* MKTUnsignedShortReturnSetter.m */,
+			);
+			path = ReturnValueSetters;
+			sourceTree = "<group>";
+		};
+		OBJ_11 /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				A7F93E3828E20FE3009A43F5 /* OBAccessoryPropertyBinding.h */,
+				A7F93E3928E20FE3009A43F5 /* OBIntegerPropertyBinding.h */,
+				A7F93E3C28E20FE3009A43F5 /* OBModelCellBinding.h */,
+				A7F93E3528E20FE3009A43F5 /* OBPropertyBinding.h */,
+				A7F93E3D28E20FE3009A43F5 /* UIDatePickerPropertyBinding.h */,
+				A7F93E3A28E20FE3009A43F5 /* UIImageViewPropertyBinding.h */,
+				A7F93E3B28E20FE3009A43F5 /* UILabelPropertyBinding.h */,
+				A7F93E3328E20FE3009A43F5 /* UILabelToDatePropertyBinding.h */,
+				A7F93E3428E20FE3009A43F5 /* UISearchBarPropertyBinding.h */,
+				A7F93E3728E20FE3009A43F5 /* UITextFieldPropertyBinding.h */,
+				A7F93E3628E20FE3009A43F5 /* UITextViewPropertyBinding.h */,
+				OBJ_12 /* OBAccessoryPropertyBinding.m */,
+				OBJ_13 /* OBIntegerPropertyBinding.m */,
+				OBJ_14 /* OBModelCellBinding.m */,
+				OBJ_15 /* OBPropertyBinding.m */,
+				OBJ_16 /* UIDatePickerPropertyBinding.m */,
+				OBJ_17 /* UIImageViewPropertyBinding.m */,
+				OBJ_18 /* UILabelPropertyBinding.m */,
+				OBJ_19 /* UILabelToDatePropertyBinding.m */,
+				OBJ_20 /* UISearchBarPropertyBinding.m */,
+				OBJ_21 /* UITextFieldPropertyBinding.m */,
+				OBJ_22 /* UITextViewPropertyBinding.m */,
 			);
 			path = Binding;
 			sourceTree = "<group>";
 		};
-		355B2DF98DFF4D7F62874248 /* Stubs */ = {
+		OBJ_127 /* Invocation */ = {
 			isa = PBXGroup;
 			children = (
-				355B2AB01B75C88B6A61D2D4 /* UITableViewStub.h */,
-				355B2058C0CBB17FB498DCFE /* UITableViewStub.m */,
+				OBJ_128 /* MKTCallStackElement.m */,
+				OBJ_129 /* MKTFilterCallStack.m */,
+				OBJ_130 /* MKTInvocation.m */,
+				OBJ_131 /* MKTInvocationMatcher.m */,
+				OBJ_132 /* MKTLocation.m */,
+				OBJ_133 /* MKTMatchingInvocationsFinder.m */,
+				OBJ_134 /* MKTParseCallStack.m */,
+				OBJ_135 /* MKTPrinter.m */,
+				OBJ_136 /* MKT_TPDWeakProxy.m */,
+				OBJ_137 /* NSInvocation+OCMockito.m */,
 			);
-			path = Stubs;
+			path = Invocation;
 			sourceTree = "<group>";
 		};
-		355B2E782F8EC0C69CD254AB /* Binding */ = {
+		OBJ_138 /* Mocking */ = {
 			isa = PBXGroup;
 			children = (
-				355B2D1913D5E582B24BBB49 /* OBModelCellBindingTest.m */,
-				355B27A3D2302B17EFCF5870 /* UISearchBarPropertyBindingTest.m */,
-				355B219DC28E2BA7EAF6A2E2 /* OBSearchBarTableViewCell.m */,
-				355B2C2FE9A4259BA6A605BC /* OBSearchBarTableViewCell.h */,
+				OBJ_139 /* MKTBaseMockObject.m */,
+				OBJ_140 /* MKTClassObjectMock.m */,
+				OBJ_141 /* MKTDynamicProperties.m */,
+				OBJ_142 /* MKTObjectAndProtocolMock.m */,
+				OBJ_143 /* MKTObjectMock.m */,
+				OBJ_144 /* MKTProtocolMock.m */,
+				OBJ_145 /* MKTSingletonSwizzler.m */,
 			);
-			path = Binding;
+			path = Mocking;
 			sourceTree = "<group>";
 		};
-		A754FD2E19094CFE00F92530 = {
+		OBJ_146 /* Stubbing */ = {
 			isa = PBXGroup;
 			children = (
-				A754FD6F19094EB900F92530 /* Core */,
-				A754FD7219094EB900F92530 /* Demo */,
-				A754FD7D19094EB900F92530 /* Test */,
-				A754FD3919094CFE00F92530 /* Frameworks */,
-				A754FD3819094CFE00F92530 /* Products */,
+				OBJ_147 /* MKTExecutesBlock.m */,
+				OBJ_148 /* MKTInvocationContainer.m */,
+				OBJ_149 /* MKTOngoingStubbing.m */,
+				OBJ_150 /* MKTReturnsValue.m */,
+				OBJ_151 /* MKTStubbedInvocationMatcher.m */,
+				OBJ_152 /* MKTThrowsException.m */,
 			);
+			path = Stubbing;
 			sourceTree = "<group>";
 		};
-		A754FD3819094CFE00F92530 /* Products */ = {
+		OBJ_153 /* Verifying */ = {
 			isa = PBXGroup;
 			children = (
-				A754FD5719094CFE00F92530 /* Tests.xctest */,
-				A7378CA81CA2CED300D30471 /* OBTableViewController.framework */,
-				A7961DF61CF460D900F6DFC6 /* DemoApp.app */,
+				OBJ_154 /* MKTAtLeastNumberOfInvocationsChecker.m */,
+				OBJ_155 /* MKTAtLeastTimes.m */,
+				OBJ_156 /* MKTAtMostNumberOfInvocationsChecker.m */,
+				OBJ_157 /* MKTAtMostTimes.m */,
+				OBJ_158 /* MKTExactTimes.m */,
+				OBJ_159 /* MKTInvocationsChecker.m */,
+				OBJ_160 /* MKTMissingInvocationChecker.m */,
+				OBJ_161 /* MKTNumberOfInvocationsChecker.m */,
+				OBJ_162 /* MKTVerificationData.m */,
 			);
-			name = Products;
+			path = Verifying;
 			sourceTree = "<group>";
 		};
-		A754FD3919094CFE00F92530 /* Frameworks */ = {
+		OBJ_163 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				A73A214B2583CD100063C2D2 /* XCTest.framework */,
-				A73A21442583CC8A0063C2D2 /* OCHamcrest.xcframework */,
-				A73A21432583CC8A0063C2D2 /* OCMockito.xcframework */,
-				A754FD3A19094CFE00F92530 /* Foundation.framework */,
-				A754FD3C19094CFE00F92530 /* CoreGraphics.framework */,
-				A754FD3E19094CFE00F92530 /* UIKit.framework */,
-				A754FD4019094CFE00F92530 /* CoreData.framework */,
+				OBJ_164 /* OCMockito */,
+				OBJ_174 /* module.modulemap */,
 			);
-			name = Frameworks;
+			path = include;
 			sourceTree = "<group>";
 		};
-		A754FD6F19094EB900F92530 /* Core */ = {
+		OBJ_164 /* OCMockito */ = {
 			isa = PBXGroup;
 			children = (
-				A754FD7119094EB900F92530 /* Source */,
-				A7378CC91CA2D0AC00D30471 /* Info.plist */,
-				A7378CCB1CA2D0BD00D30471 /* OBTableViewController-Umbrella.h */,
-				A7378CE01CA2D17200D30471 /* OBTableViewController.modulemap */,
+				OBJ_165 /* MKTNonObjectArgumentMatching.h */,
+				OBJ_166 /* MKTClassObjectMock.h */,
+				OBJ_167 /* MKTBaseMockObject.h */,
+				OBJ_168 /* OCMockito.h */,
+				OBJ_169 /* MKTOngoingStubbing.h */,
+				OBJ_170 /* MKTObjectMock.h */,
+				OBJ_171 /* NSInvocation+OCMockito.h */,
+				OBJ_172 /* MKTProtocolMock.h */,
+				OBJ_173 /* MKTObjectAndProtocolMock.h */,
+			);
+			path = OCMockito;
+			sourceTree = "<group>";
+		};
+		OBJ_175 /* OCHamcrest 9.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_176 /* Package.swift */,
+				OBJ_177 /* Core */,
+				OBJ_215 /* Library */,
+				OBJ_264 /* include */,
+			);
+			name = "OCHamcrest 9.0.1";
+			path = .build/checkouts/OCHamcrest/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_177 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_178 /* HCAssertThat.m */,
+				OBJ_179 /* HCBaseDescription.m */,
+				OBJ_180 /* HCBaseMatcher.m */,
+				OBJ_181 /* HCDiagnosingMatcher.m */,
+				OBJ_182 /* HCStringDescription.m */,
+				OBJ_183 /* Helpers */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		A754FD7119094EB900F92530 /* Source */ = {
+		OBJ_183 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A7F8C77424486557007965E7 /* Cell */,
-				355B2AB1DF513886E39B7A7F /* Binding */,
-				355B28404E0E1D444ED67508 /* Model */,
-				355B270366E27CD0ED9DFF09 /* OBReflection */,
-				355B258470BE994BF75E1FC6 /* OBAbstractTableViewController.h */,
-				355B20C8526263F40A5A9527 /* OBAbstractTableViewController.m */,
-				355B2570F32C5BB4DAB19813 /* OBSimpleTableViewController.h */,
-				355B25D1B751831C8D6C93D2 /* OBSimpleTableViewController.m */,
-				355B24C8B1113A39A1EB9336 /* OBTableViewController.h */,
-				355B217D70CF3AF2312F1A8F /* OBTableViewController.m */,
-				355B280D0B200C334901D126 /* OBTableViewControllerDelegate.h */,
-				355B22C856FA3242F52C2729 /* OBTableViewSection.h */,
-				355B26B987C33D692456D0B8 /* OBTableViewSection.m */,
+				OBJ_184 /* HCCollect.m */,
+				OBJ_185 /* HCInvocationMatcher.m */,
+				OBJ_186 /* HCRequireNonNilObject.m */,
+				OBJ_187 /* HCRunloopRunner.m */,
+				OBJ_188 /* HCWrapInMatcher.m */,
+				OBJ_189 /* NSInvocation+OCHamcrest.m */,
+				OBJ_190 /* ReturnValueGetters */,
+				OBJ_207 /* TestFailureReporters */,
 			);
-			path = Source;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
-		A754FD7219094EB900F92530 /* Demo */ = {
+		OBJ_190 /* ReturnValueGetters */ = {
 			isa = PBXGroup;
 			children = (
-				A754FD7319094EB900F92530 /* Demo-Info.plist */,
-				A754FD7419094EB900F92530 /* Demo-Prefix.pch */,
-				A754FD7519094EB900F92530 /* Resources */,
-				A754FD7919094EB900F92530 /* Source */,
+				OBJ_191 /* HCBoolReturnGetter.m */,
+				OBJ_192 /* HCCharReturnGetter.m */,
+				OBJ_193 /* HCDoubleReturnGetter.m */,
+				OBJ_194 /* HCFloatReturnGetter.m */,
+				OBJ_195 /* HCIntReturnGetter.m */,
+				OBJ_196 /* HCLongLongReturnGetter.m */,
+				OBJ_197 /* HCLongReturnGetter.m */,
+				OBJ_198 /* HCObjectReturnGetter.m */,
+				OBJ_199 /* HCReturnTypeHandlerChain.m */,
+				OBJ_200 /* HCReturnValueGetter.m */,
+				OBJ_201 /* HCShortReturnGetter.m */,
+				OBJ_202 /* HCUnsignedCharReturnGetter.m */,
+				OBJ_203 /* HCUnsignedIntReturnGetter.m */,
+				OBJ_204 /* HCUnsignedLongLongReturnGetter.m */,
+				OBJ_205 /* HCUnsignedLongReturnGetter.m */,
+				OBJ_206 /* HCUnsignedShortReturnGetter.m */,
 			);
-			path = Demo;
+			path = ReturnValueGetters;
 			sourceTree = "<group>";
 		};
-		A754FD7519094EB900F92530 /* Resources */ = {
+		OBJ_207 /* TestFailureReporters */ = {
 			isa = PBXGroup;
 			children = (
-				A754FD7819094EB900F92530 /* Images.xcassets */,
-				A7E11C3F19096A3000AEA800 /* Storyboard.storyboard */,
-				A75B2C851C7741AD003D753D /* LaunchScreen.storyboard */,
+				OBJ_208 /* HCGenericTestFailureReporter.m */,
+				OBJ_209 /* HCSenTestFailureReporter.m */,
+				OBJ_210 /* HCTestFailure.m */,
+				OBJ_211 /* HCTestFailureReporter.m */,
+				OBJ_212 /* HCTestFailureReporterChain.m */,
+				OBJ_213 /* HCXCTestFailureReporter.m */,
+				OBJ_214 /* HCXCTestIssueFailureReporter.m */,
 			);
-			path = Resources;
+			path = TestFailureReporters;
 			sourceTree = "<group>";
 		};
-		A754FD7919094EB900F92530 /* Source */ = {
+		OBJ_215 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				A754FD7A19094EB900F92530 /* main.m */,
-				A754FD7B19094EB900F92530 /* OBAppDelegate.h */,
-				A754FD7C19094EB900F92530 /* OBAppDelegate.m */,
-				355B21541CFC21B27110011A /* OBDemoViewController.m */,
-				355B27DFDE3E383136D31ADA /* OBDemoViewController.h */,
-				A77E7C0B1986A685008083C5 /* OBInsertViewController.h */,
-				A77E7C0C1986A685008083C5 /* OBInsertViewController.m */,
+				OBJ_216 /* Collection */,
+				OBJ_230 /* Decorator */,
+				OBJ_233 /* Logical */,
+				OBJ_238 /* Number */,
+				OBJ_244 /* Object */,
+				OBJ_256 /* Text */,
 			);
-			path = Source;
+			path = Library;
 			sourceTree = "<group>";
 		};
-		A754FD7D19094EB900F92530 /* Test */ = {
+		OBJ_216 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
-				A7E11C3D1909614700AEA800 /* Test-Prefix.pch */,
-				A754FD7E19094EB900F92530 /* Source */,
-				A754FD7F19094EB900F92530 /* Test-Info.plist */,
+				OBJ_217 /* HCEvery.m */,
+				OBJ_218 /* HCHasCount.m */,
+				OBJ_219 /* HCIsCollectionContaining.m */,
+				OBJ_220 /* HCIsCollectionContainingInAnyOrder.m */,
+				OBJ_221 /* HCIsCollectionContainingInOrder.m */,
+				OBJ_222 /* HCIsCollectionContainingInRelativeOrder.m */,
+				OBJ_223 /* HCIsCollectionOnlyContaining.m */,
+				OBJ_224 /* HCIsDictionaryContaining.m */,
+				OBJ_225 /* HCIsDictionaryContainingEntries.m */,
+				OBJ_226 /* HCIsDictionaryContainingKey.m */,
+				OBJ_227 /* HCIsDictionaryContainingValue.m */,
+				OBJ_228 /* HCIsEmptyCollection.m */,
+				OBJ_229 /* HCIsIn.m */,
 			);
-			path = Test;
+			path = Collection;
 			sourceTree = "<group>";
 		};
-		A754FD7E19094EB900F92530 /* Source */ = {
+		OBJ_23 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				355B2E782F8EC0C69CD254AB /* Binding */,
-				355B2DF98DFF4D7F62874248 /* Stubs */,
-				355B2276845046B45EE861F0 /* OBAbstractTableViewControllerTest.m */,
-				355B2F4F85B66FB5132CA123 /* OBCustomTableViewCell.h */,
-				355B2F7CE7C3C217B0E54501 /* OBCustomTableViewCell.m */,
-				355B2BFE2BB5AF7B639D89F1 /* OBSimpleTableViewControllerTest.m */,
-				355B29345456AA4764F2E995 /* OBTableViewController_ModelProtocol_Test.m */,
-				355B23DC1CB32883B8FC9C09 /* OBTableViewControllerTest_SetModels.m */,
-				355B26CDDD0B40303AE48656 /* OBTableViewControllerTest.m */,
-				355B26915C1DF789E5E162C2 /* OBTestCase.h */,
-				355B2FED1592B6C99E355D50 /* OBTestCase.m */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		A7F8C77424486557007965E7 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				A7F8C77524486578007965E7 /* OBTableViewCell.h */,
-				A7F8C77624486578007965E7 /* OBTableViewCell.m */,
-				355B24C82821063FCA7969D7 /* OBModelBasedCell.h */,
+				A7F93E4B28E2100C009A43F5 /* OBModelBasedCell.h */,
+				A7F93E4A28E2100C009A43F5 /* OBTableViewCell.h */,
+				A7F93E4928E2100C009A43F5 /* OBTableViewController.h */,
+				OBJ_24 /* OBTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		OBJ_230 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_231 /* HCDescribedAs.m */,
+				OBJ_232 /* HCIs.m */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		OBJ_233 /* Logical */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_234 /* HCAllOf.m */,
+				OBJ_235 /* HCAnyOf.m */,
+				OBJ_236 /* HCIsAnything.m */,
+				OBJ_237 /* HCIsNot.m */,
+			);
+			path = Logical;
+			sourceTree = "<group>";
+		};
+		OBJ_238 /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_239 /* HCIsCloseTo.m */,
+				OBJ_240 /* HCIsEqualToNumber.m */,
+				OBJ_241 /* HCIsTrueFalse.m */,
+				OBJ_242 /* HCNumberAssert.m */,
+				OBJ_243 /* HCOrderingComparison.m */,
+			);
+			path = Number;
+			sourceTree = "<group>";
+		};
+		OBJ_244 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_245 /* HCArgumentCaptor.m */,
+				OBJ_246 /* HCClassMatcher.m */,
+				OBJ_247 /* HCConformsToProtocol.m */,
+				OBJ_248 /* HCHasDescription.m */,
+				OBJ_249 /* HCHasProperty.m */,
+				OBJ_250 /* HCIsEqual.m */,
+				OBJ_251 /* HCIsInstanceOf.m */,
+				OBJ_252 /* HCIsNil.m */,
+				OBJ_253 /* HCIsSame.m */,
+				OBJ_254 /* HCIsTypeOf.m */,
+				OBJ_255 /* HCThrowsException.m */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		OBJ_25 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A7F93E5328E21015009A43F5 /* OBAbstractTableViewController.h */,
+				A7F93E5128E21015009A43F5 /* OBSimpleTableViewController.h */,
+				A7F93E5028E21015009A43F5 /* OBTableViewController_.h */,
+				A7F93E5228E21015009A43F5 /* OBTableViewController.h */,
+				A7F93E5428E21015009A43F5 /* OBTableViewControllerDelegate.h */,
+				A7F93E4F28E21015009A43F5 /* OBTableViewSection.h */,
+				OBJ_26 /* OBAbstractTableViewController.m */,
+				OBJ_27 /* OBSimpleTableViewController.m */,
+				OBJ_28 /* OBTableViewController.m */,
+				OBJ_29 /* OBTableViewSection.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		OBJ_256 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_257 /* HCIsEqualCompressingWhiteSpace.m */,
+				OBJ_258 /* HCIsEqualIgnoringCase.m */,
+				OBJ_259 /* HCStringContains.m */,
+				OBJ_260 /* HCStringContainsInOrder.m */,
+				OBJ_261 /* HCStringEndsWith.m */,
+				OBJ_262 /* HCStringStartsWith.m */,
+				OBJ_263 /* HCSubstringMatcher.m */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		OBJ_264 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_265 /* OCHamcrest */,
+				OBJ_324 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_265 /* OCHamcrest */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_266 /* HCIsEmptyCollection.h */,
+				OBJ_267 /* HCNumberAssert.h */,
+				OBJ_268 /* HCTestFailure.h */,
+				OBJ_269 /* HCIsEqual.h */,
+				OBJ_270 /* HCStringEndsWith.h */,
+				OBJ_271 /* HCIsCollectionContaining.h */,
+				OBJ_272 /* HCStringContains.h */,
+				OBJ_273 /* HCOrderingComparison.h */,
+				OBJ_274 /* HCClassMatcher.h */,
+				OBJ_275 /* HCBaseDescription.h */,
+				OBJ_276 /* HCIsIn.h */,
+				OBJ_277 /* HCAllOf.h */,
+				OBJ_278 /* HCIsInstanceOf.h */,
+				OBJ_279 /* HCMatcher.h */,
+				OBJ_280 /* OCHamcrest.h */,
+				OBJ_281 /* HCIs.h */,
+				OBJ_282 /* HCStringStartsWith.h */,
+				OBJ_283 /* HCStringDescription.h */,
+				OBJ_284 /* HCHasProperty.h */,
+				OBJ_285 /* HCInvocationMatcher.h */,
+				OBJ_286 /* HCDiagnosingMatcher.h */,
+				OBJ_287 /* HCConformsToProtocol.h */,
+				OBJ_288 /* HCArgumentCaptor.h */,
+				OBJ_289 /* HCAssertThat.h */,
+				OBJ_290 /* HCIsCollectionContainingInRelativeOrder.h */,
+				OBJ_291 /* HCIsNil.h */,
+				OBJ_292 /* HCSubstringMatcher.h */,
+				OBJ_293 /* HCTestFailureReporterChain.h */,
+				OBJ_294 /* HCIsEqualIgnoringCase.h */,
+				OBJ_295 /* HCIsTrueFalse.h */,
+				OBJ_296 /* HCEvery.h */,
+				OBJ_297 /* HCIsDictionaryContaining.h */,
+				OBJ_298 /* HCIsNot.h */,
+				OBJ_299 /* HCIsAnything.h */,
+				OBJ_300 /* HCIsSame.h */,
+				OBJ_301 /* HCDescription.h */,
+				OBJ_302 /* HCBaseMatcher.h */,
+				OBJ_303 /* HCIsTypeOf.h */,
+				OBJ_304 /* HCIsCollectionContainingInAnyOrder.h */,
+				OBJ_305 /* HCIsCloseTo.h */,
+				OBJ_306 /* HCIsCollectionOnlyContaining.h */,
+				OBJ_307 /* HCIsDictionaryContainingEntries.h */,
+				OBJ_308 /* HCWrapInMatcher.h */,
+				OBJ_309 /* HCSelfDescribing.h */,
+				OBJ_310 /* HCIsEqualCompressingWhiteSpace.h */,
+				OBJ_311 /* HCIsEqualToNumber.h */,
+				OBJ_312 /* HCStringContainsInOrder.h */,
+				OBJ_313 /* HCThrowsException.h */,
+				OBJ_314 /* HCDescribedAs.h */,
+				OBJ_315 /* HCHasCount.h */,
+				OBJ_316 /* HCRequireNonNilObject.h */,
+				OBJ_317 /* HCIsCollectionContainingInOrder.h */,
+				OBJ_318 /* HCTestFailureReporter.h */,
+				OBJ_319 /* HCIsDictionaryContainingValue.h */,
+				OBJ_320 /* HCAnyOf.h */,
+				OBJ_321 /* HCIsDictionaryContainingKey.h */,
+				OBJ_322 /* HCHasDescription.h */,
+				OBJ_323 /* HCCollect.h */,
+			);
+			path = OCHamcrest;
+			sourceTree = "<group>";
+		};
+		OBJ_30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7F93E5B28E2101E009A43F5 /* OBCellModel.h */,
+				A7F93E5C28E2101E009A43F5 /* UITableViewCellModel.h */,
+				OBJ_31 /* OBCellModel.m */,
+				OBJ_32 /* UITableViewCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		OBJ_325 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"obtableviewcontroller::OBTableViewControllerTests::Product" /* OBTableViewControllerTests.xctest */,
+				A7F93DFF28E20DF1009A43F5 /* OBTableViewController.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_33 /* OBReflection */ = {
+			isa = PBXGroup;
+			children = (
+				A7F93E6028E21026009A43F5 /* OBProperty.h */,
+				A7F93E5F28E21026009A43F5 /* OBReflection.h */,
+				OBJ_34 /* OBProperty.m */,
+				OBJ_35 /* OBReflection.m */,
+			);
+			path = OBReflection;
+			sourceTree = "<group>";
+		};
+		OBJ_36 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* OBTableViewController */,
+				OBJ_61 /* module.modulemap */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		OBJ_37 /* OBTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_38 /* OBModelBasedCell.h */,
+				OBJ_39 /* OBTableViewController.h */,
+				OBJ_40 /* OBPropertyBinding.h */,
+				OBJ_41 /* OBTableViewControllerDelegate.h */,
+				OBJ_42 /* OBAbstractTableViewController.h */,
+				OBJ_43 /* UITextFieldPropertyBinding.h */,
+				OBJ_44 /* OBProperty.h */,
+				OBJ_45 /* UILabelPropertyBinding.h */,
+				OBJ_46 /* UIDatePickerPropertyBinding.h */,
+				OBJ_47 /* OBTableViewSection.h */,
+				OBJ_48 /* UITextViewPropertyBinding.h */,
+				OBJ_49 /* OBReflection.h */,
+				OBJ_50 /* UIImageViewPropertyBinding.h */,
+				OBJ_51 /* OBModelCellBinding.h */,
+				OBJ_52 /* UITableViewCellModel.h */,
+				OBJ_53 /* OBTableViewController_.h */,
+				OBJ_54 /* OBCellModel.h */,
+				OBJ_55 /* OBIntegerPropertyBinding.h */,
+				OBJ_56 /* OBSimpleTableViewController.h */,
+				OBJ_57 /* OBTableViewCell.h */,
+				OBJ_58 /* UISearchBarPropertyBinding.h */,
+				OBJ_59 /* UILabelToDatePropertyBinding.h */,
+				OBJ_60 /* OBAccessoryPropertyBinding.h */,
+			);
+			path = OBTableViewController;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_9 /* Tests */,
+				OBJ_77 /* Dependencies */,
+				A7F93E0028E20DF1009A43F5 /* OBTableViewController */,
+				OBJ_325 /* Products */,
+				OBJ_330 /* Demo */,
+				OBJ_331 /* OBTableViewController */,
+				OBJ_332 /* Core */,
+				OBJ_333 /* gradle */,
+				OBJ_334 /* build */,
+				OBJ_335 /* LICENSE */,
+				OBJ_336 /* Changelog.md */,
+				OBJ_337 /* Readme.md */,
+				OBJ_338 /* build.sh */,
+				OBJ_339 /* gradlew */,
+				OBJ_340 /* build.gradle */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_62 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_63 /* Binding */,
+				OBJ_67 /* Core */,
+				OBJ_75 /* Stubs */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		OBJ_63 /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_64 /* OBModelCellBindingTest.m */,
+				OBJ_65 /* OBSearchBarTableViewCell.m */,
+				OBJ_66 /* UISearchBarPropertyBindingTest.m */,
+			);
+			path = Binding;
+			sourceTree = "<group>";
+		};
+		OBJ_67 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_68 /* OBAbstractTableViewControllerTest.m */,
+				OBJ_69 /* OBCustomTableViewCell.m */,
+				OBJ_70 /* OBSimpleTableViewControllerTest.m */,
+				OBJ_71 /* OBTableViewControllerTest.m */,
+				OBJ_72 /* OBTableViewControllerTest_SetModels.m */,
+				OBJ_73 /* OBTableViewController_ModelProtocol_Test.m */,
+				OBJ_74 /* OBTestCase.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* OBTableViewController */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_75 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_76 /* UITableViewStub.m */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		OBJ_77 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_78 /* OCMockito 7.0.1 */,
+				OBJ_175 /* OCHamcrest 9.0.1 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_78 /* OCMockito 7.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_79 /* Package.swift */,
+				OBJ_80 /* OCMockito */,
+				OBJ_163 /* include */,
+			);
+			name = "OCMockito 7.0.1";
+			path = .build/checkouts/OCMockito/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* OBTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OBTableViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_80 /* OCMockito */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_81 /* Core */,
+				OBJ_86 /* Helpers */,
+				OBJ_127 /* Invocation */,
+				OBJ_138 /* Mocking */,
+				OBJ_146 /* Stubbing */,
+				OBJ_153 /* Verifying */,
+			);
+			path = OCMockito;
+			sourceTree = "<group>";
+		};
+		OBJ_81 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_82 /* MKTMockingProgress.m */,
+				OBJ_83 /* MKTMockitoCore.m */,
+				OBJ_84 /* MKTTestLocation.m */,
+				OBJ_85 /* OCMockito.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		OBJ_86 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_87 /* ArgumentGetters */,
+				OBJ_108 /* ReturnValueSetters */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		OBJ_87 /* ArgumentGetters */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_88 /* MKTArgumentGetter.m */,
+				OBJ_89 /* MKTArgumentGetterChain.m */,
+				OBJ_90 /* MKTBoolArgumentGetter.m */,
+				OBJ_91 /* MKTCharArgumentGetter.m */,
+				OBJ_92 /* MKTClassArgumentGetter.m */,
+				OBJ_93 /* MKTDoubleArgumentGetter.m */,
+				OBJ_94 /* MKTFloatArgumentGetter.m */,
+				OBJ_95 /* MKTIntArgumentGetter.m */,
+				OBJ_96 /* MKTLongArgumentGetter.m */,
+				OBJ_97 /* MKTLongLongArgumentGetter.m */,
+				OBJ_98 /* MKTObjectArgumentGetter.m */,
+				OBJ_99 /* MKTPointerArgumentGetter.m */,
+				OBJ_100 /* MKTSelectorArgumentGetter.m */,
+				OBJ_101 /* MKTShortArgumentGetter.m */,
+				OBJ_102 /* MKTStructArgumentGetter.m */,
+				OBJ_103 /* MKTUnsignedCharArgumentGetter.m */,
+				OBJ_104 /* MKTUnsignedIntArgumentGetter.m */,
+				OBJ_105 /* MKTUnsignedLongArgumentGetter.m */,
+				OBJ_106 /* MKTUnsignedLongLongArgumentGetter.m */,
+				OBJ_107 /* MKTUnsignedShortArgumentGetter.m */,
+			);
+			path = ArgumentGetters;
+			sourceTree = "<group>";
+		};
+		OBJ_9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Main */,
+				OBJ_36 /* Headers */,
+				OBJ_62 /* Test */,
+			);
+			name = Tests;
+			path = OBTableViewController;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A7378CA51CA2CED300D30471 /* Headers */ = {
+		A7F93DFA28E20DF1009A43F5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7378CCC1CA2D0BF00D30471 /* OBTableViewController-Umbrella.h in Headers */,
-				A7F8C77724486578007965E7 /* OBTableViewCell.h in Headers */,
-				A7378CCD1CA2D12000D30471 /* OBPropertyBinding.h in Headers */,
-				A7378CCE1CA2D12000D30471 /* OBModelCellBinding.h in Headers */,
-				A7378CCF1CA2D12000D30471 /* UILabelPropertyBinding.h in Headers */,
-				A7378CD01CA2D12000D30471 /* OBAccessoryPropertyBinding.h in Headers */,
-				A7378CD11CA2D12000D30471 /* UIImageViewPropertyBinding.h in Headers */,
-				A7378CD21CA2D12000D30471 /* UISearchBarPropertyBinding.h in Headers */,
-				A7378CD31CA2D12000D30471 /* UITextFieldPropertyBinding.h in Headers */,
-				A7378CD41CA2D12000D30471 /* UIDatePickerPropertyBinding.h in Headers */,
-				A7378CD51CA2D12000D30471 /* UILabelToDatePropertyBinding.h in Headers */,
-				A7378CD61CA2D12000D30471 /* OBIntegerPropertyBinding.h in Headers */,
-				A7378CD71CA2D12000D30471 /* UITextViewPropertyBinding.h in Headers */,
-				A7378CD81CA2D12000D30471 /* OBAbstractTableViewController.h in Headers */,
-				A7F8C773244863EB007965E7 /* OBCellModel.h in Headers */,
-				A7378CD91CA2D12000D30471 /* OBSimpleTableViewController.h in Headers */,
-				A7378CDA1CA2D12000D30471 /* OBTableViewController.h in Headers */,
-				A7378CDB1CA2D12000D30471 /* OBTableViewControllerDelegate.h in Headers */,
-				A7378CDC1CA2D12000D30471 /* OBTableViewSection.h in Headers */,
-				A7378CDD1CA2D12000D30471 /* OBProperty.h in Headers */,
-				A7378CDE1CA2D12000D30471 /* OBReflection.h in Headers */,
-				A7378CDF1CA2D12000D30471 /* UITableViewCellModel.h in Headers */,
-				355B251D726FF57397F20B80 /* OBModelBasedCell.h in Headers */,
+				A7F93E5828E21016009A43F5 /* OBTableViewController.h in Headers */,
+				A7F93E4728E20FE3009A43F5 /* OBModelCellBinding.h in Headers */,
+				A7F93E4128E20FE3009A43F5 /* UITextViewPropertyBinding.h in Headers */,
+				A7F93E4428E20FE3009A43F5 /* OBIntegerPropertyBinding.h in Headers */,
+				A7F93E4028E20FE3009A43F5 /* OBPropertyBinding.h in Headers */,
+				A7F93E5628E21015009A43F5 /* OBTableViewController_.h in Headers */,
+				A7F93E4228E20FE3009A43F5 /* UITextFieldPropertyBinding.h in Headers */,
+				A7F93E6228E21026009A43F5 /* OBProperty.h in Headers */,
+				A7F93E5E28E2101E009A43F5 /* UITableViewCellModel.h in Headers */,
+				A7F93E6128E21026009A43F5 /* OBReflection.h in Headers */,
+				A7F93E5A28E21016009A43F5 /* OBTableViewControllerDelegate.h in Headers */,
+				A7F93E4528E20FE3009A43F5 /* UIImageViewPropertyBinding.h in Headers */,
+				A7F93E5728E21015009A43F5 /* OBSimpleTableViewController.h in Headers */,
+				A7F93E4828E20FE3009A43F5 /* UIDatePickerPropertyBinding.h in Headers */,
+				A7F93E4628E20FE3009A43F5 /* UILabelPropertyBinding.h in Headers */,
+				A7F93E5D28E2101E009A43F5 /* OBCellModel.h in Headers */,
+				A7F93E4E28E2100C009A43F5 /* OBModelBasedCell.h in Headers */,
+				A7F93E3F28E20FE3009A43F5 /* UISearchBarPropertyBinding.h in Headers */,
+				A7F93E3E28E20FE3009A43F5 /* UILabelToDatePropertyBinding.h in Headers */,
+				A7F93E4D28E2100C009A43F5 /* OBTableViewCell.h in Headers */,
+				A7F93E5928E21016009A43F5 /* OBAbstractTableViewController.h in Headers */,
+				A7F93E5528E21015009A43F5 /* OBTableViewSection.h in Headers */,
+				A7F93E4328E20FE3009A43F5 /* OBAccessoryPropertyBinding.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A7378CA71CA2CED300D30471 /* OBTableViewController */ = {
+		A7F93DFE28E20DF1009A43F5 /* OBTableViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7378CBF1CA2CED400D30471 /* Build configuration list for PBXNativeTarget "OBTableViewController" */;
+			buildConfigurationList = A7F93E0328E20DF1009A43F5 /* Build configuration list for PBXNativeTarget "OBTableViewController" */;
 			buildPhases = (
-				A7378CA31CA2CED300D30471 /* Sources */,
-				A7378CA41CA2CED300D30471 /* Frameworks */,
-				A7378CA51CA2CED300D30471 /* Headers */,
-				A7378CA61CA2CED300D30471 /* Resources */,
+				A7F93DFA28E20DF1009A43F5 /* Headers */,
+				A7F93DFB28E20DF1009A43F5 /* Sources */,
+				A7F93DFC28E20DF1009A43F5 /* Frameworks */,
+				A7F93DFD28E20DF1009A43F5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -504,255 +1127,133 @@
 			);
 			name = OBTableViewController;
 			productName = OBTableViewController;
-			productReference = A7378CA81CA2CED300D30471 /* OBTableViewController.framework */;
+			productReference = A7F93DFF28E20DF1009A43F5 /* OBTableViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A754FD5619094CFE00F92530 /* Tests */ = {
+		"obtableviewcontroller::OBTableViewControllerTests" /* OBTableViewControllerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A754FD6C19094CFE00F92530 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = OBJ_385 /* Build configuration list for PBXNativeTarget "OBTableViewControllerTests" */;
 			buildPhases = (
-				A754FD5319094CFE00F92530 /* Sources */,
-				A754FD5419094CFE00F92530 /* Frameworks */,
-				A758DB731D65E5270055A886 /* CopyFiles */,
+				OBJ_388 /* Sources */,
+				OBJ_400 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A7961E1D1CF4627B00F6DFC6 /* PBXTargetDependency */,
 			);
-			name = Tests;
+			name = OBTableViewControllerTests;
 			productName = OBTableViewControllerTests;
-			productReference = A754FD5719094CFE00F92530 /* Tests.xctest */;
+			productReference = "obtableviewcontroller::OBTableViewControllerTests::Product" /* OBTableViewControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A7961DF51CF460D900F6DFC6 /* DemoApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7961E0D1CF460D900F6DFC6 /* Build configuration list for PBXNativeTarget "DemoApp" */;
-			buildPhases = (
-				A7961DF21CF460D900F6DFC6 /* Sources */,
-				A7961DF31CF460D900F6DFC6 /* Frameworks */,
-				A7961DF41CF460D900F6DFC6 /* Resources */,
-				A7961E1B1CF4618F00F6DFC6 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A7961E1A1CF4618F00F6DFC6 /* PBXTargetDependency */,
-			);
-			name = DemoApp;
-			productName = DemoApp;
-			productReference = A7961DF61CF460D900F6DFC6 /* DemoApp.app */;
-			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A754FD2F19094CFE00F92530 /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = OB;
-				LastUpgradeCheck = 1200;
-				ORGANIZATIONNAME = "Rene Pirringer";
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
 				TargetAttributes = {
-					A7378CA71CA2CED300D30471 = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					A754FD5619094CFE00F92530 = {
-						DevelopmentTeam = ED5DV56QPQ;
+					A7F93DFE28E20DF1009A43F5 = {
+						CreatedOnToolsVersion = 14.0.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = A7961DF51CF460D900F6DFC6;
-					};
-					A7961DF51CF460D900F6DFC6 = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = ED5DV56QPQ;
 					};
 				};
 			};
-			buildConfigurationList = A754FD3219094CFE00F92530 /* Build configuration list for PBXProject "OBTableViewController" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "OBTableViewController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = A754FD2E19094CFE00F92530;
-			productRefGroup = A754FD3819094CFE00F92530 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_325 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7961DF51CF460D900F6DFC6 /* DemoApp */,
-				A754FD5619094CFE00F92530 /* Tests */,
-				A7378CA71CA2CED300D30471 /* OBTableViewController */,
+				A7F93DFE28E20DF1009A43F5 /* OBTableViewController */,
+				"obtableviewcontroller::OBTableViewControllerTests" /* OBTableViewControllerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A7378CA61CA2CED300D30471 /* Resources */ = {
+		A7F93DFD28E20DF1009A43F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7961DF41CF460D900F6DFC6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7961E141CF460F300F6DFC6 /* Storyboard.storyboard in Resources */,
-				A7961E161CF4610200F6DFC6 /* Images.xcassets in Resources */,
-				A7961E151CF460F300F6DFC6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A7378CA31CA2CED300D30471 /* Sources */ = {
+		A7F93DFB28E20DF1009A43F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7378CE11CA2D28700D30471 /* UILabelToDatePropertyBinding.m in Sources */,
-				A7F8C772244863E5007965E7 /* OBCellModel.m in Sources */,
-				A7378D211CA2E0D600D30471 /* UITableViewCellModel.m in Sources */,
-				A7378CE61CA2DBCD00D30471 /* OBAccessoryPropertyBinding.m in Sources */,
-				A7378CEC1CA2DBCD00D30471 /* UITextViewPropertyBinding.m in Sources */,
-				A7378D201CA2E0D200D30471 /* OBReflection.m in Sources */,
-				A7378CEA1CA2DBCD00D30471 /* UIDatePickerPropertyBinding.m in Sources */,
-				A7378CE51CA2DBCD00D30471 /* UILabelPropertyBinding.m in Sources */,
-				A7378CE71CA2DBCD00D30471 /* UIImageViewPropertyBinding.m in Sources */,
-				A7378CEF1CA2DBD400D30471 /* OBTableViewController.m in Sources */,
-				A7378CED1CA2DBD400D30471 /* OBAbstractTableViewController.m in Sources */,
-				A7378CF01CA2DBD400D30471 /* OBTableViewSection.m in Sources */,
-				A7F8C77824486578007965E7 /* OBTableViewCell.m in Sources */,
-				A7378CE41CA2DBCD00D30471 /* OBModelCellBinding.m in Sources */,
-				A7378CEE1CA2DBD400D30471 /* OBSimpleTableViewController.m in Sources */,
-				A7378CE81CA2DBCD00D30471 /* UISearchBarPropertyBinding.m in Sources */,
-				A7378CE91CA2DBCD00D30471 /* UITextFieldPropertyBinding.m in Sources */,
-				A7378D1F1CA2E0D000D30471 /* OBProperty.m in Sources */,
-				A7378CEB1CA2DBCD00D30471 /* OBIntegerPropertyBinding.m in Sources */,
-				A7378CE31CA2DBC400D30471 /* OBPropertyBinding.m in Sources */,
+				A7F93E0628E20E3C009A43F5 /* OBAccessoryPropertyBinding.m in Sources */,
+				A7F93E0728E20E3C009A43F5 /* OBIntegerPropertyBinding.m in Sources */,
+				A7F93E0828E20E3C009A43F5 /* OBModelCellBinding.m in Sources */,
+				A7F93E0928E20E3C009A43F5 /* OBPropertyBinding.m in Sources */,
+				A7F93E0A28E20E3C009A43F5 /* UIDatePickerPropertyBinding.m in Sources */,
+				A7F93E0B28E20E3C009A43F5 /* UIImageViewPropertyBinding.m in Sources */,
+				A7F93E0C28E20E3C009A43F5 /* UILabelPropertyBinding.m in Sources */,
+				A7F93E0D28E20E3C009A43F5 /* UILabelToDatePropertyBinding.m in Sources */,
+				A7F93E0E28E20E3C009A43F5 /* UISearchBarPropertyBinding.m in Sources */,
+				A7F93E0F28E20E3C009A43F5 /* UITextFieldPropertyBinding.m in Sources */,
+				A7F93E1028E20E3C009A43F5 /* UITextViewPropertyBinding.m in Sources */,
+				A7F93E1128E20E3C009A43F5 /* OBTableViewCell.m in Sources */,
+				A7F93E1228E20E3C009A43F5 /* OBAbstractTableViewController.m in Sources */,
+				A7F93E1328E20E3C009A43F5 /* OBSimpleTableViewController.m in Sources */,
+				A7F93E1428E20E3C009A43F5 /* OBTableViewController.m in Sources */,
+				A7F93E1528E20E3C009A43F5 /* OBTableViewSection.m in Sources */,
+				A7F93E1628E20E3C009A43F5 /* OBCellModel.m in Sources */,
+				A7F93E1728E20E3C009A43F5 /* UITableViewCellModel.m in Sources */,
+				A7F93E1828E20E3C009A43F5 /* OBProperty.m in Sources */,
+				A7F93E1928E20E3C009A43F5 /* OBReflection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A754FD5319094CFE00F92530 /* Sources */ = {
+		OBJ_388 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				355B28D2A98416B8A17ED739 /* OBCustomTableViewCell.m in Sources */,
-				355B23534FD7047E63D94D73 /* OBSimpleTableViewControllerTest.m in Sources */,
-				355B2560A16CA5C9A397F204 /* OBTableViewControllerTest.m in Sources */,
-				355B263D86FE46D538A0186E /* OBTestCase.m in Sources */,
-				355B24D0A8EE7801C9BDFB16 /* UITableViewStub.m in Sources */,
-				355B23018921812CD9D20D13 /* OBModelCellBindingTest.m in Sources */,
-				355B254D2F32C4A0F90FA6D2 /* UISearchBarPropertyBindingTest.m in Sources */,
-				355B2EEF54E1153B2F61BFD2 /* OBSearchBarTableViewCell.m in Sources */,
-				355B255402BEE645747905A7 /* OBTableViewControllerTest_SetModels.m in Sources */,
-				355B22616E9A26C517A0F0ED /* OBAbstractTableViewControllerTest.m in Sources */,
-				355B24087FC53E6ACCC1E1A1 /* OBTableViewController_ModelProtocol_Test.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7961DF21CF460D900F6DFC6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7961E131CF460ED00F6DFC6 /* OBInsertViewController.m in Sources */,
-				A7961E101CF460E900F6DFC6 /* main.m in Sources */,
-				A7961E121CF460ED00F6DFC6 /* OBDemoViewController.m in Sources */,
-				A7961E111CF460ED00F6DFC6 /* OBAppDelegate.m in Sources */,
+				OBJ_389 /* OBModelCellBindingTest.m in Sources */,
+				OBJ_390 /* OBSearchBarTableViewCell.m in Sources */,
+				OBJ_391 /* UISearchBarPropertyBindingTest.m in Sources */,
+				OBJ_392 /* OBAbstractTableViewControllerTest.m in Sources */,
+				OBJ_393 /* OBCustomTableViewCell.m in Sources */,
+				OBJ_394 /* OBSimpleTableViewControllerTest.m in Sources */,
+				OBJ_395 /* OBTableViewControllerTest.m in Sources */,
+				OBJ_396 /* OBTableViewControllerTest_SetModels.m in Sources */,
+				OBJ_397 /* OBTableViewController_ModelProtocol_Test.m in Sources */,
+				OBJ_398 /* OBTestCase.m in Sources */,
+				OBJ_399 /* UITableViewStub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		A7961E1A1CF4618F00F6DFC6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A7378CA71CA2CED300D30471 /* OBTableViewController */;
-			targetProxy = A7961E191CF4618F00F6DFC6 /* PBXContainerItemProxy */;
-		};
-		A7961E1D1CF4627B00F6DFC6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A7961DF51CF460D900F6DFC6 /* DemoApp */;
-			targetProxy = A7961E1C1CF4627B00F6DFC6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		A7378CC01CA2CED400D30471 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = Core/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				MODULEMAP_FILE = "$(SRCROOT)/Core/OBTableViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elo.OBTableViewController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A7378CC11CA2CED400D30471 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = Core/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				MODULEMAP_FILE = "$(SRCROOT)/Core/OBTableViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elo.OBTableViewController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A754FD6719094CFE00F92530 /* Debug */ = {
+		A7F93E0428E20DF1009A43F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -765,50 +1266,67 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.OBTableViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A754FD6819094CFE00F92530 /* Release */ = {
+		A7F93E0528E20DF1009A43F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -821,14 +1339,19 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -836,134 +1359,192 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				SDKROOT = iphoneos;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.OBTableViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A754FD6D19094CFE00F92530 /* Debug */ = {
+		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ED5DV56QPQ;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Test/Test-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.openbakery.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		A754FD6E19094CFE00F92530 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ED5DV56QPQ;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
-				INFOPLIST_FILE = "Test/Test-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.openbakery.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-		A7961E0E1CF460D900F6DFC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = ED5DV56QPQ;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Demo/Demo-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.DemoApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A7961E0F1CF460D900F6DFC6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = ED5DV56QPQ;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Demo/Demo-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
 				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.DemoApp;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/OBTableViewController/include",
+					"$(SRCROOT)/OBTableViewController/Headers",
+					"$(SRCROOT)/.build/checkouts/OCMockito/Source/include",
+					"$(SRCROOT)/.build/checkouts/OCHamcrest/Source/include",
+					Test/Core,
+					Test/Stubs,
+				);
+				INFOPLIST_FILE = OBTableViewController.xcodeproj/OBTableViewControllerTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.OBTableViewControllerTests;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = OBTableViewControllerTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/OBTableViewController/include",
+					"$(SRCROOT)/OBTableViewController/Headers",
+					"$(SRCROOT)/.build/checkouts/OCMockito/Source/include",
+					"$(SRCROOT)/.build/checkouts/OCHamcrest/Source/include",
+					Test/Core,
+					Test/Stubs,
+				);
+				INFOPLIST_FILE = OBTableViewController.xcodeproj/OBTableViewControllerTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.OBTableViewControllerTests;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = OBTableViewControllerTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7378CBF1CA2CED400D30471 /* Build configuration list for PBXNativeTarget "OBTableViewController" */ = {
+		A7F93E0328E20DF1009A43F5 /* Build configuration list for PBXNativeTarget "OBTableViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7378CC01CA2CED400D30471 /* Debug */,
-				A7378CC11CA2CED400D30471 /* Release */,
+				A7F93E0428E20DF1009A43F5 /* Debug */,
+				A7F93E0528E20DF1009A43F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A754FD3219094CFE00F92530 /* Build configuration list for PBXProject "OBTableViewController" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "OBTableViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A754FD6719094CFE00F92530 /* Debug */,
-				A754FD6819094CFE00F92530 /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A754FD6C19094CFE00F92530 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		OBJ_385 /* Build configuration list for PBXNativeTarget "OBTableViewControllerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A754FD6D19094CFE00F92530 /* Debug */,
-				A754FD6E19094CFE00F92530 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A7961E0D1CF460D900F6DFC6 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7961E0E1CF460D900F6DFC6 /* Debug */,
-				A7961E0F1CF460D900F6DFC6 /* Release */,
+				OBJ_386 /* Debug */,
+				OBJ_387 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A754FD2F19094CFE00F92530 /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }

@@ -7,7 +7,7 @@ buildscript {
 	}
 
 	dependencies {
-			classpath "org.openbakery:xcode-plugin:0.22.+"
+			classpath "org.openbakery:xcode-plugin:0.23.+"
 	}
 }
 
@@ -17,11 +17,10 @@ project.ext.version = "1.2.0"
 
 
 xcodebuild {
-	scheme = 'DemoApp'
-  target = 'DemoApp'
+	scheme = 'OBTableViewController'
+  target = 'OBTableViewController'
 	simulator = true
-	destination = ['iPhone 11']
-
+	destination = ['iPhone 14']
 }
 
 

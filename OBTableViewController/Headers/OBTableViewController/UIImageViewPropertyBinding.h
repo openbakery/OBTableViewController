@@ -1,1 +1,0 @@
-../../Main/Binding/UIImageViewPropertyBinding.h

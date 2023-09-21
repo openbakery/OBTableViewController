@@ -3,13 +3,128 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		355B201304E7FAFE0ED7E268 /* UITableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B22F2B6D24F5D3F910557 /* UITableViewCellModel.m */; };
+		355B202C3EB618C2BE77166E /* UITableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B264A022D6CA386AEAC02 /* UITableViewCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B208128AA1C7A47534390 /* UITextViewPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B22E6AA6ADD4B044984BE /* UITextViewPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B2086EA9D1D5205B3BC69 /* UILabelPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B295418F5F75FC55F12C4 /* UILabelPropertyBinding.m */; };
+		355B2094C6E5882DAD7C55D1 /* UITextViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B27953EA8BA408E675377 /* UITextViewPropertyBinding.m */; };
+		355B2107FA6B9436F182F01D /* UISearchBarPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B289D4243752BB5C40518 /* UISearchBarPropertyBinding.m */; };
+		355B211F40DBFEA326DB0C88 /* OBPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B25DE6D89AB7B1DF096DC /* OBPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B21A915CDA21276BA8043 /* UIDatePickerPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2FD63D37EBEA8584E0FB /* UIDatePickerPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B21BEE58F2D285CE395A9 /* UILabelPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2975B32256533B76E250 /* UILabelPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B21D96956A59D4373D825 /* OBAbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25335D10B057F47EE7EF /* OBAbstractTableViewController.m */; };
+		355B229E84B04BD66BCE56E2 /* OBAccessoryPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2384F96A0303A372350A /* OBAccessoryPropertyBinding.m */; };
+		355B22CDBF966B15EBCA8E7E /* OBTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2044BC20EFCA916D9D6D /* OBTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B231D352194A3146D0A8A /* OBModelCellBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2FFF7853F22128BD49C6 /* OBModelCellBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B246B375ED39FDDAD2238 /* UIDatePickerPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B265BA21587608E17E747 /* UIDatePickerPropertyBinding.m */; };
+		355B24768D8EE54A8B509795 /* OBTableViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B248E9C7A7AF1E6679C12 /* OBTableViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B24951B0DE63B2F116EF1 /* OBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2879A266CDE20DDB0165 /* OBTableViewCell.m */; };
+		355B258AFD34FBBDC6A8D323 /* OBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B29786BB8237B3FFE46DE /* OBTableViewController.m */; };
+		355B25BC6E96E9ECC52F37F9 /* OBCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2D5DF2F5878DECA3E700 /* OBCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B26315AF9DD5868DBDC6B /* OBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2BB26426F4A9437D8B03 /* OBProperty.m */; };
+		355B26558FAFB00762ACA13E /* OBCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26DE7A1A62BB3A11BCD9 /* OBCellModel.m */; };
+		355B268CAA8F9EBFC88F0BD2 /* UILabelToDatePropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DF320A0CABFF2629D56 /* UILabelToDatePropertyBinding.m */; };
+		355B26C7D5C9DDD1036927F5 /* UIImageViewPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2EEE97029FFC113275D1 /* UIImageViewPropertyBinding.m */; };
+		355B26DBF24456DE13516F15 /* OBModelBasedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B20484E7EE5551C6E6FB3 /* OBModelBasedCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B27589327E1718CA6EB65 /* UISearchBarPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B29A27F551ED095A4FC27 /* UISearchBarPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B279125221F3A6D841571 /* OBPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2ECC66FF4ECCDDBCCFED /* OBPropertyBinding.m */; };
+		355B27916BE7B9FA0C0D742F /* OBIntegerPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2B4011BBD16E9A9DF99C /* OBIntegerPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B27DB039052D768472327 /* UITextFieldPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2F85BD606BBDCFC2F2FC /* UITextFieldPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B282EE2B838C84D34A091 /* UIImageViewPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2355DBE333FD156BC0AD /* UIImageViewPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B286BD87EAD5E76579BB2 /* OBReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2B5E2E65BA15CDAEDFD2 /* OBReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B290452CDFC697673D752 /* UITextFieldPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B206215AC0D43B11F4D44 /* UITextFieldPropertyBinding.m */; };
+		355B295723182FD2E8B33DF6 /* OBSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E7643FBFB627EFFFEE4 /* OBSimpleTableViewController.m */; };
+		355B2A1191955570B04C25BF /* OBTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B229D8E041718E9FD39FE /* OBTableViewSection.m */; };
+		355B2ADC40347AA9B1BBCC84 /* OBModelCellBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2BF11E9222BB062D23A7 /* OBModelCellBinding.m */; };
+		355B2CDDDC44CACCBC9C0173 /* OBAccessoryPropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2C2C573754EFDDEFBA2D /* OBAccessoryPropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B2D8E447F3E1FE314601F /* UILabelToDatePropertyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2D1054A4355E3C6BE7F3 /* UILabelToDatePropertyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B2E235877D7C6EDEF4B29 /* OBIntegerPropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2EECABCB43A8DABA81EB /* OBIntegerPropertyBinding.m */; };
+		355B2F52216CE9B5706CE3E0 /* OBTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B22C12F8A7AE089195DE6 /* OBTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355B2FBD58A1287025B0ECB6 /* OBReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B283FD7FD00C2D6B8A7B1 /* OBReflection.m */; };
+		A75A7E9429DFEEA0009372F0 /* OBSimpleTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B2508D97266F8073E2BE6 /* OBSimpleTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A75A7E9529DFEEA0009372F0 /* OBAbstractTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B27AEB1EFFCCCBDA2D577 /* OBAbstractTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A75A7E9629DFEEA0009372F0 /* OBTableViewSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B231B8241480C376C6E6E /* OBTableViewSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A75A7E9A29DFEFA7009372F0 /* OBTableViewController_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A75A7E9929DFEF92009372F0 /* OBTableViewController_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7B34FF42ABC5308002319C1 /* OBProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 355B280F79A7B6252FE55543 /* OBProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7B350112ABC69B0002319C1 /* OBSearchBarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B3500D2ABC69B0002319C1 /* OBSearchBarTableViewCell.m */; };
+		A7B350122ABC69B0002319C1 /* UISearchBarPropertyBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B3500E2ABC69B0002319C1 /* UISearchBarPropertyBindingTest.m */; };
+		A7B350132ABC69B0002319C1 /* OBModelCellBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B350102ABC69B0002319C1 /* OBModelCellBindingTest.m */; };
+		A7B350172ABC69BB002319C1 /* UITableViewStub.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B350162ABC69BB002319C1 /* UITableViewStub.m */; };
+		A7B3501C2ABC6AA1002319C1 /* UITableViewStub.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B350152ABC69BB002319C1 /* UITableViewStub.h */; };
+		A7B3501E2ABC6AB6002319C1 /* OBSearchBarTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B3500F2ABC69B0002319C1 /* OBSearchBarTableViewCell.h */; };
+		A7B3501F2ABC6AD6002319C1 /* OBSearchBarTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B3500F2ABC69B0002319C1 /* OBSearchBarTableViewCell.h */; };
+		A7B350212ABC6AD6002319C1 /* UITableViewStub.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B350152ABC69BB002319C1 /* UITableViewStub.h */; };
+		A7B3502C2ABC6B4B002319C1 /* OBTableViewControllerTest_SetModels.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B350242ABC6B4B002319C1 /* OBTableViewControllerTest_SetModels.m */; };
+		A7B3502D2ABC6B4B002319C1 /* OBSimpleTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B350252ABC6B4B002319C1 /* OBSimpleTableViewControllerTest.m */; };
+		A7B3502F2ABC6B4B002319C1 /* OBCustomTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B350272ABC6B4B002319C1 /* OBCustomTableViewCell.h */; };
+		A7B350302ABC6B4B002319C1 /* OBCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B350282ABC6B4B002319C1 /* OBCustomTableViewCell.m */; };
+		A7B350312ABC6B4B002319C1 /* OBTableViewController_ModelProtocol_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B350292ABC6B4B002319C1 /* OBTableViewController_ModelProtocol_Test.m */; };
+		A7B350322ABC6B4B002319C1 /* OBTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B3502A2ABC6B4B002319C1 /* OBTableViewControllerTest.m */; };
+		A7B3503B2ABC6CF4002319C1 /* OCMockito in Frameworks */ = {isa = PBXBuildFile; productRef = A7B3503A2ABC6CF4002319C1 /* OCMockito */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		355B2044BC20EFCA916D9D6D /* OBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewCell.h; sourceTree = "<group>"; };
+		355B20484E7EE5551C6E6FB3 /* OBModelBasedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBModelBasedCell.h; sourceTree = "<group>"; };
+		355B206215AC0D43B11F4D44 /* UITextFieldPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldPropertyBinding.m; sourceTree = "<group>"; };
+		355B229D8E041718E9FD39FE /* OBTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewSection.m; sourceTree = "<group>"; };
+		355B22C12F8A7AE089195DE6 /* OBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewController.h; sourceTree = "<group>"; };
+		355B22E6AA6ADD4B044984BE /* UITextViewPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewPropertyBinding.h; sourceTree = "<group>"; };
+		355B22F2B6D24F5D3F910557 /* UITableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewCellModel.m; sourceTree = "<group>"; };
+		355B231B8241480C376C6E6E /* OBTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewSection.h; sourceTree = "<group>"; };
+		355B2355DBE333FD156BC0AD /* UIImageViewPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewPropertyBinding.h; sourceTree = "<group>"; };
+		355B2384F96A0303A372350A /* OBAccessoryPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAccessoryPropertyBinding.m; sourceTree = "<group>"; };
+		355B248E9C7A7AF1E6679C12 /* OBTableViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTableViewControllerDelegate.h; sourceTree = "<group>"; };
+		355B2508D97266F8073E2BE6 /* OBSimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSimpleTableViewController.h; sourceTree = "<group>"; };
+		355B25335D10B057F47EE7EF /* OBAbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAbstractTableViewController.m; sourceTree = "<group>"; };
+		355B25DE6D89AB7B1DF096DC /* OBPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBPropertyBinding.h; sourceTree = "<group>"; };
+		355B264A022D6CA386AEAC02 /* UITableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellModel.h; sourceTree = "<group>"; };
+		355B265BA21587608E17E747 /* UIDatePickerPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerPropertyBinding.m; sourceTree = "<group>"; };
+		355B26DE7A1A62BB3A11BCD9 /* OBCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCellModel.m; sourceTree = "<group>"; };
+		355B27953EA8BA408E675377 /* UITextViewPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewPropertyBinding.m; sourceTree = "<group>"; };
+		355B27AEB1EFFCCCBDA2D577 /* OBAbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAbstractTableViewController.h; sourceTree = "<group>"; };
+		355B280F79A7B6252FE55543 /* OBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBProperty.h; sourceTree = "<group>"; };
+		355B283FD7FD00C2D6B8A7B1 /* OBReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBReflection.m; sourceTree = "<group>"; };
+		355B2879A266CDE20DDB0165 /* OBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewCell.m; sourceTree = "<group>"; };
+		355B289D4243752BB5C40518 /* UISearchBarPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBinding.m; sourceTree = "<group>"; };
+		355B295418F5F75FC55F12C4 /* UILabelPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelPropertyBinding.m; sourceTree = "<group>"; };
+		355B2975B32256533B76E250 /* UILabelPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelPropertyBinding.h; sourceTree = "<group>"; };
+		355B29786BB8237B3FFE46DE /* OBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewController.m; sourceTree = "<group>"; };
+		355B29A27F551ED095A4FC27 /* UISearchBarPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchBarPropertyBinding.h; sourceTree = "<group>"; };
+		355B2B4011BBD16E9A9DF99C /* OBIntegerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBIntegerPropertyBinding.h; sourceTree = "<group>"; };
+		355B2B5E2E65BA15CDAEDFD2 /* OBReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBReflection.h; sourceTree = "<group>"; };
+		355B2BB26426F4A9437D8B03 /* OBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBProperty.m; sourceTree = "<group>"; };
+		355B2BF11E9222BB062D23A7 /* OBModelCellBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBinding.m; sourceTree = "<group>"; };
+		355B2C2C573754EFDDEFBA2D /* OBAccessoryPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAccessoryPropertyBinding.h; sourceTree = "<group>"; };
+		355B2D1054A4355E3C6BE7F3 /* UILabelToDatePropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelToDatePropertyBinding.h; sourceTree = "<group>"; };
+		355B2D5DF2F5878DECA3E700 /* OBCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCellModel.h; sourceTree = "<group>"; };
+		355B2DF320A0CABFF2629D56 /* UILabelToDatePropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelToDatePropertyBinding.m; sourceTree = "<group>"; };
+		355B2E7643FBFB627EFFFEE4 /* OBSimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSimpleTableViewController.m; sourceTree = "<group>"; };
+		355B2ECC66FF4ECCDDBCCFED /* OBPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBPropertyBinding.m; sourceTree = "<group>"; };
+		355B2EECABCB43A8DABA81EB /* OBIntegerPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBIntegerPropertyBinding.m; sourceTree = "<group>"; };
+		355B2EEE97029FFC113275D1 /* UIImageViewPropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewPropertyBinding.m; sourceTree = "<group>"; };
+		355B2F85BD606BBDCFC2F2FC /* UITextFieldPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldPropertyBinding.h; sourceTree = "<group>"; };
+		355B2FD63D37EBEA8584E0FB /* UIDatePickerPropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerPropertyBinding.h; sourceTree = "<group>"; };
+		355B2FFF7853F22128BD49C6 /* OBModelCellBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBModelCellBinding.h; sourceTree = "<group>"; };
+		A75A7E9929DFEF92009372F0 /* OBTableViewController_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBTableViewController_Private.h; sourceTree = "<group>"; };
+		A7B3500D2ABC69B0002319C1 /* OBSearchBarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSearchBarTableViewCell.m; sourceTree = "<group>"; };
+		A7B3500E2ABC69B0002319C1 /* UISearchBarPropertyBindingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarPropertyBindingTest.m; sourceTree = "<group>"; };
+		A7B3500F2ABC69B0002319C1 /* OBSearchBarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBSearchBarTableViewCell.h; sourceTree = "<group>"; };
+		A7B350102ABC69B0002319C1 /* OBModelCellBindingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBModelCellBindingTest.m; sourceTree = "<group>"; };
+		A7B350152ABC69BB002319C1 /* UITableViewStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewStub.h; sourceTree = "<group>"; };
+		A7B350162ABC69BB002319C1 /* UITableViewStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewStub.m; sourceTree = "<group>"; };
+		A7B350242ABC6B4B002319C1 /* OBTableViewControllerTest_SetModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest_SetModels.m; sourceTree = "<group>"; };
+		A7B350252ABC6B4B002319C1 /* OBSimpleTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBSimpleTableViewControllerTest.m; sourceTree = "<group>"; };
+		A7B350272ABC6B4B002319C1 /* OBCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCustomTableViewCell.h; sourceTree = "<group>"; };
+		A7B350282ABC6B4B002319C1 /* OBCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCustomTableViewCell.m; sourceTree = "<group>"; };
+		A7B350292ABC6B4B002319C1 /* OBTableViewController_ModelProtocol_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewController_ModelProtocol_Test.m; sourceTree = "<group>"; };
+		A7B3502A2ABC6B4B002319C1 /* OBTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTableViewControllerTest.m; sourceTree = "<group>"; };
 		A7F93DFF28E20DF1009A43F5 /* OBTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OBTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_330 /* Demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Demo; sourceTree = SOURCE_ROOT; };
-		OBJ_331 /* OBTableViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OBTableViewController; sourceTree = SOURCE_ROOT; };
 		OBJ_335 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_336 /* Changelog.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Changelog.md; sourceTree = "<group>"; };
 		OBJ_337 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
@@ -32,12 +147,171 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				A7B3503B2ABC6CF4002319C1 /* OCMockito in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		355B254C305A7800073B429A /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				355B2C2C573754EFDDEFBA2D /* OBAccessoryPropertyBinding.h */,
+				355B2384F96A0303A372350A /* OBAccessoryPropertyBinding.m */,
+				355B2B4011BBD16E9A9DF99C /* OBIntegerPropertyBinding.h */,
+				355B2EECABCB43A8DABA81EB /* OBIntegerPropertyBinding.m */,
+				355B2FFF7853F22128BD49C6 /* OBModelCellBinding.h */,
+				355B2BF11E9222BB062D23A7 /* OBModelCellBinding.m */,
+				355B25DE6D89AB7B1DF096DC /* OBPropertyBinding.h */,
+				355B2ECC66FF4ECCDDBCCFED /* OBPropertyBinding.m */,
+				355B2FD63D37EBEA8584E0FB /* UIDatePickerPropertyBinding.h */,
+				355B265BA21587608E17E747 /* UIDatePickerPropertyBinding.m */,
+				355B2355DBE333FD156BC0AD /* UIImageViewPropertyBinding.h */,
+				355B2EEE97029FFC113275D1 /* UIImageViewPropertyBinding.m */,
+				355B2975B32256533B76E250 /* UILabelPropertyBinding.h */,
+				355B295418F5F75FC55F12C4 /* UILabelPropertyBinding.m */,
+				355B2D1054A4355E3C6BE7F3 /* UILabelToDatePropertyBinding.h */,
+				355B2DF320A0CABFF2629D56 /* UILabelToDatePropertyBinding.m */,
+				355B29A27F551ED095A4FC27 /* UISearchBarPropertyBinding.h */,
+				355B289D4243752BB5C40518 /* UISearchBarPropertyBinding.m */,
+				355B2F85BD606BBDCFC2F2FC /* UITextFieldPropertyBinding.h */,
+				355B206215AC0D43B11F4D44 /* UITextFieldPropertyBinding.m */,
+				355B22E6AA6ADD4B044984BE /* UITextViewPropertyBinding.h */,
+				355B27953EA8BA408E675377 /* UITextViewPropertyBinding.m */,
+			);
+			path = Binding;
+			sourceTree = "<group>";
+		};
+		355B2699CA06F2DA089E67E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				355B2D5DF2F5878DECA3E700 /* OBCellModel.h */,
+				355B26DE7A1A62BB3A11BCD9 /* OBCellModel.m */,
+				355B264A022D6CA386AEAC02 /* UITableViewCellModel.h */,
+				355B22F2B6D24F5D3F910557 /* UITableViewCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		355B286734CDA4498B93A11A /* Reflection */ = {
+			isa = PBXGroup;
+			children = (
+				355B280F79A7B6252FE55543 /* OBProperty.h */,
+				355B2BB26426F4A9437D8B03 /* OBProperty.m */,
+				355B2B5E2E65BA15CDAEDFD2 /* OBReflection.h */,
+				355B283FD7FD00C2D6B8A7B1 /* OBReflection.m */,
+			);
+			path = Reflection;
+			sourceTree = "<group>";
+		};
+		355B2A1149431609CE07F24C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				355B27AEB1EFFCCCBDA2D577 /* OBAbstractTableViewController.h */,
+				355B25335D10B057F47EE7EF /* OBAbstractTableViewController.m */,
+				355B2508D97266F8073E2BE6 /* OBSimpleTableViewController.h */,
+				355B2E7643FBFB627EFFFEE4 /* OBSimpleTableViewController.m */,
+				A75A7E9929DFEF92009372F0 /* OBTableViewController_Private.h */,
+				355B29786BB8237B3FFE46DE /* OBTableViewController.m */,
+				355B248E9C7A7AF1E6679C12 /* OBTableViewControllerDelegate.h */,
+				355B231B8241480C376C6E6E /* OBTableViewSection.h */,
+				355B229D8E041718E9FD39FE /* OBTableViewSection.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		355B2D96623B8B7174D9544D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				355B20484E7EE5551C6E6FB3 /* OBModelBasedCell.h */,
+				355B2044BC20EFCA916D9D6D /* OBTableViewCell.h */,
+				355B2879A266CDE20DDB0165 /* OBTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A75A7E8A29DFEB0C009372F0 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				A75A7E8B29DFEB17009372F0 /* Main */,
+				A75A7E8D29DFEB26009372F0 /* Test */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		A75A7E8B29DFEB17009372F0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A75A7E8C29DFEB1F009372F0 /* Source */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A75A7E8C29DFEB1F009372F0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				355B254C305A7800073B429A /* Binding */,
+				355B2D96623B8B7174D9544D /* Cell */,
+				355B2A1149431609CE07F24C /* Core */,
+				355B2699CA06F2DA089E67E4 /* Model */,
+				355B286734CDA4498B93A11A /* Reflection */,
+				355B22C12F8A7AE089195DE6 /* OBTableViewController.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A75A7E8D29DFEB26009372F0 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A75A7E8E29DFEB2B009372F0 /* Source */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A75A7E8E29DFEB2B009372F0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A7B350222ABC6B2B002319C1 /* Core */,
+				A7B3500C2ABC69B0002319C1 /* Binding */,
+				A7B350142ABC69BB002319C1 /* Stubs */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A7B3500C2ABC69B0002319C1 /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				A7B3500D2ABC69B0002319C1 /* OBSearchBarTableViewCell.m */,
+				A7B3500E2ABC69B0002319C1 /* UISearchBarPropertyBindingTest.m */,
+				A7B3500F2ABC69B0002319C1 /* OBSearchBarTableViewCell.h */,
+				A7B350102ABC69B0002319C1 /* OBModelCellBindingTest.m */,
+			);
+			path = Binding;
+			sourceTree = "<group>";
+		};
+		A7B350142ABC69BB002319C1 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				A7B350152ABC69BB002319C1 /* UITableViewStub.h */,
+				A7B350162ABC69BB002319C1 /* UITableViewStub.m */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		A7B350222ABC6B2B002319C1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A7B350272ABC6B4B002319C1 /* OBCustomTableViewCell.h */,
+				A7B350282ABC6B4B002319C1 /* OBCustomTableViewCell.m */,
+				A7B350252ABC6B4B002319C1 /* OBSimpleTableViewControllerTest.m */,
+				A7B350292ABC6B4B002319C1 /* OBTableViewController_ModelProtocol_Test.m */,
+				A7B350242ABC6B4B002319C1 /* OBTableViewControllerTest_SetModels.m */,
+				A7B3502A2ABC6B4B002319C1 /* OBTableViewControllerTest.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		OBJ_325 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -47,13 +321,13 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				A75A7E8A29DFEB0C009372F0 /* Framework */,
 				OBJ_6 /* Package.swift */,
 				OBJ_325 /* Products */,
 				OBJ_330 /* Demo */,
-				OBJ_331 /* OBTableViewController */,
 				OBJ_335 /* LICENSE */,
 				OBJ_336 /* Changelog.md */,
 				OBJ_337 /* Readme.md */,
@@ -61,16 +335,50 @@
 				OBJ_339 /* gradlew */,
 				OBJ_340 /* build.gradle */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		A7B3501B2ABC6A99002319C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B3502F2ABC6B4B002319C1 /* OBCustomTableViewCell.h in Headers */,
+				A7B3501F2ABC6AD6002319C1 /* OBSearchBarTableViewCell.h in Headers */,
+				A7B350212ABC6AD6002319C1 /* UITableViewStub.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7F93DFA28E20DF1009A43F5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355B2F52216CE9B5706CE3E0 /* OBTableViewController.h in Headers */,
+				355B208128AA1C7A47534390 /* UITextViewPropertyBinding.h in Headers */,
+				355B21A915CDA21276BA8043 /* UIDatePickerPropertyBinding.h in Headers */,
+				355B282EE2B838C84D34A091 /* UIImageViewPropertyBinding.h in Headers */,
+				355B231D352194A3146D0A8A /* OBModelCellBinding.h in Headers */,
+				A7B3501E2ABC6AB6002319C1 /* OBSearchBarTableViewCell.h in Headers */,
+				355B211F40DBFEA326DB0C88 /* OBPropertyBinding.h in Headers */,
+				A75A7E9429DFEEA0009372F0 /* OBSimpleTableViewController.h in Headers */,
+				A75A7E9A29DFEFA7009372F0 /* OBTableViewController_Private.h in Headers */,
+				A75A7E9529DFEEA0009372F0 /* OBAbstractTableViewController.h in Headers */,
+				A75A7E9629DFEEA0009372F0 /* OBTableViewSection.h in Headers */,
+				355B24768D8EE54A8B509795 /* OBTableViewControllerDelegate.h in Headers */,
+				355B22CDBF966B15EBCA8E7E /* OBTableViewCell.h in Headers */,
+				355B26DBF24456DE13516F15 /* OBModelBasedCell.h in Headers */,
+				355B202C3EB618C2BE77166E /* UITableViewCellModel.h in Headers */,
+				A7B3501C2ABC6AA1002319C1 /* UITableViewStub.h in Headers */,
+				355B25BC6E96E9ECC52F37F9 /* OBCellModel.h in Headers */,
+				A7B34FF42ABC5308002319C1 /* OBProperty.h in Headers */,
+				355B286BD87EAD5E76579BB2 /* OBReflection.h in Headers */,
+				355B2D8E447F3E1FE314601F /* UILabelToDatePropertyBinding.h in Headers */,
+				355B27DB039052D768472327 /* UITextFieldPropertyBinding.h in Headers */,
+				355B2CDDDC44CACCBC9C0173 /* OBAccessoryPropertyBinding.h in Headers */,
+				355B27916BE7B9FA0C0D742F /* OBIntegerPropertyBinding.h in Headers */,
+				355B27589327E1718CA6EB65 /* UISearchBarPropertyBinding.h in Headers */,
+				355B21BEE58F2D285CE395A9 /* UILabelPropertyBinding.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +399,8 @@
 			dependencies = (
 			);
 			name = OBTableViewController;
+			packageProductDependencies = (
+			);
 			productName = OBTableViewController;
 			productReference = A7F93DFF28E20DF1009A43F5 /* OBTableViewController.framework */;
 			productType = "com.apple.product-type.framework";
@@ -99,6 +409,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_385 /* Build configuration list for PBXNativeTarget "OBTableViewControllerTests" */;
 			buildPhases = (
+				A7B3501B2ABC6A99002319C1 /* Headers */,
 				OBJ_388 /* Sources */,
 				OBJ_400 /* Frameworks */,
 			);
@@ -107,6 +418,9 @@
 			dependencies = (
 			);
 			name = OBTableViewControllerTests;
+			packageProductDependencies = (
+				A7B3503A2ABC6CF4002319C1 /* OCMockito */,
+			);
 			productName = OBTableViewControllerTests;
 			productReference = "obtableviewcontroller::OBTableViewControllerTests::Product" /* OBTableViewControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -117,8 +431,9 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftMigration = 9999;
-				LastUpgradeCheck = 9999;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					A7F93DFE28E20DF1009A43F5 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -133,7 +448,10 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
+			packageReferences = (
+				A7B350392ABC6CF4002319C1 /* XCRemoteSwiftPackageReference "OCMockito" */,
+			);
 			productRefGroup = OBJ_325 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,6 +477,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355B295723182FD2E8B33DF6 /* OBSimpleTableViewController.m in Sources */,
+				355B21D96956A59D4373D825 /* OBAbstractTableViewController.m in Sources */,
+				355B2A1191955570B04C25BF /* OBTableViewSection.m in Sources */,
+				355B258AFD34FBBDC6A8D323 /* OBTableViewController.m in Sources */,
+				355B24951B0DE63B2F116EF1 /* OBTableViewCell.m in Sources */,
+				355B268CAA8F9EBFC88F0BD2 /* UILabelToDatePropertyBinding.m in Sources */,
+				355B2086EA9D1D5205B3BC69 /* UILabelPropertyBinding.m in Sources */,
+				355B26C7D5C9DDD1036927F5 /* UIImageViewPropertyBinding.m in Sources */,
+				355B2ADC40347AA9B1BBCC84 /* OBModelCellBinding.m in Sources */,
+				355B246B375ED39FDDAD2238 /* UIDatePickerPropertyBinding.m in Sources */,
+				355B290452CDFC697673D752 /* UITextFieldPropertyBinding.m in Sources */,
+				355B229E84B04BD66BCE56E2 /* OBAccessoryPropertyBinding.m in Sources */,
+				355B2E235877D7C6EDEF4B29 /* OBIntegerPropertyBinding.m in Sources */,
+				355B2094C6E5882DAD7C55D1 /* UITextViewPropertyBinding.m in Sources */,
+				355B279125221F3A6D841571 /* OBPropertyBinding.m in Sources */,
+				355B2107FA6B9436F182F01D /* UISearchBarPropertyBinding.m in Sources */,
+				355B26558FAFB00762ACA13E /* OBCellModel.m in Sources */,
+				355B201304E7FAFE0ED7E268 /* UITableViewCellModel.m in Sources */,
+				355B2FBD58A1287025B0ECB6 /* OBReflection.m in Sources */,
+				355B26315AF9DD5868DBDC6B /* OBProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +504,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				A7B350122ABC69B0002319C1 /* UISearchBarPropertyBindingTest.m in Sources */,
+				A7B350302ABC6B4B002319C1 /* OBCustomTableViewCell.m in Sources */,
+				A7B3502C2ABC6B4B002319C1 /* OBTableViewControllerTest_SetModels.m in Sources */,
+				A7B350172ABC69BB002319C1 /* UITableViewStub.m in Sources */,
+				A7B350312ABC6B4B002319C1 /* OBTableViewController_ModelProtocol_Test.m in Sources */,
+				A7B350112ABC69B0002319C1 /* OBSearchBarTableViewCell.m in Sources */,
+				A7B3502D2ABC6B4B002319C1 /* OBSimpleTableViewControllerTest.m in Sources */,
+				A7B350132ABC69B0002319C1 /* OBModelCellBindingTest.m in Sources */,
+				A7B350322ABC6B4B002319C1 /* OBTableViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,12 +550,14 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -227,9 +576,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.OBTableViewController;
@@ -276,6 +632,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -283,6 +640,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -296,9 +654,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openbakery.OBTableViewController;
@@ -319,17 +684,45 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
@@ -347,26 +740,25 @@
 		OBJ_386 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/OBTableViewController/include",
-					"$(SRCROOT)/OBTableViewController/Headers",
-					"$(SRCROOT)/.build/checkouts/OCMockito/Source/include",
-					"$(SRCROOT)/.build/checkouts/OCHamcrest/Source/include",
-					Test/Core,
-					Test/Stubs,
+					"$(SRCROOT)/Framework/Test/Source/Stubs",
 				);
 				INFOPLIST_FILE = OBTableViewController.xcodeproj/OBTableViewControllerTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -386,26 +778,25 @@
 		OBJ_387 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/OBTableViewController/include",
-					"$(SRCROOT)/OBTableViewController/Headers",
-					"$(SRCROOT)/.build/checkouts/OCMockito/Source/include",
-					"$(SRCROOT)/.build/checkouts/OCHamcrest/Source/include",
-					Test/Core,
-					Test/Stubs,
+					"$(SRCROOT)/Framework/Test/Source/Stubs",
 				);
 				INFOPLIST_FILE = OBTableViewController.xcodeproj/OBTableViewControllerTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -426,15 +817,42 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -443,7 +861,8 @@
 				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -479,6 +898,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7B350392ABC6CF4002319C1 /* XCRemoteSwiftPackageReference "OCMockito" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonreid/OCMockito";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7B3503A2ABC6CF4002319C1 /* OCMockito */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7B350392ABC6CF4002319C1 /* XCRemoteSwiftPackageReference "OCMockito" */;
+			productName = OCMockito;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = OBJ_1 /* Project object */;
 }

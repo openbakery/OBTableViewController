@@ -18,25 +18,32 @@ let package = Package(
     targets: [
         .target(
             name: "OBTableViewController",
-            dependencies: ["OCMockito"],
-						path: "OBTableViewController",
+						path: "Framework",
             exclude: [
             ],
             sources: [
                 "Main",
             ],
-            publicHeadersPath: "Headers"
-        ),
+            publicHeadersPath: "Headers",
+            cSettings: [
+              CSetting.headerSearchPath("Source/Binding"),
+              CSetting.headerSearchPath("Source/Cell"),
+              CSetting.headerSearchPath("Source/Core"),
+              CSetting.headerSearchPath("Source/Reflection"),
+              CSetting.headerSearchPath("Source")
+            ]
+            ),
 				.testTarget(
 					name: "OBTableViewControllerTests",
-					dependencies: ["OBTableViewController"],
-					path: "OBTableViewController",
+					dependencies: ["OBTableViewController", "OCMockito"],
+					path: "Framework",
 					exclude: [
 					],
 					sources: [
 							"Test",
 					],
 					cSettings: [
+						CSetting.headerSearchPath("Test/Binding"),
 						CSetting.headerSearchPath("Test/Core"),
 						CSetting.headerSearchPath("Test/Stubs")
 					]

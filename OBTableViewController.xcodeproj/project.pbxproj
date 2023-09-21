@@ -54,8 +54,6 @@
 		A7B350122ABC69B0002319C1 /* UISearchBarPropertyBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B3500E2ABC69B0002319C1 /* UISearchBarPropertyBindingTest.m */; };
 		A7B350132ABC69B0002319C1 /* OBModelCellBindingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B350102ABC69B0002319C1 /* OBModelCellBindingTest.m */; };
 		A7B350172ABC69BB002319C1 /* UITableViewStub.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B350162ABC69BB002319C1 /* UITableViewStub.m */; };
-		A7B3501C2ABC6AA1002319C1 /* UITableViewStub.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B350152ABC69BB002319C1 /* UITableViewStub.h */; };
-		A7B3501E2ABC6AB6002319C1 /* OBSearchBarTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B3500F2ABC69B0002319C1 /* OBSearchBarTableViewCell.h */; };
 		A7B3501F2ABC6AD6002319C1 /* OBSearchBarTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B3500F2ABC69B0002319C1 /* OBSearchBarTableViewCell.h */; };
 		A7B350212ABC6AD6002319C1 /* UITableViewStub.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B350152ABC69BB002319C1 /* UITableViewStub.h */; };
 		A7B3502C2ABC6B4B002319C1 /* OBTableViewControllerTest_SetModels.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B350242ABC6B4B002319C1 /* OBTableViewControllerTest_SetModels.m */; };
@@ -359,7 +357,6 @@
 				355B21A915CDA21276BA8043 /* UIDatePickerPropertyBinding.h in Headers */,
 				355B282EE2B838C84D34A091 /* UIImageViewPropertyBinding.h in Headers */,
 				355B231D352194A3146D0A8A /* OBModelCellBinding.h in Headers */,
-				A7B3501E2ABC6AB6002319C1 /* OBSearchBarTableViewCell.h in Headers */,
 				355B211F40DBFEA326DB0C88 /* OBPropertyBinding.h in Headers */,
 				A75A7E9429DFEEA0009372F0 /* OBSimpleTableViewController.h in Headers */,
 				A75A7E9A29DFEFA7009372F0 /* OBTableViewController_Private.h in Headers */,
@@ -369,7 +366,6 @@
 				355B22CDBF966B15EBCA8E7E /* OBTableViewCell.h in Headers */,
 				355B26DBF24456DE13516F15 /* OBModelBasedCell.h in Headers */,
 				355B202C3EB618C2BE77166E /* UITableViewCellModel.h in Headers */,
-				A7B3501C2ABC6AA1002319C1 /* UITableViewStub.h in Headers */,
 				355B25BC6E96E9ECC52F37F9 /* OBCellModel.h in Headers */,
 				A7B34FF42ABC5308002319C1 /* OBProperty.h in Headers */,
 				355B286BD87EAD5E76579BB2 /* OBReflection.h in Headers */,

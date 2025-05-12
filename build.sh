@@ -1,19 +1,48 @@
 #!/bin/sh
 
-NAME="OBTableViewController"
 
-IOS_ARCHIVE_PATH="./build/archive/ios.xcarchive"
-IOS_SIMULATOR_ARCHIVE_PATH="./build/archive/ios_simulator.xcarchive"
+NAME=OBTableViewController
+PROJECT=$NAME.xcodeproj
+SCHEME=$NAME
+SIMULATOR_NAME="iPhone 16 Pro"
 
-echo "Build"
-xcodebuild archive -scheme ${NAME} -archivePath ${IOS_ARCHIVE_PATH} -sdk iphoneos SKIP_INSTALL=NO -destination 'generic/platform=iOS'
-xcodebuild archive -scheme ${NAME} -archivePath ${IOS_SIMULATOR_ARCHIVE_PATH} -sdk iphonesimulator SKIP_INSTALL=NO -destination 'generic/platform=iOS Simulator'
+build() {
+
+	xcodebuild build-for-testing -scheme $SCHEME -configuration Debug \
+		-UseNewBuildSystem=YES \
+		-derivedDataPath ./build -disable-concurrent-destination-testing \
+		-destination platform="iOS Simulator,name=$SIMULATOR_NAME" \
+		-parallel-testing-enabled NO \
+		-enableAddressSanitizer NO -enableThreadSanitizer NO -enableUndefinedBehaviorSanitizer NO \
+		-enableCodeCoverage NO COMPILER_INDEX_STORE_ENABLE=NO \
+		-skipMacroValidation \
+		ARCH=arm64 \
+		CODE_SIGN_IDENTITY= \
+		CODE_SIGNING_REQUIRED=NO \
+		CODE_SIGNING_ALLOWED=NO | xcbeautify -qq --disable-colored-output
+}
 
 
-echo "Create xcframework"
-xcodebuild -create-xcframework \
-  -framework ${IOS_ARCHIVE_PATH}/Products/Library/Frameworks/${NAME}.framework \
-  -framework ${IOS_SIMULATOR_ARCHIVE_PATH}/Products/Library/Frameworks/${NAME}.framework \
-  -output "./build/${NAME}.xcframework"
+unitTest() {
+	xcodebuild test-without-building -scheme $SCHEME -configuration Debug \
+		-UseNewBuildSystem=YES \
+		-derivedDataPath ./build -disable-concurrent-destination-testing \
+		-destination platform="iOS Simulator,name=$SIMULATOR_NAME" \
+		-parallel-testing-enabled NO \
+		-enableAddressSanitizer NO -enableThreadSanitizer NO -enableUndefinedBehaviorSanitizer NO \
+		-enableCodeCoverage NO COMPILER_INDEX_STORE_ENABLE=NO \
+		-collect-test-diagnostics never \
+		-skipMacroValidation \
+		ARCH=arm64 \
+		$ONLY_TEST | xcbeautify --disable-colored-output
 
+}
 
+build
+
+if [ $? != 0 ]; then
+  echo "Build failed"
+  exit 1
+fi
+
+unitTest

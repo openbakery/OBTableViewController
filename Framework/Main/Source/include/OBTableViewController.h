@@ -1,4 +1,10 @@
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+FOUNDATION_EXPORT double OBTableViewControllerVersionNumber;
+
+FOUNDATION_EXPORT const unsigned char OBTableViewControllerVersionString[];
 
 #import "../Binding/OBAccessoryPropertyBinding.h"
 #import "../Binding/OBIntegerPropertyBinding.h"

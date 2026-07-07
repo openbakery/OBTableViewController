@@ -7,7 +7,8 @@
 
 @import XCTest;
 @import OCHamcrest;
-#import <OBTableViewController/OBTableViewController.h>
+@import OBTableViewController;
+
 
 @interface OBModelCellBindingTest : XCTestCase
 @end

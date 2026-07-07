@@ -6,8 +6,8 @@
 //  Copyright © 2020 Rene Pirringer. All rights reserved.
 //
 
+#import "OBModelBasedCell.h"
 #import <UIKit/UIKit.h>
-#import <OBTableViewController/OBModelBasedCell.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

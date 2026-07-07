@@ -2,19 +2,19 @@
 //
 // Created by Rene Pirringer.
 //
-// 
+//
 //
 
-
+#import "OBPropertyBinding.h"
 #import <Foundation/Foundation.h>
-#import <OBTableViewController/OBPropertyBinding.h>
-
 
 /**
-* binds NSDate properties to the cell UILabels, e.g. NSDate *date -> UILabel *textLabel
-*/
+ * binds NSDate properties to the cell UILabels, e.g. NSDate *date -> UILabel
+ * *textLabel
+ */
 @interface UILabelToDatePropertyBinding : OBPropertyBinding
 
-- (id)initSourceName:(NSString *)sourceName andDestinationName:(NSString *)destinationName;
+- (id)initSourceName:(NSString *)sourceName
+    andDestinationName:(NSString *)destinationName;
 
 @end

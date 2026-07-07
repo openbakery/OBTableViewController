@@ -2,16 +2,15 @@
 //
 // Created by Rene Pirringer.
 //
-// 
+//
 //
 
-
+#import "OBPropertyBinding.h"
 #import <Foundation/Foundation.h>
-#import <OBTableViewController/OBPropertyBinding.h>
-
 
 @interface UIDatePickerPropertyBinding : OBPropertyBinding
 
-- (id)initSourceName:(NSString *)sourceName andDestinationName:(NSString *)destinationName;
+- (id)initSourceName:(NSString *)sourceName
+    andDestinationName:(NSString *)destinationName;
 
 @end

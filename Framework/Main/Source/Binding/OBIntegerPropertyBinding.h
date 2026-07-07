@@ -2,12 +2,12 @@
 // Created by Rene Pirringer
 //
 
+#import "OBPropertyBinding.h"
 #import <Foundation/Foundation.h>
-#import <OBTableViewController/OBPropertyBinding.h>
-
 
 @interface OBIntegerPropertyBinding : OBPropertyBinding
 
-- (id)initWithSourceName:(NSString *)sourceName destinationName:(NSString *)destinationName;
+- (id)initWithSourceName:(NSString *)sourceName
+         destinationName:(NSString *)destinationName;
 
 @end

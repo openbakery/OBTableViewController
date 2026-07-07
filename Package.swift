@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
@@ -7,47 +7,43 @@ let package = Package(
         .iOS(.v14)
     ],
     products: [
-        .library(name: "OBTableViewController", targets: ["OBTableViewController"]),
+        .library(name: "OBTableViewController", targets: ["OBTableViewController"])
     ],
     dependencies: [
         .package(
             url: "https://github.com/jonreid/OCMockito",
             .upToNextMajor(from: "7.0.0")
-        ),
+        )
     ],
     targets: [
         .target(
             name: "OBTableViewController",
-						path: "Framework",
-            exclude: [
-            ],
-            sources: [
-                "Main",
-            ],
-            publicHeadersPath: "Headers",
+            path: "Framework/Main/Source/",
+            publicHeadersPath: "include",
             cSettings: [
-              CSetting.headerSearchPath("Source/Binding"),
-              CSetting.headerSearchPath("Source/Cell"),
-              CSetting.headerSearchPath("Source/Core"),
-              CSetting.headerSearchPath("Source/Reflection"),
-              CSetting.headerSearchPath("Source")
+                .headerSearchPath("./Binding"),
+                .headerSearchPath("./Cell"),
+                .headerSearchPath("./Core"),
+                .headerSearchPath("./Model"),
+                .headerSearchPath("./Reflection"),
             ]
-            ),
-				.testTarget(
-					name: "OBTableViewControllerTests",
-					dependencies: ["OBTableViewController", "OCMockito"],
-					path: "Framework",
-					exclude: [
-					],
-					sources: [
-							"Test",
-					],
-					cSettings: [
-						CSetting.headerSearchPath("Test/Binding"),
-						CSetting.headerSearchPath("Test/Core"),
-						CSetting.headerSearchPath("Test/Stubs")
-					]
-				)
 
-		]
+        ),
+        .testTarget(
+            name: "OBTableViewControllerTests",
+            dependencies: ["OBTableViewController", "OCMockito"],
+            path: "Framework/Test/Source/",
+            cSettings: [
+                .headerSearchPath("./Binding"),
+                .headerSearchPath("./Core"),
+                .headerSearchPath("./Stubs"),
+                .headerSearchPath("../../Main/Source/Binding"),
+                .headerSearchPath("../../Main/Source/Cell"),
+                .headerSearchPath("../../Main/Source/Core"),
+                .headerSearchPath("../../Main/Source/Model"),
+                .headerSearchPath("../../Main/Source/Reflection"),
+            ]
+        ),
+
+    ]
 )

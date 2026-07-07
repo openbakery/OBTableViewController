@@ -8,8 +8,8 @@
 
 @import XCTest;
 @import OCHamcrest;
+@import OBTableViewController;
 #import <Foundation/Foundation.h>
-#import <OBTableViewController/OBTableViewController.h>
 #import "OBSearchBarTableViewCell.h"
 
 @interface UISearchBarPropertyBindingTest : XCTestCase

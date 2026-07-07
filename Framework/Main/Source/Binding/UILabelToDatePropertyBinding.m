@@ -2,46 +2,47 @@
 //
 // Created by Rene Pirringer.
 //
-// 
+//
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "OBProperty.h"
 #import "UILabelToDatePropertyBinding.h"
-#import <OBTableViewController/OBProperty.h>
-
 
 @implementation UILabelToDatePropertyBinding {
-	NSDateFormatter *_dateFormatter;
+  NSDateFormatter *_dateFormatter;
 }
 
-- (id)initSourceName:(NSString *)sourceName andDestinationName:(NSString *)destinationName {
-	self = [super initSourceName:sourceName sourceClass:[NSDate class] destinationName:destinationName destinationClass:[UILabel class]];
-	if (self) {
-		_dateFormatter = [[NSDateFormatter alloc] init];
-		[_dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-		[_dateFormatter setTimeStyle:NSDateFormatterNoStyle];
-
-	}
-	return self;
+- (id)initSourceName:(NSString *)sourceName
+    andDestinationName:(NSString *)destinationName {
+  self = [super initSourceName:sourceName
+                   sourceClass:[NSDate class]
+               destinationName:destinationName
+              destinationClass:[UILabel class]];
+  if (self) {
+    _dateFormatter = [[NSDateFormatter alloc] init];
+    [_dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [_dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+  }
+  return self;
 }
-
 
 - (void)setValueFrom:(NSObject *)sourceObject to:(NSObject *)destinationObject {
-	UILabel *label = [self.destinationProperty valueForObject:destinationObject];
-	NSDate *value = [self.sourceProperty valueForObject:sourceObject];
-	label.text  = [_dateFormatter stringFromDate:value];
+  UILabel *label = [self.destinationProperty valueForObject:destinationObject];
+  NSDate *value = [self.sourceProperty valueForObject:sourceObject];
+  label.text = [_dateFormatter stringFromDate:value];
 }
 
 - (id)copyWithZone:(NSZone *)zone {
-	UILabelToDatePropertyBinding *copy = [super copyWithZone:zone];
+  UILabelToDatePropertyBinding *copy = [super copyWithZone:zone];
 
-	if (copy != nil) {
-		copy->_dateFormatter = _dateFormatter;
-	}
+  if (copy != nil) {
+    copy->_dateFormatter = _dateFormatter;
+  }
 
-	return copy;
+  return copy;
 }
 
 @end

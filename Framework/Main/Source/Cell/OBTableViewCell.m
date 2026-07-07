@@ -7,20 +7,19 @@
 //
 
 #import "OBTableViewCell.h"
-#import <OBTableViewController/OBCellModel.h>
+#import "OBCellModel.h"
 
 @implementation OBTableViewCell
 
-
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-	[super setSelected:selected animated:animated];
+  [super setSelected:selected animated:animated];
 }
 
 - (void)setModel:(NSObject *)model {
-	if ([model isKindOfClass:[OBCellModel class]]) {
-		OBCellModel *cellModel = (OBCellModel *) model;
+  if ([model isKindOfClass:[OBCellModel class]]) {
+    OBCellModel *cellModel = (OBCellModel *)model;
     self.textLabel.text = cellModel.text;
-	}
+  }
 }
 
 @end
